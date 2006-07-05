@@ -1,0 +1,13 @@
+<module>
+	<rawname>phonebook</rawname>
+	<name>Phonebook</name>
+	<version>1.0.3</version>
+	<type>tool</type>
+	<category>Module</category>
+	<menuitems>
+		<phonebook>Asterisk Phonebook</phonebook>
+	</menuitems>
+	<location>release/phonebook-1.0.3.tgz</location>
+	<md5sum>xx</md5sum>
+	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
+</module>

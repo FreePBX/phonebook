@@ -1,0 +1,24 @@
+phonebook (1.0.3)
+
+ * Added 'Import from CSV' function
+ * Added an 'Empty Phonebook' button
+ * Added js confirmation to Delete link
+ * Added licensing information in every php file
+ * Created this ChangeLog
+
+ -- Edoardo, 2006-06-25
+
+phonebook (1.0.3)
+
+ * Is now possible to insert a name with a space in it (Bug signaled by jcwoltz)
+ * Fixed a little bug in editing the a number associated with a name
+ * Suppressed warnings when the phonebook was empty
+ * Swapped Number and name columns and fields
+
+ -- Edoardo, 2006-06-18
+
+phonebook (1.0.1)
+
+ * Initial phonebook release
+
+ -- Edoardo, 2006-05-29
