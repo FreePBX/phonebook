@@ -53,6 +53,14 @@ if(isset($_REQUEST['action'])) {
 			} else
 				$n = 0; // total lines if no file
     break;
+		case "export":
+			header('Content-Type: text/csv');
+			header('Content-disposition: attachment; filename=phonebook.csv');
+			$numbers = phonebook_list();
+			foreach ($numbers as $number => $name)
+				printf("\"%s\";%s\n", $name, $number);
+			die();
+		break;
 	}
 }
 
@@ -85,7 +93,9 @@ if (is_array($numbers)) {
 	<input type="hidden" name="action" value="empty">
 
 	<tr>
-		<td colspan="4"><h5><?php echo _("Phonebook entries") ?><hr></h5></td>
+		<td colspan="4"><h5><?php echo _("Phonebook entries") ?>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="<?php echo $_SERVER['PHP_SELF'] ?>?type=tool&display=phonebook&action=export&quietmode=1"><?php echo _("Export in CSV") ?></a><hr></h5></td>
 	</tr>
 
 	<tr>
@@ -130,11 +140,11 @@ if (is_array($numbers)) {
 
 	<tr><td colspan="4"><h5><?php echo _("Add or replace entry") ?><hr></h5></td></tr>
 
-        <tr>
-                <td><a href="#" class="info"><?php echo _("Number:")?>
-                <span><?php echo _("Enter the number (For caller ID lookup to work it should match the caller ID received from network)")?></span></a></td>
-                <td><input type="text" name="number"></td>
-        </tr>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Number:")?>
+		<span><?php echo _("Enter the number (For caller ID lookup to work it should match the caller ID received from network)")?></span></a></td>
+		<td><input type="text" name="number"></td>
+	</tr>
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Name:")?><span><?php echo _("Enter the name")?></span></a></td>
@@ -154,11 +164,11 @@ if (is_array($numbers)) {
 	<input type="hidden" name="action" value="import">
 
 
-	<tr><td colspan="4"><h5><?php echo _("Import From CSV") ?><hr></h5></td></tr>
+	<tr><td colspan="4"><h5><?php echo _("Import from CSV") ?><hr></h5></td></tr>
 
         <tr>
                 <td><a href="#" class="info"><?php echo _("File:")?>
-                <span><?php echo _("Import a CSV File, the first column should contain the telephone number and the second should contain the name")?></span></a></td>
+                <span><?php echo _("Import a CSV File, the first column should contain the NAME and the second should contain the NUMBER. Names should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:<br/>\"John Doe\";12345678")?></span></a></td>
                 <td><input type="file" name="csv"></td>
         </tr>
 
@@ -177,7 +187,7 @@ function edit_onsubmit() {
 	defaultEmptyOK = false;
 	if (!isAlphanumeric(theForm.name.value))
 		return warnInvalid(theForm.name, "Please enter a valid Name");
-        if (!isInteger(theForm.number.value))
+        if (!checkNumber(theForm.number.value))
                 return warnInvalid(theForm.number, "Please enter a valid Number");
 	
 		

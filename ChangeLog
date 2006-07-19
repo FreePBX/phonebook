@@ -1,3 +1,10 @@
+phonebook (1.0.4)
+
+ * Added 'Export to CSV' function
+ * Fixed some documentation errors
+
+ -- Edoardo, 2006-07-15
+ 
 phonebook (1.0.3)
 
  * Added 'Import from CSV' function
@@ -8,7 +15,7 @@ phonebook (1.0.3)
 
  -- Edoardo, 2006-06-25
 
-phonebook (1.0.3)
+phonebook (1.0.2)
 
  * Is now possible to insert a name with a space in it (Bug signaled by jcwoltz)
  * Fixed a little bug in editing the a number associated with a name
