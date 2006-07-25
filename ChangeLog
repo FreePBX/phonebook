@@ -1,3 +1,12 @@
+phonebook (1.1.0)
+
+ * Added Speed dial field for phonebook entries (used by speeddial module)
+ * Changed phonebook_list return value structure
+ * Changed tables to have 100% wdth
+ * Numbers can no more contain '+' sign because of speeddial
+
+ -- Edoardo, 2006-07-15
+
 phonebook (1.0.4)
 
  * Added 'Export to CSV' function

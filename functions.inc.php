@@ -20,11 +20,15 @@ function phonebook_list() {
 		$list = $astman->database_show();
 		foreach ($list as $k => $v)	{
 			if (substr($k, 1, 7) == 'cidname')
-			$numbers[substr($k, 9)] = $v ;
+				$numbers[substr($k, 9)]['name'] = $v ;
+			if (substr($k, 1, 13) == 'sysspeeddials')
+				$numbers[$v]['speeddial'] = substr($k, 15) ;
 		}
 
+/*
 		if (is_array($numbers))
 			natcasesort($numbers);
+*/
 
 		return $numbers;
 	} else {
@@ -33,13 +37,15 @@ function phonebook_list() {
 
 }
 
-function phonebook_del($number){
+function phonebook_del($number, $speeddial){
 	require_once('common/php-asmanager.php');
 	global $amp_conf;
 
 	$astman = new AGI_AsteriskManager();
 	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
 		$astman->database_del("cidname",$number);
+		if ($speeddial != '')
+			$astman->database_del("sysspeeddials",$speeddial);
 	} else {
 		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 	}
@@ -52,12 +58,13 @@ function phonebook_empty(){
 	$astman = new AGI_AsteriskManager();
 	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
 		$astman->database_deltree("cidname");
+		$astman->database_deltree("sysspeeddials");
 	} else {
 		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 	}
 }
 
-function phonebook_add($number, $name){
+function phonebook_add($number, $name, $speeddial){
 	require_once('common/php-asmanager.php');
 	global $amp_conf;
 
@@ -67,6 +74,8 @@ function phonebook_add($number, $name){
   $astman = new AGI_AsteriskManager();
 	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
 		$astman->database_put("cidname",$number, '"'.$name.'"');
+		if ($speeddial != '')
+			$astman->database_put("sysspeeddials",$speeddial, '"'.$number.'"');
 	} else {
 		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 	}
