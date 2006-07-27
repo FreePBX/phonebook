@@ -8,5 +8,6 @@
 		<phonebook>Asterisk Phonebook</phonebook>
 	</menuitems>
 	<location>release/phonebook-1.1.0.tgz</location>
+	<md5sum>99927d1c979d43e98d2f6276cc9922fe</md5sum>
 	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
 </module>
