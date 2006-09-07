@@ -87,7 +87,7 @@ function phonebook_chk($post){
 	return true;
 }
 
-function fgetcsvfromline ($line, $columnCount, $delimiterChar = ';', $enclosureChar = '"') {
+function phonebook_fgetcsvfromline ($line, $columnCount, $delimiterChar = ';', $enclosureChar = '"') {
     $regExpSpecialChars = array (
         "|" => "\\|",
         "&" => "\\&",

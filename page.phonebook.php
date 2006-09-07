@@ -46,7 +46,7 @@ if(isset($_REQUEST['action'])) {
 				if (is_array($lines))	{
 					$n = count($lines); // total lines
 					foreach($lines as $line) {
-						$fields = fgetcsvfromline($line, 3);
+						$fields = phonebook_fgetcsvfromline($line, 3);
 						$fields = array_map('trim', $fields);
 						if (is_array($fields) && count($fields) == 3 && is_numeric($fields[2]) &&  ($fields[3] == '' || is_numeric($fields[3]))) {
 							phonebook_del($fields[2], $numbers[$fields[2]]['speeddial']);
