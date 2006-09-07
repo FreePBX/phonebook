@@ -7,7 +7,7 @@
 	<menuitems>
 		<phonebook>Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/phonebook-1.1.1.tgz</location>
-	<md5sum>11ca8842a722cd5279552d2766efa510</md5sum>
+	<location>release//2.2/phonebook-1.1.1.tgz</location>
+	<md5sum>f8565315d4c9f14b3f2635b9f68d0b5e</md5sum>
 	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
 </module>
