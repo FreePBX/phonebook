@@ -19,10 +19,12 @@ function phonebook_list() {
 	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
 		$list = $astman->database_show();
 		foreach ($list as $k => $v)	{
-			if (substr($k, 1, 7) == 'cidname')
-				$numbers[substr($k, 9)]['name'] = $v ;
-			if (substr($k, 1, 13) == 'sysspeeddials')
-				$numbers[$v]['speeddial'] = substr($k, 15) ;
+			if (isset($v)) { // Somehow, a 'null' value is leaking into astdb.
+				if (substr($k, 1, 7) == 'cidname')
+					$numbers[substr($k, 9)]['name'] = $v ;
+				if (substr($k, 1, 13) == 'sysspeeddials')
+					$numbers[$v]['speeddial'] = substr($k, 15) ;
+			}
 		}
 
 /*
