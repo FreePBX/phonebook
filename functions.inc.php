@@ -89,6 +89,12 @@ function phonebook_chk($post){
 	return true;
 }
 
+/*
+* @version V1.01 16 June 2004 (c) Petar Nedyalkov (bu@orbitel.bg). All rights reserved.
+* Released under the GPL license.
+* http://bu.orbitel.bg/fgetcsvfromline.php
+*/
+
 function phonebook_fgetcsvfromline ($line, $columnCount, $delimiterChar = ';', $enclosureChar = '"') {
     $regExpSpecialChars = array (
         "|" => "\\|",
