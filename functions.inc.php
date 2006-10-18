@@ -32,7 +32,7 @@ function phonebook_list() {
 			natcasesort($numbers);
 */
 
-		return $numbers;
+		return isset($numbers)?$numbers:null;
 	} else {
 		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 	}
