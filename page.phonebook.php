@@ -31,11 +31,11 @@ if(isset($_REQUEST['action'])) {
 			$numbers = phonebook_list();
 			phonebook_del($number, $numbers[$number]['speeddial']);
 		break;
-    case "edit":
-    	$numbers = phonebook_list();
+		case "edit":
+			$numbers = phonebook_list();
 			phonebook_del($editnumber, $numbers[$editnumber]['speeddial']);
 			phonebook_add($number, $name, $speeddial);
-    break;
+		break;
 		case "empty":
 			phonebook_empty();
 		break;

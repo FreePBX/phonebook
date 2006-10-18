@@ -73,8 +73,18 @@ function phonebook_add($number, $name, $speeddial){
 	if(!phonebook_chk($number))
 		return false;
 
-  $astman = new AGI_AsteriskManager();
+	$astman = new AGI_AsteriskManager();
 	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
+		// Was the user a twonk and didn't specify a speeddial?
+		if (empty($speeddial)) { 
+			for ($nbr = 0; $nbr <= 99; $nbr++) { 
+				$res = $astman->database_get("sysspeeddials",$nbr);
+				if ($astman->database_get("sysspeeddials",sprintf("%02d",$nbr))===false) {
+					$speeddial = sprintf("%02d", $nbr);
+					break;
+				}
+			}
+		}
 		$astman->database_put("cidname",$number, '"'.$name.'"');
 		if ($speeddial != '')
 			$astman->database_put("sysspeeddials",$speeddial, '"'.$number.'"');
