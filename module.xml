@@ -4,7 +4,7 @@
 	<version>1.1.3</version>
 	<description>Provides a phonebook for freePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
 	<type>tool</type>
-	<category>Phonebook</category>
+	<category>CID/Number Management</category>
 	<menuitems>
 		<phonebook>Asterisk Phonebook</phonebook>
 	</menuitems>
