@@ -12,13 +12,12 @@
 //GNU General Public License for more details.
 
 function phonebook_list() {
-	require_once('common/php-asmanager.php');
 	global $amp_conf;
+	global $astman;
 
-	$astman = new AGI_AsteriskManager();
-	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
+	if ($astman) {
 		$list = $astman->database_show();
-		foreach ($list as $k => $v)	{
+		foreach ($list as $k => $v) {
 			if (isset($v)) { // Somehow, a 'null' value is leaking into astdb.
 				if (substr($k, 1, 7) == 'cidname')
 					$numbers[substr($k, 9)]['name'] = $v ;
@@ -26,25 +25,21 @@ function phonebook_list() {
 					$numbers[$v]['speeddial'] = substr($k, 15) ;
 			}
 		}
-
 /*
 		if (is_array($numbers))
 			natcasesort($numbers);
 */
-
 		return isset($numbers)?$numbers:null;
 	} else {
 		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 	}
-
 }
 
 function phonebook_del($number, $speeddial){
-	require_once('common/php-asmanager.php');
 	global $amp_conf;
+	global $astman;
 
-	$astman = new AGI_AsteriskManager();
-	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
+	if ($astman) {
 		$astman->database_del("cidname",$number);
 		if ($speeddial != '')
 			$astman->database_del("sysspeeddials",$speeddial);
@@ -54,11 +49,10 @@ function phonebook_del($number, $speeddial){
 }
 
 function phonebook_empty(){
-	require_once('common/php-asmanager.php');
 	global $amp_conf;
+	global $astman;
 
-	$astman = new AGI_AsteriskManager();
-	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
+	if ($astman) {
 		$astman->database_deltree("cidname");
 		$astman->database_deltree("sysspeeddials");
 	} else {
@@ -67,14 +61,13 @@ function phonebook_empty(){
 }
 
 function phonebook_add($number, $name, $speeddial){
-	require_once('common/php-asmanager.php');
 	global $amp_conf;
+	global $astman;
 
 	if(!phonebook_chk($number))
 		return false;
 
-	$astman = new AGI_AsteriskManager();
-	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
+	if ($astman) {
 		// Was the user a twonk and didn't specify a speeddial?
 		if (empty($speeddial)) { 
 			for ($nbr = 0; $nbr <= 99; $nbr++) { 
