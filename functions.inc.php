@@ -20,16 +20,23 @@ function phonebook_list() {
 		foreach ($list as $k => $v) {
 			if (isset($v)) { // Somehow, a 'null' value is leaking into astdb.
 				if (substr($k, 1, 7) == 'cidname')
-					$numbers[substr($k, 9)]['name'] = $v ;
+					$numbers['foo'.substr($k, 9)]['name'] = $v ;
 				if (substr($k, 1, 13) == 'sysspeeddials')
-					$numbers[$v]['speeddial'] = substr($k, 15) ;
+					$numbers['foo'.$v]['speeddial'] = substr($k, 15) ;
 			}
 		}
-/*
+
+		foreach ($numbers as $key => $row) {
+			$names[$key]  = strtolower($row['name']);
+		}
+		// Array multisort renumber keys if they are numeric, (casting doesn't work), that's why I added 'foo' in front of the key
+		// Quite ugly, I know... should recode it
+		array_multisort($names, SORT_ASC, SORT_STRING, $numbers);
 		if (is_array($numbers))
-			natcasesort($numbers);
-*/
-		return isset($numbers)?$numbers:null;
+			foreach ($numbers as $key => $value)
+				$retnumbers[substr($key, 3)] = $value;
+
+		return isset($retnumbers)?$retnumbers:null;
 	} else {
 		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 	}
@@ -69,9 +76,10 @@ function phonebook_add($number, $name, $speeddial){
 
 	if ($astman) {
 		// Was the user a twonk and didn't specify a speeddial?
+		// Should we really automatically generate a speeddial ? 
+		// If yes I think we should start from 99 going down and leave easier speeddials to users 
 		if (empty($speeddial)) { 
-			for ($nbr = 0; $nbr <= 99; $nbr++) { 
-				$res = $astman->database_get("sysspeeddials",$nbr);
+			for ($nbr = 99; $nbr > 0; $nbr--) { 
 				if ($astman->database_get("sysspeeddials",sprintf("%02d",$nbr))===false) {
 					$speeddial = sprintf("%02d", $nbr);
 					break;

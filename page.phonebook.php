@@ -125,7 +125,7 @@ if (is_array($numbers)) {
 ?>
 
 	<tr>
-		<td colspan="5"><br><h6><a href="<?php echo $_SERVER['PHP_SELF'] ?>?type=tool&display=phonebook&action=export&quietmode=1"><?php echo _("Export in CSV") ?></a><input name="submit" type="submit" value="<?php echo _("Empty Phonebook")?>"></h6></td>		
+		<td colspan="3"><br><h6><a href="<?php echo $_SERVER['PHP_SELF'] ?>?type=tool&display=phonebook&action=export&quietmode=1"><?php echo _("Export in CSV") ?></a></h6></td><td colspan="2" align="center"><input name="submit" type="submit" value="<?php echo _("Empty Phonebook")?>"></td>		
 	</tr>
 </form>
 

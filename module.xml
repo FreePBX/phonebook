@@ -1,7 +1,7 @@
 <module>
 	<rawname>phonebook</rawname>
 	<name>Phonebook</name>
-	<version>1.1.3</version>
+	<version>1.1.4</version>
 	<description>Provides a phonebook for freePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
 	<type>tool</type>
 	<category>CID &amp; Number Management</category>
@@ -12,6 +12,9 @@
 	<md5sum>b1b47c35f65ff85105d7a671b9ffa9f6</md5sum>
 	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
 	<changelog>
+		*1.1.4* Automatically generate Speed Dial Code if not supplied by user
+			Sort Phonebook alphabetically
+			Reuse Asterisk Manager connection
 		*1.1.3* Fixed copyright information for fgetcsvfromline()
 			Updated module.xml format
 		*1.1.2* freePBX 2.1.2 Released
