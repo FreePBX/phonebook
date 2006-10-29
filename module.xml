@@ -8,8 +8,8 @@
 	<menuitems>
 		<phonebook>Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.2/phonebook-1.1.3.tgz</location>
-	<md5sum>b1b47c35f65ff85105d7a671b9ffa9f6</md5sum>
+	<location>release/2.2/phonebook-1.1.4.tgz</location>
+	<md5sum>6326ee297c853f3c9b4cec8655d17eaf</md5sum>
 	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
 	<changelog>
 		*1.1.4* Automatically generate Speed Dial Code if not supplied by user
