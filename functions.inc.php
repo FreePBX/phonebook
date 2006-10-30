@@ -26,15 +26,17 @@ function phonebook_list() {
 			}
 		}
 
-		foreach ($numbers as $key => $row) {
-			$names[$key]  = strtolower($row['name']);
-		}
-		// Array multisort renumber keys if they are numeric, (casting doesn't work), that's why I added 'foo' in front of the key
-		// Quite ugly, I know... should recode it
-		array_multisort($names, SORT_ASC, SORT_STRING, $numbers);
-		if (is_array($numbers))
-			foreach ($numbers as $key => $value)
+		if (isset($numbers) && is_array($numbers)) {
+			foreach ($numbers as $key => $row) {
+				$names[$key]  = strtolower($row['name']);
+			}
+			// Array multisort renumber keys if they are numeric, (casting doesn't work), that's why I added 'foo' in front of the key
+			// Quite ugly, I know... should recode it
+			array_multisort($names, SORT_ASC, SORT_STRING, $numbers);
+			foreach ($numbers as $key => $value) {
 				$retnumbers[substr($key, 3)] = $value;
+			}
+		}
 
 		return isset($retnumbers)?$retnumbers:null;
 	} else {
