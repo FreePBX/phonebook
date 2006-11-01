@@ -1,17 +1,18 @@
 <module>
 	<rawname>phonebook</rawname>
 	<name>Phonebook</name>
-	<version>1.1.4</version>
+	<version>1.1.5</version>
 	<description>Provides a phonebook for freePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
 	<type>tool</type>
 	<category>CID &amp; Number Management</category>
 	<menuitems>
 		<phonebook>Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.2/phonebook-1.1.4.tgz</location>
-	<md5sum>6326ee297c853f3c9b4cec8655d17eaf</md5sum>
+	<location>release/2.2/phonebook-1.1.5.tgz</location>
+	<md5sum>b78ffc82cf878b039a609e3b4a16455b</md5sum>
 	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
 	<changelog>
+		*1.1.5* Fixed a Warning when phonebook was empty
 		*1.1.4* Automatically generate Speed Dial Code if not supplied by user
 			Sort Phonebook alphabetically
 			Reuse Asterisk Manager connection
