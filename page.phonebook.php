@@ -26,15 +26,19 @@ if(isset($_REQUEST['action'])) {
 	switch ($action) {
 		case "add":
 			phonebook_add($number, $name, $speeddial);
+			redirect_standard();
+		exit;
 		break;
 		case "delete":
 			$numbers = phonebook_list();
 			phonebook_del($number, $numbers[$number]['speeddial']);
+			redirect_standard();
 		break;
 		case "edit":
 			$numbers = phonebook_list();
 			phonebook_del($editnumber, $numbers[$editnumber]['speeddial']);
 			phonebook_add($number, $name, $speeddial);
+			redirect_standard();
 		break;
 		case "empty":
 			phonebook_empty();
@@ -54,6 +58,7 @@ if(isset($_REQUEST['action'])) {
 							$i++;
 						}
 					}
+					redirect_standard();
 				}
 			} else
 				$n = 0; // total lines if no file
