@@ -9,7 +9,7 @@
 		<phonebook>Asterisk Phonebook</phonebook>
 	</menuitems>
 	<location>release/2.3/phonebook-1.1.5.1.tgz</location>
-	<md5sum>a73e7d630283c4ca90c08419ce18650c</md5sum>
+	<md5sum>ffda01a511856057b9068d5a348f2697</md5sum>
 	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
 	<changelog>
 		*1.1.5.1* changed freePBX to FreePBX
