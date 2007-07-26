@@ -98,8 +98,8 @@ if (is_array($numbers)) {
 
 <table cellpadding="5" width="100%">
 
-<form autocomplete="off" name="delete" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return confirm('<? echo _("Are you sure you want to empty your phonebook ?")?>');">
-<?#onsubmit="return edit_onsubmit();"?>
+<form autocomplete="off" name="delete" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return confirm('<?php echo _("Are you sure you want to empty your phonebook ?")?>');">
+<?php#onsubmit="return edit_onsubmit();"?>
 	<input type="hidden" name="action" value="empty">
 
 	<tr>
@@ -107,9 +107,9 @@ if (is_array($numbers)) {
 	</tr>
 
 	<tr>
-		<td><b><?=_("Number")?></b></td>
-		<td><b><?=_("Name")?></b></td>
-		<td><b><?=_("Speed dial")?></b></td>
+		<td><b><?php=_("Number")?></b></td>
+		<td><b><?php=_("Name")?></b></td>
+		<td><b><?php=_("Speed dial")?></b></td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 	</tr>
@@ -136,7 +136,7 @@ if (is_array($numbers)) {
 
 </table>
 
-<?
+<?php
 }
 ?>
 

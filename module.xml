@@ -1,7 +1,7 @@
 <module>
 	<rawname>phonebook</rawname>
 	<name>Phonebook</name>
-	<version>1.1.5.2</version>
+	<version>1.1.5.3</version>
 	<description>Provides a phonebook for FreePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
 	<type>tool</type>
 	<category>CID &amp; Number Management</category>
@@ -12,6 +12,7 @@
 	<md5sum>d89ca47ec89e38585b306e46ef11339b</md5sum>
 	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
 	<changelog>
+		*1.1.5.3* #2070 fix proper use of script tags
 		*1.1.5.2* bumping to remove checksum error
 		*1.1.5.1* changed freePBX to FreePBX
 		*1.1.5* Fixed a Warning when phonebook was empty
