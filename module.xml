@@ -8,8 +8,8 @@
 	<menuitems>
 		<phonebook>Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.3/phonebook-1.1.5.2.tgz</location>
-	<md5sum>d89ca47ec89e38585b306e46ef11339b</md5sum>
+	<location>release/2.3/phonebook-1.1.5.3.tgz</location>
+	<md5sum>84a15dccc1318c504f0ea614c8ddc434</md5sum>
 	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
 	<changelog>
 		*1.1.5.3* #2070 fix proper use of script tags
