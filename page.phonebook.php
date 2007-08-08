@@ -69,7 +69,7 @@ if(isset($_REQUEST['action'])) {
 			$numbers = phonebook_list();
 			foreach ($numbers as $number => $values)
 				printf("\"%s\";%s;%s\n", $values['name'], $number, $values['speeddial']);
-			die();
+			die_freepbx();
 		break;
 	}
 }
