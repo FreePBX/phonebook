@@ -8,8 +8,8 @@
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.3/phonebook-1.1.5.5.tgz</location>
-	<md5sum>dc79fa7053d678bd265812ce66632b08</md5sum>
+	<location>release/2.3/phonebook-1.1.5.6.tgz</location>
+	<md5sum>ddd2f3eedff4d6a60b12abeedfcc5fd8</md5sum>
 	<changelog>
 		*1.1.5.6* bump for rc1
 		*1.1.5.5* added xml attribute needsenginedb
