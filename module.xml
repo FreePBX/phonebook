@@ -1,7 +1,7 @@
 <module>
 	<rawname>phonebook</rawname>
 	<name>Phonebook</name>
-	<version>1.1.5.5</version>
+	<version>1.1.5.6</version>
 	<description>Provides a phonebook for FreePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
 	<type>tool</type>
 	<category>CID &amp; Number Management</category>
@@ -10,8 +10,8 @@
 	</menuitems>
 	<location>release/2.3/phonebook-1.1.5.5.tgz</location>
 	<md5sum>dc79fa7053d678bd265812ce66632b08</md5sum>
-	<info>http://freepbx.org/wiki/AsteriskPhonebook</info>
 	<changelog>
+		*1.1.5.6* bump for rc1
 		*1.1.5.5* added xml attribute needsenginedb
 		*1.1.5.4* #2163 fix syntax error
 		*1.1.5.3* #2070 fix proper use of script tags
