@@ -1,16 +1,17 @@
 <module>
 	<rawname>phonebook</rawname>
 	<name>Phonebook</name>
-	<version>1.1.5.6</version>
+	<version>1.1.5.7</version>
 	<description>Provides a phonebook for FreePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
 	<type>tool</type>
-	<category>CID &amp; Number Management</category>
+	<category>System Administration</category>
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.3/phonebook-1.1.5.6.tgz</location>
-	<md5sum>ddd2f3eedff4d6a60b12abeedfcc5fd8</md5sum>
+	<location>release/2.3/phonebook-1.1.5.7.tgz</location>
+	<md5sum>ac2f7115bc943a66faa552dab0dd4dc6</md5sum>
 	<changelog>
+		*1.1.5.7* changed categories
 		*1.1.5.6* bump for rc1
 		*1.1.5.5* added xml attribute needsenginedb
 		*1.1.5.4* #2163 fix syntax error
