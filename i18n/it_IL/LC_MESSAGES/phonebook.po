@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: osdevel@webrainstorm.it\n"
+"POT-Creation-Date: 2006-05-29 11:35+0200\n"
+"PO-Revision-Date: 2006-05-29 11:35\n"
+"Last-Translator: Edoardo Serra <edoardo.serra@webrainstorm.it>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.phonebook.php:47
+msgid "Phonebook entry"
+msgstr "Voce di rubrica"
+
+#: page.phonebook.php:47
+msgid "deleted"
+msgstr "cancellata"
+
+#: page.phonebook.php:52
+msgid "Phonebook entries"
+msgstr "Voci di rubrica"
+
+#: page.phonebook.php:56
+msgid "Name"
+msgstr "Nome"
+
+#: page.phonebook.php:57
+msgid "Number"
+msgstr "Numero"
+
+#: page.phonebook.php:69
+msgid "Delete"
+msgstr "Elimina"
+
+#: page.phonebook.php:71
+msgid "Edit"
+msgstr "Modifica"
+
+#: page.phonebook.php:82
+msgid "Add or replace entry"
+msgstr "Aggiungi o sostituisci voce"
+
+#: page.phonebook.php:85
+msgid "Name:"
+msgstr "Nome:"
+
+#: page.phonebook.php:85
+msgid "Enter the name"
+msgstr "Inserire il nome"
+
+#: page.phonebook.php:89
+msgid "Number:"
+msgstr "Numero:"
+
+#: page.phonebook.php:90
+msgid ""
+"Enter the number (For caller ID lookup to work it should match the caller ID "
+"received from network)"
+msgstr ""
+"Inserire il numero (Per far funzionare la ricerca dell'ID chiamante,"
+"deve corrispondere all'ID chiamante ricevuto dalla rete telefonica)"
+
+msgid "Speed dial"
+msgstr "Selezione rapida"
+
+msgid "Enter a speed dial code<br/>Speeddial module is required to use speeddial codes"
+msgstr "Immettere un codice di selezione rapida<br />E' richiesto il modulo Speeddial per far funzionare i codici di selezione rapida"
+
+msgid "Import from CSV"
+msgstr "Importa dal CSV"
+
+msgid "Upload"
+msgstr "Carica"
+
+msgid "Submit Changes"
+msgstr "Applica"
+
+msgid "Speed dial code:"
+msgstr "Codice Selezione rapida:"
+
+msgid "Empty Phonebook"
+msgstr "Svuota Rubrica"
+
+msgid "Export in CSV"
+msgstr "Esporta in CSV"
+
+msgid "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> Names should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:<br/>\"John Doe\";12345678;123"
+msgstr "Importa un file CSV formattato nel seguente modo:<br/>\"Nome\";Numero;Codice<br /> I nomi devono essere inclusi in '\"' e i campi separati da ';' <br /> <br />Esempio:<br/>\"Mario Rossi\";12345678;123"
