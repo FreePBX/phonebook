@@ -25,7 +25,7 @@ $dispnum = "phonebook"; //used for switch on config.php
 if(isset($_REQUEST['action'])) {
 	switch ($action) {
 		case "add":
-			phonebook_add($number, $name, $speeddial);
+			phonebook_add($number, $name, $speeddial, $needsd);
 			redirect_standard();
 		exit;
 		break;
@@ -168,7 +168,7 @@ if (is_array($numbers)) {
 	
   <tr>
 		<td><a href="#" class="info"><?php echo _("Set Speed Dial?"); ?><span><?php echo _("Check to have a speed dial created automaticaly for this number"); ?></span></a></td>
-		<td><input type="checkbox" name="needsd" value="" CHECKED <?php echo $thisItem['needsd'] ?>  /></td>
+		<td><input type="checkbox" name="needsd" value="true" CHECKED <?php echo $thisItem['needsd'] ?>  /></td>
 	</tr>
 	
   <tr>
