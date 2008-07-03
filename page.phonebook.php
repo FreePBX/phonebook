@@ -15,8 +15,10 @@ isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 isset($_REQUEST['number'])?$number = $_REQUEST['number']:$number='';
 isset($_REQUEST['name'])?$name = $_REQUEST['name']:$name='';
 isset($_REQUEST['speeddial'])?$speeddial = $_REQUEST['speeddial']:$speeddial='';
+isset($_REQUEST['gensd'])?$gensd = $_REQUEST['gensd']:$gensd='';
 
 isset($_REQUEST['editnumber'])?$editnumber = $_REQUEST['editnumber']:$editnumber='';
+//check if we should have generate speed dial checkbox checked
 
 $dispnum = "phonebook"; //used for switch on config.php
 
@@ -25,7 +27,7 @@ $dispnum = "phonebook"; //used for switch on config.php
 if(isset($_REQUEST['action'])) {
 	switch ($action) {
 		case "add":
-			phonebook_add($number, $name, $speeddial, $needsd);
+			phonebook_add($number, $name, $speeddial, $gensd);
 			redirect_standard();
 		exit;
 		break;
@@ -37,7 +39,7 @@ if(isset($_REQUEST['action'])) {
 		case "edit":
 			$numbers = phonebook_list();
 			phonebook_del($editnumber, $numbers[$editnumber]['speeddial']);
-			phonebook_add($number, $name, $speeddial);
+			phonebook_add($number, $name, $speeddial, $gensd);
 			redirect_standard();
 		break;
 		case "empty":
@@ -122,7 +124,10 @@ if (is_array($numbers)) {
 		printf('<td>%s</td><td>%s</td><td>%s</td>', $num, $values['name'], $values['speeddial']);
 		printf('<td><a href="%s?type=tool&display=%s&number=%s&action=delete" onclick="return confirm(\'%s\')">%s</a></td>', 
 			$_SERVER['PHP_SELF'], urlencode($dispnum), urlencode($num), _("Are you sure you want to delete this entry ?"), _("Delete"));
-		printf('<td><a href="#" onClick="theForm.number.value = \'%s\'; theForm.name.value = \'%s\' ; theForm.speeddial.value = \'%s\' ; theForm.editnumber.value = \'%s\' ; theForm.action.value = \'edit\' ; ">%s</a></td>',
+		printf('<td><a href="#"  
+    onClick="theForm.number.value = \'%s\'; theForm.name.value = \'%s\' ; theForm.speeddial.value = \'%s\' ; 
+    if (theForm.name.value && theForm.number.value && !theForm.speeddial.value) { theForm.gensd.checked = false } else { theForm.gensd.checked = true };
+    theForm.editnumber.value = \'%s\' ; theForm.action.value = \'edit\' ; ">%s</a></td>',
 			$num,  addslashes($values['name']), $values['speeddial'], $num, _("Edit"));
 		print('</tr>');
 	}
@@ -154,25 +159,25 @@ if (is_array($numbers)) {
 		<td><a href="#" class="info"><?php echo _("Name:")?><span><?php echo _("Enter the name")?></span></a></td>
 		<td><input type="text" name="name"></td>
 	</tr>
-
+	
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Number:")?>
 		<span><?php echo _("Enter the number (For caller ID lookup to work it should match the caller ID received from network)")?></span></a></td>
 		<td><input type="text" name="number"></td>
 	</tr>
-	
+
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Speed dial code:")?><span><?php echo _("Enter a speed dial code<br/>Speeddial module is required to use speeddial codes")?></span></a></td>
 		<td><input type="text" name="speeddial"></td>
 	</tr>
-	
+
   <tr>
 		<td><a href="#" class="info"><?php echo _("Set Speed Dial?"); ?><span><?php echo _("Check to have a speed dial created automaticaly for this number"); ?></span></a></td>
-		<td><input type="checkbox" name="needsd" value="true" CHECKED <?php echo $thisItem['needsd'] ?>  /></td>
-	</tr>
-	
-  <tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6>
+		<td><input type="checkbox" name="gensd" value="yes" CHECKED ></td>
+
+	<tr>
+		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
+
 	</tr>
 </form>
 </table>

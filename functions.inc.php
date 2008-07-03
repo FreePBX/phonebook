@@ -69,7 +69,7 @@ function phonebook_empty(){
 	}
 }
 
-function phonebook_add($number, $name, $speeddial){
+function phonebook_add($number, $name, $speeddial, $gensd){
 	global $amp_conf;
 	global $astman;
 
@@ -78,23 +78,25 @@ function phonebook_add($number, $name, $speeddial){
 
 	if ($astman) {
 		// Was the user a twonk and didn't specify a speeddial?
-		// Should we really automatically generate a speeddial ? 
+		// Should we really automatically generate a speeddial ? definatly only when gensd is checked
 		// If yes I think we should start from 99 going down and leave easier speeddials to users 
-		if  ($needsd) {
-        if (empty($speeddial)) { 
-			    for ($nbr = 99; $nbr > 0; $nbr--) { 
-				    if ($astman->database_get("sysspeeddials",sprintf("%02d",$nbr))===false) {
-					    $speeddial = sprintf("%02d", $nbr);
-					    break;
-				    }
-			    }
-		    }
-		    }
-		    $astman->database_put("cidname",$number, '"'.$name.'"');
-		    if ($speeddial != '')
-			    $astman->database_put("sysspeeddials",$speeddial, '"'.$number.'"');
-	    } else {
-		    fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
+
+		if ($gensd == "yes"){
+      if (empty($speeddial)) { 
+			  for ($nbr = 99; $nbr > 0; $nbr--) { 
+				  if ($astman->database_get("sysspeeddials",sprintf("%02d",$nbr))===false) {
+					  $speeddial = sprintf("%02d", $nbr);
+					  break;
+				  }
+			  }
+		  }
+		}
+		$astman->database_put("cidname",$number, '"'.$name.'"');
+		if ($speeddial != '')
+			$astman->database_put("sysspeeddials",$speeddial, '"'.$number.'"');
+	} else {
+		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
+
 	}
 }
 
