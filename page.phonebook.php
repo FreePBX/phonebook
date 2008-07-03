@@ -149,11 +149,6 @@ if (is_array($numbers)) {
 
 	<tr><td colspan="4"><h5><?php echo _("Add or replace entry") ?><hr></h5></td></tr>
 
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Number:")?>
-		<span><?php echo _("Enter the number (For caller ID lookup to work it should match the caller ID received from network)")?></span></a></td>
-		<td><input type="text" name="number"></td>
-	</tr>
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Name:")?><span><?php echo _("Enter the name")?></span></a></td>
@@ -161,12 +156,23 @@ if (is_array($numbers)) {
 	</tr>
 
 	<tr>
+		<td><a href="#" class="info"><?php echo _("Number:")?>
+		<span><?php echo _("Enter the number (For caller ID lookup to work it should match the caller ID received from network)")?></span></a></td>
+		<td><input type="text" name="number"></td>
+	</tr>
+	
+	<tr>
 		<td><a href="#" class="info"><?php echo _("Speed dial code:")?><span><?php echo _("Enter a speed dial code<br/>Speeddial module is required to use speeddial codes")?></span></a></td>
 		<td><input type="text" name="speeddial"></td>
 	</tr>
-
-	<tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
+	
+  <tr>
+		<td><a href="#" class="info"><?php echo _("Set Speed Dial?"); ?><span><?php echo _("Check to have a speed dial created automaticaly for this number"); ?></span></a></td>
+		<td><input type="checkbox" name="needsd" value="" CHECKED <?php echo $thisItem['needsd'] ?>  /></td>
+	</tr>
+	
+  <tr>
+		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6>
 	</tr>
 </form>
 </table>
@@ -195,7 +201,7 @@ if (is_array($numbers)) {
 <!--
 
 var theForm = document.edit;
-theForm.number.focus();
+theForm.name.focus();
 
 function edit_onsubmit() {
 	defaultEmptyOK = false;

@@ -80,13 +80,15 @@ function phonebook_add($number, $name, $speeddial){
 		// Was the user a twonk and didn't specify a speeddial?
 		// Should we really automatically generate a speeddial ? 
 		// If yes I think we should start from 99 going down and leave easier speeddials to users 
-		if (empty($speeddial)) { 
+		if (isset($_POST['needsd'])){
+    if (empty($speeddial)) { 
 			for ($nbr = 99; $nbr > 0; $nbr--) { 
 				if ($astman->database_get("sysspeeddials",sprintf("%02d",$nbr))===false) {
 					$speeddial = sprintf("%02d", $nbr);
 					break;
 				}
 			}
+		}
 		}
 		$astman->database_put("cidname",$number, '"'.$name.'"');
 		if ($speeddial != '')
