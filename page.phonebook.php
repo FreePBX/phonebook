@@ -18,7 +18,6 @@ isset($_REQUEST['speeddial'])?$speeddial = $_REQUEST['speeddial']:$speeddial='';
 isset($_REQUEST['gensd'])?$gensd = $_REQUEST['gensd']:$gensd='';
 
 isset($_REQUEST['editnumber'])?$editnumber = $_REQUEST['editnumber']:$editnumber='';
-//check if we should have generate speed dial checkbox checked
 
 $dispnum = "phonebook"; //used for switch on config.php
 
@@ -157,26 +156,26 @@ if (is_array($numbers)) {
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Name:")?><span><?php echo _("Enter the name")?></span></a></td>
-		<td><input type="text" name="name"></td>
+		<td><input type="text" name="name" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Number:")?>
 		<span><?php echo _("Enter the number (For caller ID lookup to work it should match the caller ID received from network)")?></span></a></td>
-		<td><input type="text" name="number"></td>
+		<td><input type="text" name="number" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Speed dial code:")?><span><?php echo _("Enter a speed dial code<br/>Speeddial module is required to use speeddial codes")?></span></a></td>
-		<td><input type="text" name="speeddial"></td>
+		<td><input type="text" name="speeddial" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 
   <tr>
 		<td><a href="#" class="info"><?php echo _("Set Speed Dial?"); ?><span><?php echo _("Check to have a speed dial created automaticaly for this number"); ?></span></a></td>
-		<td><input type="checkbox" name="gensd" value="yes" CHECKED ></td>
+		<td><input type="checkbox" name="gensd" value="yes" CHECKED tabindex="<?php echo ++$tabindex;?>"></td>
 
 	<tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
+		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
 
 	</tr>
 </form>
@@ -194,11 +193,11 @@ if (is_array($numbers)) {
         <tr>
                 <td><a href="#" class="info"><?php echo _("File:")?>
                 <span><?php echo _("Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> Names should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:<br/>\"John Doe\";12345678;123")?></span></a></td>
-                <td><input type="file" name="csv"></td>
+                <td><input type="file" name="csv" tabindex="<?php echo ++$tabindex;?>"></td>
         </tr>
 
 	<tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Upload")?>"></h6></td>		
+		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Upload")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
 	</tr>
 </form>
 </table>
