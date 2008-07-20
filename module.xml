@@ -8,8 +8,8 @@
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.4/phonebook-2.4.0.1.tgz</location>
-	<md5sum>2a22268a76e4761b33ea3cd23cd0a85b</md5sum>
+	<location>release/2.5/phonebook-2.5.0.tgz</location>
+	<md5sum>db03452351029dd3cd85cbf0663b4082</md5sum>
 	<changelog>
 		*2.5.0* #1821, #2845 tabindex
 		*2.4.0.1* #2843 Russian Translation
