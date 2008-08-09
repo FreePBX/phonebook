@@ -171,7 +171,7 @@ if (is_array($numbers)) {
 	</tr>
 
   <tr>
-		<td><a href="#" class="info"><?php echo _("Set Speed Dial?"); ?><span><?php echo _("Check to have a speed dial created automaticaly for this number"); ?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Set Speed Dial?"); ?><span><?php echo _("Check to have a speed dial created automatically for this number"); ?></span></a></td>
 		<td><input type="checkbox" name="gensd" value="yes" CHECKED tabindex="<?php echo ++$tabindex;?>"></td>
 
 	<tr>
