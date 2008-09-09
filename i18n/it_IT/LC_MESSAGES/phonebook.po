@@ -38,7 +38,7 @@ msgstr "Numero"
 
 #: page.phonebook.php:69
 msgid "Delete"
-msgstr "Cancella"
+msgstr "Elimina"
 
 #: page.phonebook.php:71
 msgid "Edit"
@@ -65,5 +65,32 @@ msgid ""
 "Enter the number (For caller ID lookup to work it should match the caller ID "
 "received from network)"
 msgstr ""
-"Inserire il numero (Per far funzionare la ricerca dell'ID chiamante"
-"deve corrispondere all'ID chiamante ricevuto dalla rete)"
+"Inserire il numero (Per far funzionare la ricerca dell'ID chiamante,"
+"deve corrispondere all'ID chiamante ricevuto dalla rete telefonica)"
+
+msgid "Speed dial"
+msgstr "Selezione rapida"
+
+msgid "Enter a speed dial code<br/>Speeddial module is required to use speeddial codes"
+msgstr "Immettere un codice di selezione rapida<br />E' richiesto il modulo Speeddial per far funzionare i codici di selezione rapida"
+
+msgid "Import from CSV"
+msgstr "Importa dal CSV"
+
+msgid "Upload"
+msgstr "Carica"
+
+msgid "Submit Changes"
+msgstr "Applica"
+
+msgid "Speed dial code:"
+msgstr "Codice Selezione rapida:"
+
+msgid "Empty Phonebook"
+msgstr "Svuota Rubrica"
+
+msgid "Export in CSV"
+msgstr "Esporta in CSV"
+
+msgid "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> Names should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:<br/>\"John Doe\";12345678;123"
+msgstr "Importa un file CSV formattato nel seguente modo:<br/>\"Nome\";Numero;Codice<br /> I nomi devono essere inclusi in '\"' e i campi separati da ';' <br /> <br />Esempio:<br/>\"Mario Rossi\";12345678;123"
