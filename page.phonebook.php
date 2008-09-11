@@ -208,15 +208,18 @@ var theForm = document.edit;
 theForm.name.focus();
 
 function edit_onsubmit() {
+	var msgInvalidNumber = "<?php echo _("Please enter a valid Number"); ?>";
+	var msgInvalidName = "<?php echo _("Please enter a valid Name"); ?>";
+	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty"); ?>";
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.number.value))
-		return warnInvalid(theForm.number, "Please enter a valid Number");
+		return warnInvalid(theForm.number, msgInvalidNumber);
 	if (!isAlphanumeric(theForm.name.value))
-		return warnInvalid(theForm.name, "Please enter a valid Name");
+		return warnInvalid(theForm.name, msgInvalidName);
 	
 	defaultEmptyOK = true;
 	if (!isInteger(theForm.speeddial.value))
-		return warnInvalid(theForm.speeddial, "Please enter a valid Speeddial code or leave it empty");
+		return warnInvalid(theForm.speeddial, msgInvalidCode);
 		
 	return true;
 }
