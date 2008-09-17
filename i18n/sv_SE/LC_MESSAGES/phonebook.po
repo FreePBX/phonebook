@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX phonebook\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-16 11:01+0200\n"
-"PO-Revision-Date: 2008-09-16 12:06+0100\n"
+"PO-Revision-Date: 2008-09-17 10:41+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -127,7 +127,7 @@ msgstr "Filnamn:"
 
 #: page.phonebook.php:195
 msgid "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> Names should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:<br/>\"John Doe\";12345678;123"
-msgstr "Importera en CSV-fil formatterad enligt detta:<br>\"Namn\";Nummer;Snabbnummer<br>Namnen måste vara omslutna med \" och fälten måste vara separerade med ';'<br><br>T.ex. \"Nils Nilsson\";040123456;123"
+msgstr "Importera en CSV-fil formaterad enligt detta:<br>\"Namn\";Nummer;Snabbnummer<br>Namnen måste vara omslutna med \" och fälten måste vara separerade med ';'<br><br>T.ex. \"Nils Nilsson\";040123456;123"
 
 #: page.phonebook.php:200
 msgid "Upload"
