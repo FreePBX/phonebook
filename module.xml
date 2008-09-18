@@ -1,16 +1,17 @@
 <module>
 	<rawname>phonebook</rawname>
 	<name>Phonebook</name>
-	<version>2.5.0.1</version>
+	<version>2.5.0.2</version>
 	<description>Provides a phonebook for FreePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
 	<type>tool</type>
 	<category>System Administration</category>
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.5/phonebook-2.5.0.1.tgz</location>
-	<md5sum>43f5141d53b891f39eda9012bfdd7c5f</md5sum>
+	<location>release/2.5/phonebook-2.5.0.2.tgz</location>
+	<md5sum>7d870f78bcadee0677b4a3a4213127b7</md5sum>
 	<changelog>
+		*2.5.0.2* localization changes, Swedish
 		*2.5.0.1* #3009 spelling
 		*2.5.0* #1821, #2845 tabindex
 		*2.4.0.1* #2843 Russian Translation
