@@ -154,3 +154,7 @@ msgstr ""
 #: module.xml
 msgid "Asterisk Phonebook"
 msgstr ""
+
+#: module.xml
+msgid "Phonebook"
+msgstr ""

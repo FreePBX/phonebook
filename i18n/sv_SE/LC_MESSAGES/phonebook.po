@@ -149,3 +149,5 @@ msgstr "Skriv in ett giltigt kortnummer eller lämna detta fält tomt"
 msgid "Asterisk Phonebook"
 msgstr "Asterisk telefonbok"
 
+msgid "Phonebook"
+msgstr "Telefonbok"
