@@ -10,8 +10,8 @@
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.5/phonebook-2.5.0.2.tgz</location>
-	<md5sum>7d870f78bcadee0677b4a3a4213127b7</md5sum>
+	<location>release/2.6/phonebook-2.6.0.0.tgz</location>
+	<md5sum>2515bdf0aebeec2ff87b813c2c17881a</md5sum>
 	<changelog>
 		*2.6.0.0* localizations, misc
 		*2.5.0.2* localization changes, Swedish
