@@ -97,11 +97,11 @@ if (is_array($numbers)) {
 
 ?>
 
+<form autocomplete="off" name="delete" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return confirm('<?php echo _("Are you sure you want to empty your phonebook ?")?>');">
+<input type="hidden" name="action" value="empty">
 <table cellpadding="5" width="100%">
 
-<form autocomplete="off" name="delete" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return confirm('<?php echo _("Are you sure you want to empty your phonebook ?")?>');">
-<?php#onsubmit="return edit_onsubmit();"?>
-	<input type="hidden" name="action" value="empty">
+<?php//onsubmit="return edit_onsubmit();"?>
 
 	<tr>
 		<td colspan="5"><h5><?php echo _("Phonebook entries") ?></h5><hr></td>
@@ -136,23 +136,20 @@ if (is_array($numbers)) {
 	<tr>
 		<td colspan="3"><br><h6><a href="<?php echo $_SERVER['PHP_SELF'] ?>?type=tool&display=phonebook&action=export&quietmode=1"><?php echo _("Export in CSV") ?></a></h6></td><td colspan="2" align="center"><input name="submit" type="submit" value="<?php echo _("Empty Phonebook")?>"></td>		
 	</tr>
-</form>
-
 </table>
+</form>
 
 <?php
 }
 ?>
 
-<table cellpadding="5" width="100%">
 <form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
-	<input type="hidden" name="display" value="<?php echo $dispnum?>">
-	<input type="hidden" name="action" value="add">
-	<input type="hidden" name="editnumber" value="">
-
+<input type="hidden" name="display" value="<?php echo $dispnum?>">
+<input type="hidden" name="action" value="add">
+<input type="hidden" name="editnumber" value="">
+<table cellpadding="5" width="100%">
 
 	<tr><td colspan="4"><h5><?php echo _("Add or replace entry") ?><hr></h5></td></tr>
-
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Name:")?><span><?php echo _("Enter the name")?></span></a></td>
@@ -178,15 +175,15 @@ if (is_array($numbers)) {
 		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
 
 	</tr>
-</form>
 </table>
+</form>
+
+<form autocomplete="off" enctype="multipart/form-data" name="import" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+<input type="hidden" name="MAX_FILE_SIZE" value="30000">
+<input type="hidden" name="display" value="<?php echo $dispnum?>">
+<input type="hidden" name="action" value="import">
 
 <table cellpadding="5" width="100%">
-<form autocomplete="off" enctype="multipart/form-data" name="import" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
-	<input type="hidden" name="MAX_FILE_SIZE" value="30000">
-	<input type="hidden" name="display" value="<?php echo $dispnum?>">
-	<input type="hidden" name="action" value="import">
-
 
 	<tr><td colspan="4"><h5><?php echo _("Import from CSV") ?><hr></h5></td></tr>
 
@@ -199,8 +196,8 @@ if (is_array($numbers)) {
 	<tr>
 		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Upload")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
 	</tr>
-</form>
 </table>
+</form>
 <script language="javascript">
 <!--
 
