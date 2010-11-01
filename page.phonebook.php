@@ -55,7 +55,7 @@ if(isset($_REQUEST['action'])) {
 						$fields = array_map('trim', $fields);
 						if (is_array($fields) && count($fields) == 3 && is_numeric($fields[2]) &&  ($fields[3] == '' || is_numeric($fields[3]))) {
 							phonebook_del($fields[2], $numbers[$fields[2]]['speeddial']);
-							phonebook_add($fields[2], addslashes($fields[1]), $fields[3]);
+							phonebook_add(htmlentities($fields[2],ENT_QUOTES), addslashes(htmlentities($fields[1],ENT_QUOTES)), htmlentities($fields[3],ENT_QUOTES));
 							$i++;
 						}
 					}
