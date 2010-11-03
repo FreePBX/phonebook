@@ -102,6 +102,8 @@ if (is_array($numbers)) {
 <table cellpadding="5" width="100%">
 
 <?php//onsubmit="return edit_onsubmit();"?>
+<tr><td colspan="4"<h2>Phone Book</h2></td></tr>
+<tr><td colspan="4">Use this module to create system wide speed dial numbers that can be dialed from any phone.<br><br></td></tr>
 
 	<tr>
 		<td colspan="5"><h5><?php echo _("Phonebook entries") ?></h5><hr></td>
@@ -148,6 +150,8 @@ if (is_array($numbers)) {
 <input type="hidden" name="action" value="add">
 <input type="hidden" name="editnumber" value="">
 <table cellpadding="5" width="100%">
+	<tr><td colspan="4"<h2>Phone Book</h2></td></tr>
+		<tr><td colspan="4">Use this module to create system wide speed dial numbers that can be dialed from any phone.<br><br></td></tr>
 
 	<tr><td colspan="4"><h5><?php echo _("Add or replace entry") ?><hr></h5></td></tr>
 
