@@ -162,7 +162,7 @@ if (is_array($numbers)) {
 	
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Number:")?>
-		<span><?php echo _("Enter the number (For caller ID lookup to work it should match the caller ID received from network)")?></span></a></td>
+		<span><?php echo _("Enter the number (For CallerID lookup to work it should match the CallerID received from network)")?></span></a></td>
 		<td><input type="text" name="number" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 
