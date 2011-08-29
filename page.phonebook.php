@@ -77,15 +77,6 @@ if(isset($_REQUEST['action'])) {
 
 $numbers = phonebook_list();
 
-?>
-
-</div>
-
-<!-- NO rnav in this module -->
-
-
-<div class="content">
-<?php
 if ($action == 'delete') 
 	echo '<h3>'._("Phonebook entry").' '.$itemid.' '._("deleted").' !</h3>';
 elseif ($action == 'import')
