@@ -53,9 +53,14 @@ if(isset($_REQUEST['action'])) {
 					foreach($lines as $line) {
 						$fields = phonebook_fgetcsvfromline($line, 3);
 						$fields = array_map('trim', $fields);
-						if (is_array($fields) && count($fields) == 3 && is_numeric($fields[2]) &&  ($fields[3] == '' || is_numeric($fields[3]))) {
+						if (is_array($fields) && count($fields) == 3 
+							&& is_numeric($fields[2]) 
+							&&  ($fields[3] == '' || is_numeric($fields[3]))
+						) {
 							phonebook_del($fields[2], $numbers[$fields[2]]['speeddial']);
-							phonebook_add(htmlentities($fields[2],ENT_QUOTES), addslashes(htmlentities($fields[1],ENT_QUOTES)), htmlentities($fields[3],ENT_QUOTES));
+							phonebook_add(htmlentities($fields[2],ENT_QUOTES, 'UTF-8'),
+							 				addslashes(htmlentities($fields[1],ENT_QUOTES, 'UTF-8')),
+							 				htmlentities($fields[3],ENT_QUOTES, 'UTF-8'));
 							$i++;
 						}
 					}
@@ -206,8 +211,6 @@ function edit_onsubmit() {
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.number.value))
 		return warnInvalid(theForm.number, msgInvalidNumber);
-	if (!isAlphanumeric(theForm.name.value))
-		return warnInvalid(theForm.name, msgInvalidName);
 	
 	defaultEmptyOK = true;
 	if (!isInteger(theForm.speeddial.value))
