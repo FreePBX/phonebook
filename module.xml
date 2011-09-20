@@ -2,7 +2,7 @@
 	<rawname>phonebook</rawname>
 	<repo>extended</repo>
 	<name>Phonebook</name>
-	<version>2.9.0.2</version>
+	<version>2.9.0.3</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<description>Provides a phonebook for FreePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
@@ -10,9 +10,10 @@
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.9/phonebook-2.9.0.2.tgz</location>
-	<md5sum>cac34ab94378d9817a1d666a4e8ed964</md5sum>
+	<location>release/2.9/phonebook-2.9.0.3.tgz</location>
+	<md5sum>5465f1b172ad861d344e904c8be4183c</md5sum>
 	<changelog>
+		*2.9.0.3* #5355
 		*2.9.0.2* spelling, localizations
 		*2.9.0.1* set reposoitory
 		*2.9.0.0* 2.9 Update
