@@ -10,8 +10,8 @@
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.10/phonebook-2.10.0.0.tgz</location>
-	<md5sum>0111aae29c85ebaf6050ce321f261a57</md5sum>
+	<location>release/2.10/phonebook-2.10.0.1.tgz</location>
+	<md5sum>1880ac7f468e869622e45cf6d0edf7d9</md5sum>
 	<changelog>
 		*2.10.0.1* #5478 
 		*2.10.0.0* new version changes
