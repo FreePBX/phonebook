@@ -10,8 +10,8 @@
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.10/phonebook-2.10.0.2.tgz</location>
-	<md5sum>db2a71b550efdd6745be8fc0990cb61d</md5sum>
+	<location>release/2.11/phonebook-2.10.0.2.tgz</location>
+	<md5sum>ff9dc15e93b5d5e5f02892ee35991a79</md5sum>
 	<changelog>
 		*2.10.0.2* exit, not die_freepbx
 		*2.10.0.1* #5478 
