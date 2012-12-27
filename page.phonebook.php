@@ -75,7 +75,7 @@ if(isset($_REQUEST['action'])) {
 			header('Content-disposition: attachment; filename=phonebook.csv');
 			$numbers = phonebook_list();
 			foreach ($numbers as $number => $values)
-				printf("\"%s\";%s;%s\n", $values['name'], $number, $values['speeddial']);
+				printf("\"%s\";%s;%s\n", $values['name'], trim($number), $values['speeddial']);
             exit;
 		break;
 	}
@@ -126,7 +126,7 @@ if (is_array($numbers)) {
     onClick="theForm.number.value = \'%s\'; theForm.name.value = \'%s\' ; theForm.speeddial.value = \'%s\' ; 
     if (theForm.name.value && theForm.number.value && !theForm.speeddial.value) { theForm.gensd.checked = false } else { theForm.gensd.checked = true };
     theForm.editnumber.value = \'%s\' ; theForm.action.value = \'edit\' ; ">%s</a></td>',
-			$num,  addslashes($values['name']), $values['speeddial'], $num, _("Edit"));
+			trim($num),  addslashes($values['name']), $values['speeddial'], $num, _("Edit"));
 		print('</tr>');
 	}
 
