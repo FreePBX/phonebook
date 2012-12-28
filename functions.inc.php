@@ -50,7 +50,7 @@ function phonebook_del($number, $speeddial){
 	global $astman;
 
 	if ($astman) {
-		$astman->database_del("cidname",$number);
+		$astman->database_del("cidname",trim($number));
 		if ($speeddial != '')
 			$astman->database_del("sysspeeddials",$speeddial);
 	} else {
