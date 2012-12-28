@@ -10,8 +10,8 @@
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
-	<location>release/2.11/phonebook-2.11.0.0.tgz</location>
-	<md5sum>d08a824ba40b5679f319c2cbf844918b</md5sum>
+	<location>release/2.11/phonebook-2.11.0.1.tgz</location>
+	<md5sum>adae5d1494f4e15f9f80a522f12175a3</md5sum>
 	<changelog>
 		*2.11.0.1* #5792 again
 		*2.11.0.0* #5792
