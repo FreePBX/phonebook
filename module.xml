@@ -1,18 +1,18 @@
 <module>
-	<rawname>phonebook</rawname>
-	<repo>extended</repo>
-	<name>Phonebook</name>
-	<version>2.11.0.1</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
-	<description>Provides a phonebook for FreePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
-	<category>Admin</category>
-	<menuitems>
-		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
-	</menuitems>
-	<location>release/2.11/phonebook-2.11.0.1.tgz</location>
-	<md5sum>adae5d1494f4e15f9f80a522f12175a3</md5sum>
-	<changelog>
+  <rawname>phonebook</rawname>
+  <repo>extended</repo>
+  <name>Phonebook</name>
+  <version>2.11.0.1</version>
+  <publisher>FreePBX</publisher>
+  <license>GPLv2+</license>
+  <description>Provides a phonebook for FreePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
+  <category>Admin</category>
+  <menuitems>
+    <phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
+  </menuitems>
+  <location>release/2.11/phonebook-2.11.0.1.tgz</location>
+  <md5sum>adae5d1494f4e15f9f80a522f12175a3</md5sum>
+  <changelog>
 		*2.11.0.1* #5792 again
 		*2.11.0.0* #5792
 		*2.10.0.2* exit, not die_freepbx
@@ -32,4 +32,7 @@
 		*2.4.0.1* #2843 Russian Translation
 		*2.4.0* CHANGELOG TRUNCATED See SVN Repository
 	</changelog>
+  <supported>
+    <version>2.10</version>
+  </supported>
 </module>
