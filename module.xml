@@ -2,9 +2,10 @@
   <rawname>phonebook</rawname>
   <repo>extended</repo>
   <name>Phonebook</name>
-  <version>2.11.0.1</version>
-  <publisher>FreePBX</publisher>
-  <license>GPLv2+</license>
+  <version>2.11.0.2</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
   <description>Provides a phonebook for FreePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
   <category>Admin</category>
   <menuitems>
@@ -13,6 +14,7 @@
   <location>release/2.11/phonebook-2.11.0.1.tgz</location>
   <md5sum>adae5d1494f4e15f9f80a522f12175a3</md5sum>
   <changelog>
+  		*2.11.0.2* include license file
 		*2.11.0.1* #5792 again
 		*2.11.0.0* #5792
 		*2.10.0.2* exit, not die_freepbx
