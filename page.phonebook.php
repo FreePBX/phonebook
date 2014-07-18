@@ -54,8 +54,8 @@ if(isset($_REQUEST['action'])) {
 					foreach($lines as $line) {
 						$fields = phonebook_fgetcsvfromline($line, 3);
 						$fields = array_map('trim', $fields);
-						if (is_array($fields) && count($fields) == 3 
-							&& is_numeric($fields[2]) 
+						if (is_array($fields) && count($fields) == 3
+							&& is_numeric($fields[2])
 							&&  ($fields[3] == '' || is_numeric($fields[3]))
 						) {
 							phonebook_del($fields[2], $numbers[$fields[2]]['speeddial']);
@@ -83,18 +83,18 @@ if(isset($_REQUEST['action'])) {
 
 $numbers = phonebook_list();
 
-if ($action == 'delete') 
+if ($action == 'delete')
 	echo '<h3>'._("Phonebook entry").' '.$itemid.' '._("deleted").' !</h3>';
 elseif ($action == 'import')
 	echo '<h3>'._("Imported").' '.$i.' '._("lines of").' '.$n.' '.'!</h3>';
 elseif ($action == 'empty')
 	echo '<h3>'._("Phonebook emptied").' !</h3>';
-	
+
 if (is_array($numbers)) {
 
 ?>
 
-<form autocomplete="off" name="delete" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return confirm('<?php echo _("Are you sure you want to empty your phonebook ?")?>');">
+<form autocomplete="off" name="delete" action="" method="post" onsubmit="return confirm('<?php echo _("Are you sure you want to empty your phonebook ?")?>');">
 <input type="hidden" name="action" value="empty">
 <table cellpadding="5" width="100%">
 
@@ -120,10 +120,10 @@ if (is_array($numbers)) {
 	foreach ($numbers as $num => $values)	{
 		print('<tr>');
 		printf('<td>%s</td><td>%s</td><td>%s</td>', $num, $values['name'], $values['speeddial']);
-		printf('<td><a href="%s?type=tool&display=%s&number=%s&action=delete" onclick="return confirm(\'%s\')">%s</a></td>', 
-			$_SERVER['PHP_SELF'], urlencode($dispnum), urlencode($num), _("Are you sure you want to delete this entry ?"), _("Delete"));
-		printf('<td><a href="#"  
-    onClick="theForm.number.value = \'%s\'; theForm.name.value = \'%s\' ; theForm.speeddial.value = \'%s\' ; 
+		printf('<td><a href="%s?type=tool&display=%s&number=%s&action=delete" onclick="return confirm(\'%s\')">%s</a></td>',
+			"", urlencode($dispnum), urlencode($num), _("Are you sure you want to delete this entry ?"), _("Delete"));
+		printf('<td><a href="#"
+    onClick="theForm.number.value = \'%s\'; theForm.name.value = \'%s\' ; theForm.speeddial.value = \'%s\' ;
     if (theForm.name.value && theForm.number.value && !theForm.speeddial.value) { theForm.gensd.checked = false } else { theForm.gensd.checked = true };
     theForm.editnumber.value = \'%s\' ; theForm.action.value = \'edit\' ; ">%s</a></td>',
 			trim($num),  addslashes($values['name']), $values['speeddial'], $num, _("Edit"));
@@ -133,7 +133,7 @@ if (is_array($numbers)) {
 ?>
 
 	<tr>
-		<td colspan="3"><br><h6><a href="<?php echo $_SERVER['PHP_SELF'] ?>?type=tool&display=phonebook&action=export&quietmode=1"><?php echo _("Export in CSV") ?></a></h6></td><td colspan="2" align="center"><input name="submit" type="submit" value="<?php echo _("Empty Phonebook")?>"></td>		
+		<td colspan="3"><br><h6><a href="?type=tool&amp;display=phonebook&amp;action=export&amp;quietmode=1"><?php echo _("Export in CSV") ?></a></h6></td><td colspan="2" align="center"><input name="submit" type="submit" value="<?php echo _("Empty Phonebook")?>"></td>
 	</tr>
 </table>
 </form>
@@ -142,7 +142,7 @@ if (is_array($numbers)) {
 }
 ?>
 
-<form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
+<form autocomplete="off" name="edit" action="" method="post" onsubmit="return edit_onsubmit();">
 <input type="hidden" name="display" value="<?php echo $dispnum?>">
 <input type="hidden" name="action" value="add">
 <input type="hidden" name="editnumber" value="">
@@ -156,7 +156,7 @@ if (is_array($numbers)) {
 		<td><a href="#" class="info"><?php echo _("Name:")?><span><?php echo _("Enter the name")?></span></a></td>
 		<td><input type="text" name="name" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
-	
+
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Number:")?>
 		<span><?php echo _("Enter the number (For CallerID lookup to work it should match the CallerID received from network)")?></span></a></td>
@@ -173,13 +173,13 @@ if (is_array($numbers)) {
 		<td><input type="checkbox" name="gensd" value="yes" CHECKED tabindex="<?php echo ++$tabindex;?>"></td>
 
 	<tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
+		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
 
 	</tr>
 </table>
 </form>
 
-<form autocomplete="off" enctype="multipart/form-data" name="import" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+<form autocomplete="off" enctype="multipart/form-data" name="import" action="" method="post">
 <input type="hidden" name="MAX_FILE_SIZE" value="30000">
 <input type="hidden" name="display" value="<?php echo $dispnum?>">
 <input type="hidden" name="action" value="import">
@@ -195,7 +195,7 @@ if (is_array($numbers)) {
         </tr>
 
 	<tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Upload")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
+		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Upload")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
 	</tr>
 </table>
 </form>
@@ -212,11 +212,11 @@ function edit_onsubmit() {
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.number.value))
 		return warnInvalid(theForm.number, msgInvalidNumber);
-	
+
 	defaultEmptyOK = true;
 	if (!isInteger(theForm.speeddial.value))
 		return warnInvalid(theForm.speeddial, msgInvalidCode);
-		
+
 	return true;
 }
 
