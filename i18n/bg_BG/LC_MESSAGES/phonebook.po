@@ -103,14 +103,14 @@ msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes"
 msgstr ""
-"Въведете код за бързо избиране.<br/>Mодула Бързо избиране се изисква за да "
-"използвате кодове за бързо избиране."
+"Въведете код за бързо избиране.<br/>Mодул Бързо избиране се изисква за да "
+"използвате кодове за бързо избиране"
 
 msgid "Set Speed Dial?"
 msgstr "Установи Бързо Избиране?"
 
 msgid "Check to have a speed dial created automatically for this number"
-msgstr "Маркирайте за атоматично създаване на бързо избиране за този номер."
+msgstr "Маркирайте за автоматично създаване на бързо избиране за този номер"
 
 msgid "Submit Changes"
 msgstr "Приеми Промените"
