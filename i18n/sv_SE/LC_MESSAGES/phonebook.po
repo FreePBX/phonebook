@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX phonebook\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:04-0500\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,83 +30,35 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-msgid "Phonebook entry"
-msgstr "Telefonboken"
-
-msgid "deleted"
-msgstr "borttagen"
-
-msgid "Imported"
-msgstr "Importerade"
-
-msgid "lines of"
-msgstr "rader med"
-
-msgid "Phonebook emptied"
-msgstr "Tömde telefonboken"
-
-msgid "Are you sure you want to empty your phonebook ?"
-msgstr "Är du säker på att du vill tömma telefonboken?"
-
-msgid "Phone Book"
-msgstr "Telefonboken"
-
-msgid ""
-"Use this module to create system wide speed dial numbers that can be dialed "
-"from any phone."
-msgstr ""
-"Använd denna modul för att skapa en telefonbok med snabbnummer som kan kan "
-"användas av alla telefoner"
-
-msgid "Phonebook entries"
-msgstr "Telefonboken"
-
-msgid "Number"
-msgstr "Nummer"
-
-msgid "Name"
-msgstr "Namn"
-
-msgid "Speed dial"
-msgstr "Kortnummer"
-
-msgid "Are you sure you want to delete this entry ?"
-msgstr "Är du säker på att du vill ta bort denna post?"
-
-msgid "Delete"
-msgstr "Ta bort"
-
-msgid "Edit"
-msgstr "Redigera"
-
-msgid "Export in CSV"
-msgstr "Exportera till CSV"
-
-msgid "Empty Phonebook"
-msgstr "Töm telefonboken"
-
+#: /usr/src/freepbx/phonebook/page.phonebook.php:146
 msgid "Add or replace entry"
 msgstr "Lägg till eller byt ut"
 
-msgid "Name:"
-msgstr "Namn:"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+msgid "Are you sure you want to delete this entry ?"
+msgstr "Är du säker på att du vill ta bort denna post?"
 
-msgid "Enter the name"
-msgstr "Skriv in namnet"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:90
+msgid "Are you sure you want to empty your phonebook ?"
+msgstr "Är du säker på att du vill tömma telefonboken?"
 
-msgid "Number:"
-msgstr "Nummer:"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+msgid "Check to have a speed dial created automatically for this number"
+msgstr "Aktivera detta för att automatiskt skapa ett kortnummer för denna post"
 
-msgid ""
-"Enter the number (For CallerID lookup to work it should match the CallerID "
-"received from network)"
-msgstr ""
-"Skriv in numret (För att nummerpresentationen ska fungera måste detta nummer "
-"vara samma som presenteras vid inkommande samtal)"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+msgid "Delete"
+msgstr "Ta bort"
 
-msgid "Speed dial code:"
-msgstr "Kortnummer"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:122
+msgid "Edit"
+msgstr "Redigera"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+msgid "Empty Phonebook"
+msgstr "Töm telefonboken"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:160
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes"
@@ -114,21 +66,27 @@ msgstr ""
 "Skriv in ett kortnummer<br>Modulen Kortnummer måste vara installerad och "
 "aktiv för att detta ska fungera"
 
-msgid "Set Speed Dial?"
-msgstr "Skapa kortnummer?"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+msgid "Enter the name"
+msgstr "Skriv in namnet"
 
-msgid "Check to have a speed dial created automatically for this number"
-msgstr "Aktivera detta för att automatiskt skapa ett kortnummer för denna post"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:155
+msgid ""
+"Enter the number (For CallerID lookup to work it should match the CallerID "
+"received from network)"
+msgstr ""
+"Skriv in numret (För att nummerpresentationen ska fungera måste detta nummer "
+"vara samma som presenteras vid inkommande samtal)"
 
-msgid "Submit Changes"
-msgstr "Spara ändringar"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+msgid "Export in CSV"
+msgstr "Exportera till CSV"
 
-msgid "Import from CSV"
-msgstr "Importera från CSV"
-
+#: /usr/src/freepbx/phonebook/page.phonebook.php:185
 msgid "File:"
 msgstr "Filnamn:"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:186
 msgid ""
 "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
 "Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
@@ -138,33 +96,108 @@ msgstr ""
 "Snabbnummer<br>Namnen måste vara omslutna med \" och fälten måste vara "
 "separerade med ';'<br><br>T.ex. \"Nils Nilsson\";040123456;123"
 
-msgid "Upload"
-msgstr "Ladda upp"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:182
+msgid "Import from CSV"
+msgstr "Importera från CSV"
 
-msgid "Please enter a valid Number"
-msgstr "Skriv in ett giltigt nummer"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+msgid "Imported"
+msgstr "Importerade"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:104
+msgid "Name"
+msgstr "Namn"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+msgid "Name:"
+msgstr "Namn:"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:103
+msgid "Number"
+msgstr "Nummer"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:154
+msgid "Number:"
+msgstr "Nummer:"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:95
+#: /usr/src/freepbx/phonebook/page.phonebook.php:143
+msgid "Phone Book"
+msgstr "Telefonboken"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:84
+msgid "Phonebook emptied"
+msgstr "Tömde telefonboken"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:99
+msgid "Phonebook entries"
+msgstr "Telefonboken"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+msgid "Phonebook entry"
+msgstr "Telefonboken"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:203
 msgid "Please enter a valid Name"
 msgstr "Skriv in ett giltigt namn"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:202
+msgid "Please enter a valid Number"
+msgstr "Skriv in ett giltigt nummer"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:204
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "Skriv in ett giltigt kortnummer eller lämna detta fält tomt"
 
-msgid "Phonebook"
-msgstr "Telefonbok"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+msgid "Set Speed Dial?"
+msgstr "Skapa kortnummer?"
 
-msgid "Admin"
-msgstr ""
+#: /usr/src/freepbx/phonebook/page.phonebook.php:105
+msgid "Speed dial"
+msgstr "Kortnummer"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:160
+msgid "Speed dial code:"
+msgstr "Kortnummer"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:169
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:191
+msgid "Upload"
+msgstr "Ladda upp"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:96
+#: /usr/src/freepbx/phonebook/page.phonebook.php:144
 msgid ""
-"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
-"Lookup and Speed Dial"
+"Use this module to create system wide speed dial numbers that can be dialed "
+"from any phone."
 msgstr ""
-"En telefonbok för FreePBX, den kan användas för snabbnummer och databas för "
-"nummerpresentation"
+"Använd denna modul för att skapa en telefonbok med snabbnummer som kan kan "
+"användas av alla telefoner"
 
-msgid "Asterisk Phonebook"
-msgstr "Asterisk telefonbok"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+msgid "deleted"
+msgstr "borttagen"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+msgid "lines of"
+msgstr "rader med"
+
+#~ msgid "Phonebook"
+#~ msgstr "Telefonbok"
+
+#~ msgid ""
+#~ "Provides a phonebook for FreePBX, it can be used as base for Caller ID "
+#~ "Lookup and Speed Dial"
+#~ msgstr ""
+#~ "En telefonbok för FreePBX, den kan användas för snabbnummer och databas "
+#~ "för nummerpresentation"
+
+#~ msgid "Asterisk Phonebook"
+#~ msgstr "Asterisk telefonbok"
 
 #~ msgid "System Administration"
 #~ msgstr "Systemadministration"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:04-0500\n"
 "PO-Revision-Date: 2009-04-15 22:43+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,79 +28,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Phonebook entry"
-msgstr "Entrée de l'annuaire"
-
-msgid "deleted"
-msgstr "supprimé"
-
-msgid "Imported"
-msgstr "Importé"
-
-msgid "lines of"
-msgstr "lignes de"
-
-msgid "Phonebook emptied"
-msgstr "Annuaire vidé"
-
-msgid "Are you sure you want to empty your phonebook ?"
-msgstr "Êtes-vous sûr de vouloir vider votre annuaire ?"
-
-msgid "Phone Book"
-msgstr ""
-
-msgid ""
-"Use this module to create system wide speed dial numbers that can be dialed "
-"from any phone."
-msgstr ""
-
-msgid "Phonebook entries"
-msgstr "Entrées de l'annuaire"
-
-msgid "Number"
-msgstr "Numéro"
-
-msgid "Name"
-msgstr "Nom"
-
-msgid "Speed dial"
-msgstr "Numérotation abrégée"
-
-msgid "Are you sure you want to delete this entry ?"
-msgstr "Êtes-vous sûr de vouloir supprimer cette entrée ?"
-
-msgid "Delete"
-msgstr "Supprimer"
-
-msgid "Edit"
-msgstr "Editer"
-
-msgid "Export in CSV"
-msgstr "Exporter au format CSV"
-
-msgid "Empty Phonebook"
-msgstr "Vider l'Annuaire"
-
+#: /usr/src/freepbx/phonebook/page.phonebook.php:146
 msgid "Add or replace entry"
 msgstr "Ajouter ou remplacer une entrée"
 
-msgid "Name:"
-msgstr "Nom :"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+msgid "Are you sure you want to delete this entry ?"
+msgstr "Êtes-vous sûr de vouloir supprimer cette entrée ?"
 
-msgid "Enter the name"
-msgstr "Entrez le nom"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:90
+msgid "Are you sure you want to empty your phonebook ?"
+msgstr "Êtes-vous sûr de vouloir vider votre annuaire ?"
 
-msgid "Number:"
-msgstr "Numéro :"
-
-msgid ""
-"Enter the number (For CallerID lookup to work it should match the CallerID "
-"received from network)"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+msgid "Check to have a speed dial created automatically for this number"
 msgstr ""
+"Cochez cette case pour créer automatiquement une numérotation abrégée pour "
+"ce numéro"
 
-msgid "Speed dial code:"
-msgstr "Code de numérotation abrégée :"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+msgid "Delete"
+msgstr "Supprimer"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:122
+msgid "Edit"
+msgstr "Editer"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+msgid "Empty Phonebook"
+msgstr "Vider l'Annuaire"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:160
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes"
@@ -108,23 +66,25 @@ msgstr ""
 "Entrez un code de numérotation abrégée<br/>Le module de numérotation abrégée "
 "(Speddial) est requis pour utiliser les codes de numérotation abrégée."
 
-msgid "Set Speed Dial?"
-msgstr "Définir la numérotation abrégée ?"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+msgid "Enter the name"
+msgstr "Entrez le nom"
 
-msgid "Check to have a speed dial created automatically for this number"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:155
+msgid ""
+"Enter the number (For CallerID lookup to work it should match the CallerID "
+"received from network)"
 msgstr ""
-"Cochez cette case pour créer automatiquement une numérotation abrégée pour "
-"ce numéro"
 
-msgid "Submit Changes"
-msgstr "Appliquer les modifications"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+msgid "Export in CSV"
+msgstr "Exporter au format CSV"
 
-msgid "Import from CSV"
-msgstr "Importer d'un fichier CSV"
-
+#: /usr/src/freepbx/phonebook/page.phonebook.php:185
 msgid "File:"
 msgstr "Fichier :"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:186
 msgid ""
 "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
 "Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
@@ -134,31 +94,99 @@ msgstr ""
 "Numérotation abrégée<br /> Les noms doivent être encadrés de '\"' et les "
 "champs séparés par ';' <br /><br/> Exemple :<br/>\"John Doe\";12345678;123"
 
-msgid "Upload"
-msgstr "Upload"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:182
+msgid "Import from CSV"
+msgstr "Importer d'un fichier CSV"
 
-msgid "Please enter a valid Number"
-msgstr "Entrez un numéro valide"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+msgid "Imported"
+msgstr "Importé"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:104
+msgid "Name"
+msgstr "Nom"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+msgid "Name:"
+msgstr "Nom :"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:103
+msgid "Number"
+msgstr "Numéro"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:154
+msgid "Number:"
+msgstr "Numéro :"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:95
+#: /usr/src/freepbx/phonebook/page.phonebook.php:143
+msgid "Phone Book"
+msgstr ""
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:84
+msgid "Phonebook emptied"
+msgstr "Annuaire vidé"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:99
+msgid "Phonebook entries"
+msgstr "Entrées de l'annuaire"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+msgid "Phonebook entry"
+msgstr "Entrée de l'annuaire"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:203
 msgid "Please enter a valid Name"
 msgstr "Entrez un nom valide"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:202
+msgid "Please enter a valid Number"
+msgstr "Entrez un numéro valide"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:204
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "Entrez un code de numérotation abrégée valide ou laissez vide"
 
-msgid "Phonebook"
-msgstr "Annuaire"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+msgid "Set Speed Dial?"
+msgstr "Définir la numérotation abrégée ?"
 
-msgid "Admin"
-msgstr ""
+#: /usr/src/freepbx/phonebook/page.phonebook.php:105
+msgid "Speed dial"
+msgstr "Numérotation abrégée"
 
+#: /usr/src/freepbx/phonebook/page.phonebook.php:160
+msgid "Speed dial code:"
+msgstr "Code de numérotation abrégée :"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:169
+msgid "Submit Changes"
+msgstr "Appliquer les modifications"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:191
+msgid "Upload"
+msgstr "Upload"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:96
+#: /usr/src/freepbx/phonebook/page.phonebook.php:144
 msgid ""
-"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
-"Lookup and Speed Dial"
+"Use this module to create system wide speed dial numbers that can be dialed "
+"from any phone."
 msgstr ""
 
-msgid "Asterisk Phonebook"
-msgstr "Annuaire Asterisk"
+#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+msgid "deleted"
+msgstr "supprimé"
+
+#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+msgid "lines of"
+msgstr "lignes de"
+
+#~ msgid "Phonebook"
+#~ msgstr "Annuaire"
+
+#~ msgid "Asterisk Phonebook"
+#~ msgstr "Annuaire Asterisk"
 
 #~ msgid ""
 #~ "Enter the number (For caller ID lookup to work it should match the caller "
