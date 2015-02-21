@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:04-0500\n"
+"POT-Creation-Date: 2015-02-20 19:47-0500\n"
 "PO-Revision-Date: 2008-01-16 16:38+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -16,35 +16,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:146
+#: page.phonebook.php:146
 msgid "Add or replace entry"
 msgstr "Добавить или заменить запись"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+#: phonebook.i18n.php:4
+msgid "Admin"
+msgstr "Админ"
+
+#: page.phonebook.php:117
 msgid "Are you sure you want to delete this entry ?"
 msgstr "Вы хотите удалить эту запись?"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:90
+#: page.phonebook.php:90
 msgid "Are you sure you want to empty your phonebook ?"
 msgstr "Уверены в том, что хотите очистить вашу телефонную книгу?"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+#: phonebook.i18n.php:6
+msgid "Asterisk Phonebook"
+msgstr "Телефонная книга Астериск"
+
+#: page.phonebook.php:165
 msgid "Check to have a speed dial created automatically for this number"
 msgstr "Проверять есть ли быстрый набор автоматически для этого номера"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+#: page.phonebook.php:117
 msgid "Delete"
 msgstr "Удалить"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:122
+#: page.phonebook.php:122
 msgid "Edit"
 msgstr "Редактировать"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+#: page.phonebook.php:129
 msgid "Empty Phonebook"
 msgstr "Очистить Телефонную книгу"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:160
+#: page.phonebook.php:160
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes"
@@ -52,11 +60,11 @@ msgstr ""
 "Введите код быстрого набора<br/>Понадобится модуль Speeddial для "
 "использования возможности быстрого набора"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+#: page.phonebook.php:149
 msgid "Enter the name"
 msgstr "Введите имя"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:155
+#: page.phonebook.php:155
 msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
@@ -64,15 +72,15 @@ msgstr ""
 "Введите номер (Что бы поиск CallerID работал, этот номер должен совпадать с "
 "входящим CallerID) "
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+#: page.phonebook.php:129
 msgid "Export in CSV"
 msgstr "Экспортировать в формат CSV"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:185
+#: page.phonebook.php:185
 msgid "File:"
 msgstr "Файл:"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:186
+#: page.phonebook.php:186
 msgid ""
 "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
 "Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
@@ -83,81 +91,91 @@ msgstr ""
 "кавычки, а поля разделяются символом точка с запятой ';' <br /><br /> "
 "Например:<br/>\"Вася Печкин\";12345678;777"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:182
+#: page.phonebook.php:182
 msgid "Import from CSV"
 msgstr "Импортировать из файла CSV"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+#: page.phonebook.php:82
 msgid "Imported"
 msgstr "Импортировано"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:104
+#: page.phonebook.php:104
 msgid "Name"
 msgstr "Имя"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+#: page.phonebook.php:149
 msgid "Name:"
 msgstr "Имя:"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:103
+#: page.phonebook.php:103
 msgid "Number"
 msgstr "Номер"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:154
+#: page.phonebook.php:154
 msgid "Number:"
 msgstr "Номер:"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:95
-#: /usr/src/freepbx/phonebook/page.phonebook.php:143
+#: page.phonebook.php:95 page.phonebook.php:143
 msgid "Phone Book"
 msgstr "Телефонная книга"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:84
+#: phonebook.i18n.php:3
+msgid "Phonebook"
+msgstr "Телефонная книга"
+
+#: page.phonebook.php:84
 msgid "Phonebook emptied"
 msgstr "Телефонная книга очищена"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:99
+#: page.phonebook.php:99
 msgid "Phonebook entries"
 msgstr "Записи в телефонной книге"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+#: page.phonebook.php:80
 msgid "Phonebook entry"
 msgstr "Запись в телефонной книке"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:203
+#: page.phonebook.php:203
 msgid "Please enter a valid Name"
 msgstr "Введите правильное имя"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:202
+#: page.phonebook.php:202
 msgid "Please enter a valid Number"
 msgstr "Введите правильный номер"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:204
+#: page.phonebook.php:204
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "Введите правильный код быстрого набора"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+#: phonebook.i18n.php:5
+msgid ""
+"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
+"Lookup and Speed Dial"
+msgstr ""
+"Предоставляет телефонную книгу для Asterisk, она может использоваться как "
+"основадля поиска CallerID и быстрого набора"
+
+#: page.phonebook.php:165
 msgid "Set Speed Dial?"
 msgstr "Установить быстрый набор?"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:105
+#: page.phonebook.php:105
 msgid "Speed dial"
 msgstr "Быстрый набор"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:160
+#: page.phonebook.php:160
 msgid "Speed dial code:"
 msgstr "Код быстрого набора:"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:169
+#: page.phonebook.php:169
 msgid "Submit Changes"
 msgstr "Применить изменить"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:191
+#: page.phonebook.php:191
 msgid "Upload"
 msgstr "Загрузить"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:96
-#: /usr/src/freepbx/phonebook/page.phonebook.php:144
+#: page.phonebook.php:96 page.phonebook.php:144
 msgid ""
 "Use this module to create system wide speed dial numbers that can be dialed "
 "from any phone."
@@ -165,29 +183,13 @@ msgstr ""
 "Используйте этот модуль для создания общесистемных номеров быстрого набора "
 "которые могут быть набраны с любого телефона"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+#: page.phonebook.php:80
 msgid "deleted"
 msgstr "удалено"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+#: page.phonebook.php:82
 msgid "lines of"
 msgstr "строк в"
-
-#~ msgid "Phonebook"
-#~ msgstr "Телефонная книга"
-
-#~ msgid "Admin"
-#~ msgstr "Админ"
-
-#~ msgid ""
-#~ "Provides a phonebook for FreePBX, it can be used as base for Caller ID "
-#~ "Lookup and Speed Dial"
-#~ msgstr ""
-#~ "Предоставляет телефонную книгу для Asterisk, она может использоваться как "
-#~ "основадля поиска CallerID и быстрого набора"
-
-#~ msgid "Asterisk Phonebook"
-#~ msgstr "Телефонная книга Астериск"
 
 #~ msgid ""
 #~ "Enter the number (For caller ID lookup to work it should match the caller "

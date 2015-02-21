@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:04-0500\n"
+"POT-Creation-Date: 2015-02-20 19:47-0500\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/phonebook/ja/>\n"
@@ -48,35 +48,43 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:146
+#: page.phonebook.php:146
 msgid "Add or replace entry"
 msgstr "エントリの追加と上書き"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+#: phonebook.i18n.php:4
+msgid "Admin"
+msgstr "アドミン"
+
+#: page.phonebook.php:117
 msgid "Are you sure you want to delete this entry ?"
 msgstr "このエントリを削除しますか？"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:90
+#: page.phonebook.php:90
 msgid "Are you sure you want to empty your phonebook ?"
 msgstr "電話帳を空にしますか？"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+#: phonebook.i18n.php:6
+msgid "Asterisk Phonebook"
+msgstr "Asterisk 電話帳"
+
+#: page.phonebook.php:165
 msgid "Check to have a speed dial created automatically for this number"
 msgstr "この番号の短縮ダイヤルを自動的に作成する場合はチェックしてください。"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+#: page.phonebook.php:117
 msgid "Delete"
 msgstr "削除"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:122
+#: page.phonebook.php:122
 msgid "Edit"
 msgstr "編集"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+#: page.phonebook.php:129
 msgid "Empty Phonebook"
 msgstr "電話帳を空にする"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:160
+#: page.phonebook.php:160
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes"
@@ -84,11 +92,11 @@ msgstr ""
 "スピードダイヤルコードを入力してください<br/>スピードダイヤルコードを使用する"
 "にはスピードダイヤルモジュールが必要です。"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+#: page.phonebook.php:149
 msgid "Enter the name"
 msgstr "名前を入力してください"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:155
+#: page.phonebook.php:155
 msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
@@ -96,15 +104,15 @@ msgstr ""
 "番号を入力してください(発信者番号検索が動作するために、ネットワークから受信し"
 "た発信者番号とマッチする必要があります)"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+#: page.phonebook.php:129
 msgid "Export in CSV"
 msgstr "CSVへエクスポート"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:185
+#: page.phonebook.php:185
 msgid "File:"
 msgstr "ファイル："
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:186
+#: page.phonebook.php:186
 msgid ""
 "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
 "Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
@@ -114,81 +122,91 @@ msgstr ""
 "縮ダイヤル<br /> 名前は'\"'で囲われなければいけません、フィールドは';'で分け"
 "られなければいけません。 <br /><br /> 例：<br/>\"John Doe\";12345678;123"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:182
+#: page.phonebook.php:182
 msgid "Import from CSV"
 msgstr "CSVからインポート"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+#: page.phonebook.php:82
 msgid "Imported"
 msgstr "インポートしました"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:104
+#: page.phonebook.php:104
 msgid "Name"
 msgstr "名前"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+#: page.phonebook.php:149
 msgid "Name:"
 msgstr "名前"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:103
+#: page.phonebook.php:103
 msgid "Number"
 msgstr "番号"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:154
+#: page.phonebook.php:154
 msgid "Number:"
 msgstr "番号："
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:95
-#: /usr/src/freepbx/phonebook/page.phonebook.php:143
+#: page.phonebook.php:95 page.phonebook.php:143
 msgid "Phone Book"
 msgstr "電話帳"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:84
+#: phonebook.i18n.php:3
+msgid "Phonebook"
+msgstr "電話帳"
+
+#: page.phonebook.php:84
 msgid "Phonebook emptied"
 msgstr "電話帳を空にしました"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:99
+#: page.phonebook.php:99
 msgid "Phonebook entries"
 msgstr "電話帳エントリ"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+#: page.phonebook.php:80
 msgid "Phonebook entry"
 msgstr "電話帳エントリ"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:203
+#: page.phonebook.php:203
 msgid "Please enter a valid Name"
 msgstr "有効な名前を入力してください"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:202
+#: page.phonebook.php:202
 msgid "Please enter a valid Number"
 msgstr "有効な番号を入力してください"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:204
+#: page.phonebook.php:204
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "有効な短縮ダイヤルを入力するか、空のままにしてください。"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+#: phonebook.i18n.php:5
+msgid ""
+"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
+"Lookup and Speed Dial"
+msgstr ""
+"FreePBXへ電話帳機能を提供し、発信者IDの検索と短縮ダイヤル機能のベースとして使"
+"用されます。"
+
+#: page.phonebook.php:165
 msgid "Set Speed Dial?"
 msgstr "短縮ダイヤルの自動設定"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:105
+#: page.phonebook.php:105
 msgid "Speed dial"
 msgstr "短縮ダイヤル"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:160
+#: page.phonebook.php:160
 msgid "Speed dial code:"
 msgstr "短縮ダイヤルコード："
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:169
+#: page.phonebook.php:169
 msgid "Submit Changes"
 msgstr "変更を適用"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:191
+#: page.phonebook.php:191
 msgid "Upload"
 msgstr "アップロード"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:96
-#: /usr/src/freepbx/phonebook/page.phonebook.php:144
+#: page.phonebook.php:96 page.phonebook.php:144
 msgid ""
 "Use this module to create system wide speed dial numbers that can be dialed "
 "from any phone."
@@ -196,26 +214,10 @@ msgstr ""
 "このモジュールを使用して、任意の電話機からダイヤルすることができるシステム全"
 "体の短縮ダイヤル番号を作成します。"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+#: page.phonebook.php:80
 msgid "deleted"
 msgstr "削除されました"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+#: page.phonebook.php:82
 msgid "lines of"
 msgstr "次のライン"
-
-#~ msgid "Phonebook"
-#~ msgstr "電話帳"
-
-#~ msgid "Admin"
-#~ msgstr "アドミン"
-
-#~ msgid ""
-#~ "Provides a phonebook for FreePBX, it can be used as base for Caller ID "
-#~ "Lookup and Speed Dial"
-#~ msgstr ""
-#~ "FreePBXへ電話帳機能を提供し、発信者IDの検索と短縮ダイヤル機能のベースとし"
-#~ "て使用されます。"
-
-#~ msgid "Asterisk Phonebook"
-#~ msgstr "Asterisk 電話帳"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo phonebook module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:04-0500\n"
+"POT-Creation-Date: 2015-02-20 19:47-0500\n"
 "PO-Revision-Date: 2009-01-23 00:14+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -13,37 +13,45 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:146
+#: page.phonebook.php:146
 msgid "Add or replace entry"
 msgstr "Añadir o reemplazar elemento"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+#: phonebook.i18n.php:4
+msgid "Admin"
+msgstr ""
+
+#: page.phonebook.php:117
 msgid "Are you sure you want to delete this entry ?"
 msgstr "¿Está seguro de que desea eliminar este elemento?"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:90
+#: page.phonebook.php:90
 msgid "Are you sure you want to empty your phonebook ?"
 msgstr "¿Está seguro de que desea vaciar el listín telefónico?"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+#: phonebook.i18n.php:6
+msgid "Asterisk Phonebook"
+msgstr "Listín telefónico de Asterisk"
+
+#: page.phonebook.php:165
 msgid "Check to have a speed dial created automatically for this number"
 msgstr ""
 "Marque esta casilla para crear automáticamente un código de marcación rápida "
 "para este número."
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:117
+#: page.phonebook.php:117
 msgid "Delete"
 msgstr "Eliminar"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:122
+#: page.phonebook.php:122
 msgid "Edit"
 msgstr "Editar"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+#: page.phonebook.php:129
 msgid "Empty Phonebook"
 msgstr "Vaciar listín telefónico"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:160
+#: page.phonebook.php:160
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes"
@@ -51,25 +59,25 @@ msgstr ""
 "Introduzca un código de marcación rápida.<br/>Es necesario el módulo de "
 "'Marcación rápida' para que funcione."
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+#: page.phonebook.php:149
 msgid "Enter the name"
 msgstr "Introduzca el nombre."
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:155
+#: page.phonebook.php:155
 msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
 msgstr ""
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:129
+#: page.phonebook.php:129
 msgid "Export in CSV"
 msgstr "Exportar a CSV"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:185
+#: page.phonebook.php:185
 msgid "File:"
 msgstr "Archivo:"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:186
+#: page.phonebook.php:186
 msgid ""
 "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
 "Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
@@ -80,99 +88,101 @@ msgstr ""
 "campos separados por punto y coma (;).<br/><br/>Por ejemplo:<br/>\"John Doe"
 "\";12345678;123"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:182
+#: page.phonebook.php:182
 msgid "Import from CSV"
 msgstr "Importar desde CSV"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+#: page.phonebook.php:82
 msgid "Imported"
 msgstr "Importado"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:104
+#: page.phonebook.php:104
 msgid "Name"
 msgstr "Nombre"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:149
+#: page.phonebook.php:149
 msgid "Name:"
 msgstr "Nombre:"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:103
+#: page.phonebook.php:103
 msgid "Number"
 msgstr "Número"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:154
+#: page.phonebook.php:154
 msgid "Number:"
 msgstr "Número:"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:95
-#: /usr/src/freepbx/phonebook/page.phonebook.php:143
+#: page.phonebook.php:95 page.phonebook.php:143
 msgid "Phone Book"
 msgstr ""
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:84
+#: phonebook.i18n.php:3
+msgid "Phonebook"
+msgstr "Listín telefónico"
+
+#: page.phonebook.php:84
 msgid "Phonebook emptied"
 msgstr "Listín telefónico vaciado"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:99
+#: page.phonebook.php:99
 msgid "Phonebook entries"
 msgstr "Elementos del listín telefónico"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+#: page.phonebook.php:80
 msgid "Phonebook entry"
 msgstr "Elemento del listín telefónico"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:203
+#: page.phonebook.php:203
 msgid "Please enter a valid Name"
 msgstr "Por favor, introduzca un nombre válido."
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:202
+#: page.phonebook.php:202
 msgid "Please enter a valid Number"
 msgstr "Por favor, introduzca un número válido."
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:204
+#: page.phonebook.php:204
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "Por favor, introduzca un código de marcación rápida válido."
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:165
+#: phonebook.i18n.php:5
+msgid ""
+"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
+"Lookup and Speed Dial"
+msgstr ""
+
+#: page.phonebook.php:165
 msgid "Set Speed Dial?"
 msgstr "¿Crear código de marcación rápida?"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:105
+#: page.phonebook.php:105
 msgid "Speed dial"
 msgstr "Código de acceso directo"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:160
+#: page.phonebook.php:160
 msgid "Speed dial code:"
 msgstr "Código de marcación rápida:"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:169
+#: page.phonebook.php:169
 msgid "Submit Changes"
 msgstr "Enviar cambios"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:191
+#: page.phonebook.php:191
 msgid "Upload"
 msgstr "Enviar"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:96
-#: /usr/src/freepbx/phonebook/page.phonebook.php:144
+#: page.phonebook.php:96 page.phonebook.php:144
 msgid ""
 "Use this module to create system wide speed dial numbers that can be dialed "
 "from any phone."
 msgstr ""
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:80
+#: page.phonebook.php:80
 msgid "deleted"
 msgstr "Eliminado"
 
-#: /usr/src/freepbx/phonebook/page.phonebook.php:82
+#: page.phonebook.php:82
 msgid "lines of"
 msgstr "Líneas de"
-
-#~ msgid "Phonebook"
-#~ msgstr "Listín telefónico"
-
-#~ msgid "Asterisk Phonebook"
-#~ msgstr "Listín telefónico de Asterisk"
 
 #~ msgid ""
 #~ "Enter the number (For caller ID lookup to work it should match the caller "
