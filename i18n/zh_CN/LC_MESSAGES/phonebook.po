@@ -114,7 +114,7 @@ msgstr "号码："
 
 #: page.phonebook.php:95 page.phonebook.php:143
 msgid "Phone Book"
-msgstr ""
+msgstr "电话薄"
 
 #: phonebook.i18n.php:3
 msgid "Phonebook"
@@ -187,6 +187,4 @@ msgstr "行"
 #~ msgid ""
 #~ "Enter the number (For caller ID lookup to work it should match the caller "
 #~ "ID received from network)"
-#~ msgstr ""
-#~ "输入号码（为了让此条目在主叫ID中起作用，这个号码必须与在网络上接收到的主叫"
-#~ "ID匹配）"
+#~ msgstr "输入号码（为了让此条目在主叫ID中起作用，这个号码必须与在网络上接收到的主叫ID匹配）"
