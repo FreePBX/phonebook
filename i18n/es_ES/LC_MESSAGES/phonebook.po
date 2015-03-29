@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo phonebook module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:47-0500\n"
-"PO-Revision-Date: 2015-03-29 03:19+0200\n"
+"PO-Revision-Date: 2015-03-29 03:20+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/phonebook/es_ES/>\n"
@@ -41,7 +41,7 @@ msgstr "Listín telefónico de Asterisk"
 msgid "Check to have a speed dial created automatically for this number"
 msgstr ""
 "Marque esta casilla para crear automáticamente un código de marcación rápida "
-"para este número."
+"para este número"
 
 #: page.phonebook.php:117
 msgid "Delete"
@@ -61,11 +61,11 @@ msgid ""
 "codes"
 msgstr ""
 "Introduzca un código de marcación rápida.<br/>Es necesario el módulo de "
-"'Marcación rápida' para que funcione."
+"'Marcación rápida' para que funcione"
 
 #: page.phonebook.php:149
 msgid "Enter the name"
-msgstr "Introduzca el nombre."
+msgstr "Introduzca el nombre"
 
 #: page.phonebook.php:155
 msgid ""
@@ -140,15 +140,15 @@ msgstr "Elemento del listín telefónico"
 
 #: page.phonebook.php:203
 msgid "Please enter a valid Name"
-msgstr "Por favor, introduzca un nombre válido."
+msgstr "Por favor, introduzca un nombre válido"
 
 #: page.phonebook.php:202
 msgid "Please enter a valid Number"
-msgstr "Por favor, introduzca un número válido."
+msgstr "Por favor, introduzca un número válido"
 
 #: page.phonebook.php:204
 msgid "Please enter a valid Speeddial code or leave it empty"
-msgstr "Por favor, introduzca un código de marcación rápida válido."
+msgstr "Por favor, introduzca un código de marcación rápida válido"
 
 #: phonebook.i18n.php:5
 msgid ""
