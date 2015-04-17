@@ -5,7 +5,7 @@
   <version>2.11.0.1</version>
   <publisher>FreePBX</publisher>
   <license>GPLv2+</license>
-  <description>Provides a phonebook for FreePBX, it can be used as base for Caller ID Lookup and Speed Dial</description>
+  <description>Provides a phonebook which can be used as base for Caller ID Lookup and Speed Dial</description>
   <category>Admin</category>
   <menuitems>
     <phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
