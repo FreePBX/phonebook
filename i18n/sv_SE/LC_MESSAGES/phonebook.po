@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX phonebook\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:47-0500\n"
+"POT-Creation-Date: 2015-04-17 14:18-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Add or replace entry"
 msgstr "Lägg till eller byt ut"
 
-#: phonebook.i18n.php:4
+#: phonebook.i18n.php:6 phonebook.i18n.php:12
 msgid "Admin"
 msgstr ""
 
@@ -46,7 +46,7 @@ msgstr "Är du säker på att du vill ta bort denna post?"
 msgid "Are you sure you want to empty your phonebook ?"
 msgstr "Är du säker på att du vill tömma telefonboken?"
 
-#: phonebook.i18n.php:6
+#: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
 msgstr "Asterisk telefonbok"
 
@@ -132,7 +132,7 @@ msgstr "Nummer:"
 msgid "Phone Book"
 msgstr "Telefonboken"
 
-#: phonebook.i18n.php:3
+#: phonebook.i18n.php:4
 msgid "Phonebook"
 msgstr "Telefonbok"
 
@@ -160,13 +160,11 @@ msgstr "Skriv in ett giltigt nummer"
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "Skriv in ett giltigt kortnummer eller lämna detta fält tomt"
 
-#: phonebook.i18n.php:5
+#: phonebook.i18n.php:8
 msgid ""
-"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
-"Lookup and Speed Dial"
+"Provides a phonebook which can be used as base for Caller ID Lookup and "
+"Speed Dial"
 msgstr ""
-"En telefonbok för FreePBX, den kan användas för snabbnummer och databas för "
-"nummerpresentation"
 
 #: page.phonebook.php:165
 msgid "Set Speed Dial?"
@@ -203,6 +201,13 @@ msgstr "borttagen"
 #: page.phonebook.php:82
 msgid "lines of"
 msgstr "rader med"
+
+#~ msgid ""
+#~ "Provides a phonebook for FreePBX, it can be used as base for Caller ID "
+#~ "Lookup and Speed Dial"
+#~ msgstr ""
+#~ "En telefonbok för FreePBX, den kan användas för snabbnummer och databas "
+#~ "för nummerpresentation"
 
 #~ msgid "System Administration"
 #~ msgstr "Systemadministration"

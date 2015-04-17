@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:47-0500\n"
+"POT-Creation-Date: 2015-04-17 14:18-0400\n"
 "PO-Revision-Date: 2008-01-16 16:38+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Add or replace entry"
 msgstr "Добавить или заменить запись"
 
-#: phonebook.i18n.php:4
+#: phonebook.i18n.php:6 phonebook.i18n.php:12
 msgid "Admin"
 msgstr "Админ"
 
@@ -32,7 +32,7 @@ msgstr "Вы хотите удалить эту запись?"
 msgid "Are you sure you want to empty your phonebook ?"
 msgstr "Уверены в том, что хотите очистить вашу телефонную книгу?"
 
-#: phonebook.i18n.php:6
+#: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
 msgstr "Телефонная книга Астериск"
 
@@ -119,7 +119,7 @@ msgstr "Номер:"
 msgid "Phone Book"
 msgstr "Телефонная книга"
 
-#: phonebook.i18n.php:3
+#: phonebook.i18n.php:4
 msgid "Phonebook"
 msgstr "Телефонная книга"
 
@@ -147,13 +147,11 @@ msgstr "Введите правильный номер"
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "Введите правильный код быстрого набора"
 
-#: phonebook.i18n.php:5
+#: phonebook.i18n.php:8
 msgid ""
-"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
-"Lookup and Speed Dial"
+"Provides a phonebook which can be used as base for Caller ID Lookup and "
+"Speed Dial"
 msgstr ""
-"Предоставляет телефонную книгу для Asterisk, она может использоваться как "
-"основадля поиска CallerID и быстрого набора"
 
 #: page.phonebook.php:165
 msgid "Set Speed Dial?"
@@ -190,6 +188,13 @@ msgstr "удалено"
 #: page.phonebook.php:82
 msgid "lines of"
 msgstr "строк в"
+
+#~ msgid ""
+#~ "Provides a phonebook for FreePBX, it can be used as base for Caller ID "
+#~ "Lookup and Speed Dial"
+#~ msgstr ""
+#~ "Предоставляет телефонную книгу для Asterisk, она может использоваться как "
+#~ "основадля поиска CallerID и быстрого набора"
 
 #~ msgid ""
 #~ "Enter the number (For caller ID lookup to work it should match the caller "

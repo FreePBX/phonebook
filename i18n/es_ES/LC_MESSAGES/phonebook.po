@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo phonebook module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:47-0500\n"
+"POT-Creation-Date: 2015-04-17 14:18-0400\n"
 "PO-Revision-Date: 2015-03-29 03:20+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/phonebook/es_ES/>\n"
-"Language: es_ES\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
+"phonebook/es_ES/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Spanish\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Add or replace entry"
 msgstr "Añadir o reemplazar elemento"
 
-#: phonebook.i18n.php:4
+#: phonebook.i18n.php:6 phonebook.i18n.php:12
 msgid "Admin"
 msgstr "Administrador"
 
@@ -33,7 +33,7 @@ msgstr "¿Está seguro de que desea eliminar este elemento?"
 msgid "Are you sure you want to empty your phonebook ?"
 msgstr "¿Está seguro de que desea vaciar el listín telefónico?"
 
-#: phonebook.i18n.php:6
+#: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
 msgstr "Listín telefónico de Asterisk"
 
@@ -122,7 +122,7 @@ msgstr "Número:"
 msgid "Phone Book"
 msgstr "Libreta telefónica"
 
-#: phonebook.i18n.php:3
+#: phonebook.i18n.php:4
 msgid "Phonebook"
 msgstr "Listín telefónico"
 
@@ -150,13 +150,11 @@ msgstr "Por favor, introduzca un número válido"
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "Por favor, introduzca un código de marcación rápida válido"
 
-#: phonebook.i18n.php:5
+#: phonebook.i18n.php:8
 msgid ""
-"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
-"Lookup and Speed Dial"
+"Provides a phonebook which can be used as base for Caller ID Lookup and "
+"Speed Dial"
 msgstr ""
-"Proporciona una libreta telefónica para FreePBX, que puede ser utilizada "
-"como base para búsqueda de identificador de llamadas y de marcación rápida"
 
 #: page.phonebook.php:165
 msgid "Set Speed Dial?"
@@ -193,6 +191,13 @@ msgstr "Eliminado"
 #: page.phonebook.php:82
 msgid "lines of"
 msgstr "Líneas de"
+
+#~ msgid ""
+#~ "Provides a phonebook for FreePBX, it can be used as base for Caller ID "
+#~ "Lookup and Speed Dial"
+#~ msgstr ""
+#~ "Proporciona una libreta telefónica para FreePBX, que puede ser utilizada "
+#~ "como base para búsqueda de identificador de llamadas y de marcación rápida"
 
 #~ msgid ""
 #~ "Enter the number (For caller ID lookup to work it should match the caller "

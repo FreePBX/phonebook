@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:47-0500\n"
+"POT-Creation-Date: 2015-04-17 14:18-0400\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/phonebook/ja/>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Add or replace entry"
 msgstr "エントリの追加と上書き"
 
-#: phonebook.i18n.php:4
+#: phonebook.i18n.php:6 phonebook.i18n.php:12
 msgid "Admin"
 msgstr "アドミン"
 
@@ -64,7 +64,7 @@ msgstr "このエントリを削除しますか？"
 msgid "Are you sure you want to empty your phonebook ?"
 msgstr "電話帳を空にしますか？"
 
-#: phonebook.i18n.php:6
+#: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
 msgstr "Asterisk 電話帳"
 
@@ -150,7 +150,7 @@ msgstr "番号："
 msgid "Phone Book"
 msgstr "電話帳"
 
-#: phonebook.i18n.php:3
+#: phonebook.i18n.php:4
 msgid "Phonebook"
 msgstr "電話帳"
 
@@ -178,13 +178,11 @@ msgstr "有効な番号を入力してください"
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "有効な短縮ダイヤルを入力するか、空のままにしてください。"
 
-#: phonebook.i18n.php:5
+#: phonebook.i18n.php:8
 msgid ""
-"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
-"Lookup and Speed Dial"
+"Provides a phonebook which can be used as base for Caller ID Lookup and "
+"Speed Dial"
 msgstr ""
-"FreePBXへ電話帳機能を提供し、発信者IDの検索と短縮ダイヤル機能のベースとして使"
-"用されます。"
 
 #: page.phonebook.php:165
 msgid "Set Speed Dial?"
@@ -221,3 +219,10 @@ msgstr "削除されました"
 #: page.phonebook.php:82
 msgid "lines of"
 msgstr "次のライン"
+
+#~ msgid ""
+#~ "Provides a phonebook for FreePBX, it can be used as base for Caller ID "
+#~ "Lookup and Speed Dial"
+#~ msgstr ""
+#~ "FreePBXへ電話帳機能を提供し、発信者IDの検索と短縮ダイヤル機能のベースとし"
+#~ "て使用されます。"

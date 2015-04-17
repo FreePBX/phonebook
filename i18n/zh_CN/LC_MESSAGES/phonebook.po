@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:47-0500\n"
+"POT-Creation-Date: 2015-04-17 14:18-0400\n"
 "PO-Revision-Date: 2009-02-01 14:10+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Add or replace entry"
 msgstr "添加或取代条目"
 
-#: phonebook.i18n.php:4
+#: phonebook.i18n.php:6 phonebook.i18n.php:12
 msgid "Admin"
 msgstr ""
 
@@ -34,7 +34,7 @@ msgstr "你确定要删除此条目吗？"
 msgid "Are you sure you want to empty your phonebook ?"
 msgstr "你确定要清空电话簿吗？"
 
-#: phonebook.i18n.php:6
+#: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
 msgstr "Asterisk电话簿"
 
@@ -116,7 +116,7 @@ msgstr "号码："
 msgid "Phone Book"
 msgstr "电话薄"
 
-#: phonebook.i18n.php:3
+#: phonebook.i18n.php:4
 msgid "Phonebook"
 msgstr "电话簿"
 
@@ -144,10 +144,10 @@ msgstr "请输入有效的号码"
 msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "请输入有效的快速拨号代码，或者不填写也可"
 
-#: phonebook.i18n.php:5
+#: phonebook.i18n.php:8
 msgid ""
-"Provides a phonebook for FreePBX, it can be used as base for Caller ID "
-"Lookup and Speed Dial"
+"Provides a phonebook which can be used as base for Caller ID Lookup and "
+"Speed Dial"
 msgstr ""
 
 #: page.phonebook.php:165
@@ -187,4 +187,6 @@ msgstr "行"
 #~ msgid ""
 #~ "Enter the number (For caller ID lookup to work it should match the caller "
 #~ "ID received from network)"
-#~ msgstr "输入号码（为了让此条目在主叫ID中起作用，这个号码必须与在网络上接收到的主叫ID匹配）"
+#~ msgstr ""
+#~ "输入号码（为了让此条目在主叫ID中起作用，这个号码必须与在网络上接收到的主叫"
+#~ "ID匹配）"
