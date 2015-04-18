@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo phonebook module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-17 14:18-0400\n"
-"PO-Revision-Date: 2015-04-18 01:19+0200\n"
-"Last-Translator: Andrew <andrew.nagy@the159.com>\n"
+"PO-Revision-Date: 2015-04-18 04:21+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/phonebook/es_ES/>\n"
 "Language: es_ES\n"
@@ -151,12 +151,11 @@ msgid "Please enter a valid Speeddial code or leave it empty"
 msgstr "Por favor, introduzca un código de marcación rápida válido"
 
 #: phonebook.i18n.php:8
-#, fuzzy
 msgid ""
 "Provides a phonebook which can be used as base for Caller ID Lookup and "
 "Speed Dial"
 msgstr ""
-"Proporciona una agenda que puede ser utilizado como base para identificador "
+"Proporciona una agenda que puede ser utilizada como base para identificador "
 "de llamadas de búsqueda y de marcación rápida"
 
 #: page.phonebook.php:165
