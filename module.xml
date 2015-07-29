@@ -2,8 +2,8 @@
   <rawname>phonebook</rawname>
   <repo>extended</repo>
   <name>Phonebook</name>
-  <version>13.0.3</version>
-	<publisher>Sangoma Technologies Corporation</publisher>
+  <version>13.0.4</version>
+	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
   <description>Provides a phonebook which can be used as base for Caller ID Lookup and Speed Dial</description>
