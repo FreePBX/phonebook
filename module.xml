@@ -2,7 +2,7 @@
   <rawname>phonebook</rawname>
   <repo>extended</repo>
   <name>Phonebook</name>
-  <version>13.0.2</version>
+  <version>13.0.3</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -14,12 +14,13 @@
   <location>release/2.11/phonebook-2.11.0.1.tgz</location>
   <md5sum>adae5d1494f4e15f9f80a522f12175a3</md5sum>
   <changelog>
+    *13.0.3* FREEPBX-9646 address issues and publish
 		*13.0.2* Version bump Beta
   		*2.11.0.2* include license file
 		*2.11.0.1* #5792 again
 		*2.11.0.0* #5792
 		*2.10.0.2* exit, not die_freepbx
-		*2.10.0.1* #5478 
+		*2.10.0.1* #5478
 		*2.10.0.0* new version changes
 		*2.9.0.3* #5355
 		*2.9.0.2* spelling, localizations

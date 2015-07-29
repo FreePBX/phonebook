@@ -62,7 +62,7 @@ function phonebook_empty(){
 	}
 }
 
-function phonebook_add($number, $name, $speeddial, $gensd){
+function phonebook_add($number, $name, $speeddial="", $gensd="no"){
 	global $amp_conf;
 	global $astman;
 

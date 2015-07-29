@@ -15,13 +15,12 @@ class Phonebook implements \BMO {
 	public function backup() {}
 	public function restore($backup) {}
 	public function doConfigPageInit($page) {
-    isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
-    isset($_REQUEST['number'])?$number = $_REQUEST['number']:$number='';
-    isset($_REQUEST['name'])?$name = $_REQUEST['name']:$name='';
-    isset($_REQUEST['speeddial'])?$speeddial = $_REQUEST['speeddial']:$speeddial='';
-    isset($_REQUEST['gensd'])?$gensd = $_REQUEST['gensd']:$gensd='';
-
-    isset($_REQUEST['editnumber'])?$editnumber = $_REQUEST['editnumber']:$editnumber='';
+    $action = isset($_REQUEST['action'])? trim($_REQUEST['action']) : '';
+		$number = isset($_REQUEST['number'])? trim($_REQUEST['number']) : '';
+		$name = isset($_REQUEST['name'])? trim($_REQUEST['name']) : '';
+		$speeddial = isset($_REQUEST['speeddial'])? trim($_REQUEST['speeddial']) : '';
+		$gensd = isset($_REQUEST['gensd'])? trim($_REQUEST['gensd']) : '';
+		$editnumber = isset($_REQUEST['editnumber'])? trim($_REQUEST['editnumber']) : '';
 
     $dispnum = "phonebook"; //used for switch on config.php
   	switch ($action) {
@@ -48,18 +47,20 @@ class Phonebook implements \BMO {
   				if (is_array($lines))	{
   					$n = count($lines); // total lines
   					foreach($lines as $line) {
-  						$fields = \phonebook_fgetcsvfromline($line, 3);
-  						$fields = array_map('trim', $fields);
-  						if (is_array($fields) && count($fields) == 3
-  							&& is_numeric($fields[2])
-  							&&  ($fields[3] == '' || is_numeric($fields[3]))
-  						) {
-  							\phonebook_del($fields[2], $numbers[$fields[2]]['speeddial']);
-  							\phonebook_add(htmlentities($fields[2],ENT_QUOTES, 'UTF-8'),
-  							 				addslashes(htmlentities($fields[1],ENT_QUOTES, 'UTF-8')),
-  							 				htmlentities($fields[3],ENT_QUOTES, 'UTF-8'));
-  							$i++;
-  						}
+							$fields = phonebook_fgetcsvfromline($line, 3);
+							if (is_array($fields)) {
+								$fields = array_map('trim', $fields);
+								if (is_array($fields) && count($fields) == 3
+									&& is_numeric($fields[2])
+									&&  ($fields[3] == '' || is_numeric($fields[3]))
+								) {
+									phonebook_del($fields[2], $numbers[$fields[2]]['speeddial']);
+									phonebook_add(htmlentities($fields[2],ENT_QUOTES, 'UTF-8'),
+													addslashes(htmlentities($fields[1],ENT_QUOTES, 'UTF-8')),
+													htmlentities($fields[3],ENT_QUOTES, 'UTF-8'));
+									$i++;
+								}
+							}
   					}
   				}
   			} else {
@@ -126,7 +127,7 @@ class Phonebook implements \BMO {
               $ret[] = array(
                 'number' => $key,
                 'name' => $value['name'],
-                'dial' => $value['speeddial']
+                'dial' => isset($value['speeddial']) ? $value['speeddial'] : ""
               );
             }
             return $ret;
@@ -159,11 +160,9 @@ class Phonebook implements \BMO {
   			foreach ($numbers as $key => $row) {
   				$names[$key]  = strtolower($row['name']);
   			}
-  			// Array multisort renumber keys if they are numeric, (casting doesn't work), that's why I added 'foo' in front of the key
-  			// Quite ugly, I know... should recode it
   			array_multisort($names, SORT_ASC, SORT_STRING, $numbers);
   			foreach ($numbers as $key => $value) {
-  				$retnumbers[' '.substr($key, 3).' '] = $value;
+  				$retnumbers[substr($key, 3)] = $value;
   			}
   		}
 

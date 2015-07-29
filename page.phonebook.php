@@ -12,16 +12,16 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 	<div class="alert alert-info">
 		<?php echo _('Use this module to create system wide speed dial numbers that can be dialed from any phone.')?>
 	</div>
-	<div class = "display full-border">
+	<div class = "">
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="fpbx-container">
-					<div class="display full-border">
+					<div class="display no-border">
 						<div id="toolbar-all">
-							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#pbForm" data-action="add"><?php echo _("Add Phonebook Entry")?></button>
-							<button type="button" class="btn btn-default" data-toggle="modal" id="clearAll"><?php echo _("Empty Phonebook")?></button>
-							<button type="button" class="btn btn-default" data-toggle="modal" id="pbExport"><?php echo _("Export Phonebook")?></button>
-							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#importForm" data-action="add"><?php echo _("Import Phonebook")?></button>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#pbForm" data-action="add"><i class="fa fa-plus"></i> <?php echo _("Add Phonebook Entry")?></button>
+							<button type="button" class="btn btn-default" data-toggle="modal" id="clearAll"><i class="fa fa-exclamation-triangle"></i> <?php echo _("Empty Phonebook")?></button>
+							<a class="btn btn-default" href="?display=phonebook&amp;action=export"><i class="fa fa-upload"></i> <?php echo _("Export Phonebook")?></a>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#importForm" data-action="add"><i class="fa fa-download"></i> <?php echo _("Import Phonebook")?></button>
 						</div>
 						 <table id="mygrid" data-url="<?php echo $dataurl?>" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
 						    <thead>
