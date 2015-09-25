@@ -4,194 +4,209 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	Copyright 2013 Schmooze Com Inc.
 //  Copyright (C) 2006 WeBRainstorm S.r.l. (ask@webrainstorm.it)
 //
-
-isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
-isset($_REQUEST['number'])?$number = $_REQUEST['number']:$number='';
-isset($_REQUEST['name'])?$name = $_REQUEST['name']:$name='';
-isset($_REQUEST['speeddial'])?$speeddial = $_REQUEST['speeddial']:$speeddial='';
-isset($_REQUEST['gensd'])?$gensd = $_REQUEST['gensd']:$gensd='';
-
-isset($_REQUEST['editnumber'])?$editnumber = $_REQUEST['editnumber']:$editnumber='';
-
-$dispnum = "phonebook"; //used for switch on config.php
-
-//if submitting form, update database
-
-if(isset($_REQUEST['action'])) {
-	switch ($action) {
-		case "add":
-			phonebook_add($number, $name, $speeddial, $gensd);
-			redirect_standard();
-		exit;
-		break;
-		case "delete":
-			$numbers = phonebook_list();
-			phonebook_del($number, $numbers[$number]['speeddial']);
-			redirect_standard();
-		break;
-		case "edit":
-			$numbers = phonebook_list();
-			phonebook_del($editnumber, $numbers[$editnumber]['speeddial']);
-			phonebook_add($number, $name, $speeddial, $gensd);
-			redirect_standard();
-		break;
-		case "empty":
-			phonebook_empty();
-		break;
-		case "import":
-			$i = 0; // imported lines
-			if(is_uploaded_file($_FILES['csv']['tmp_name'])) {
-				$lines = file($_FILES['csv']['tmp_name']);
-				if (is_array($lines))	{
-					$n = count($lines); // total lines
-					foreach($lines as $line) {
-						$fields = phonebook_fgetcsvfromline($line, 3);
-						$fields = array_map('trim', $fields);
-						if (is_array($fields) && count($fields) == 3 
-							&& is_numeric($fields[2]) 
-							&&  ($fields[3] == '' || is_numeric($fields[3]))
-						) {
-							phonebook_del($fields[2], $numbers[$fields[2]]['speeddial']);
-							phonebook_add(htmlentities($fields[2],ENT_QUOTES, 'UTF-8'),
-							 				addslashes(htmlentities($fields[1],ENT_QUOTES, 'UTF-8')),
-							 				htmlentities($fields[3],ENT_QUOTES, 'UTF-8'));
-							$i++;
-						}
-					}
-					redirect_standard();
-				}
-			} else
-				$n = 0; // total lines if no file
-    break;
-		case "export":
-			header('Content-Type: text/csv');
-			header('Content-disposition: attachment; filename=phonebook.csv');
-			$numbers = phonebook_list();
-			foreach ($numbers as $number => $values)
-				printf("\"%s\";%s;%s\n", $values['name'], trim($number), $values['speeddial']);
-            exit;
-		break;
-	}
-}
-
-$numbers = phonebook_list();
-
-if ($action == 'delete') 
-	echo '<h3>'._("Phonebook entry").' '.$itemid.' '._("deleted").' !</h3>';
-elseif ($action == 'import')
-	echo '<h3>'._("Imported").' '.$i.' '._("lines of").' '.$n.' '.'!</h3>';
-elseif ($action == 'empty')
-	echo '<h3>'._("Phonebook emptied").' !</h3>';
-	
-if (is_array($numbers)) {
-
+$dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 ?>
 
-<form autocomplete="off" name="delete" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return confirm('<?php echo _("Are you sure you want to empty your phonebook ?")?>');">
-<input type="hidden" name="action" value="empty">
-<table cellpadding="5" width="100%">
+<div class="container-fluid">
+	<h1><?php echo _('Phonebook')?></h1>
+	<div class="alert alert-info">
+		<?php echo _('Use this module to create system wide speed dial numbers that can be dialed from any phone.')?>
+	</div>
+	<div class = "">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="fpbx-container">
+					<div class="display no-border">
+						<div id="toolbar-all">
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#pbForm" data-action="add"><i class="fa fa-plus"></i> <?php echo _("Add Phonebook Entry")?></button>
+							<a class="btn btn-default" href="?display=phonebook&amp;action=empty"><i class="fa fa-exclamation-triangle"></i> <?php echo _("Empty Phonebook")?></a>
+							<a class="btn btn-default" href="?display=phonebook&amp;action=export"><i class="fa fa-upload"></i> <?php echo _("Export Phonebook")?></a>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#importForm" data-action="add"><i class="fa fa-download"></i> <?php echo _("Import Phonebook")?></button>
+						</div>
+						 <table id="mygrid" data-url="<?php echo $dataurl?>" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
+						    <thead>
+						            <tr>
+						            <th data-field="number"><?php echo _("Number")?></th>
+						            <th data-field="name"><?php echo _("Name")?></th>
+						            <th data-field="dial"><?php echo _("Speeddial")?></th>
+						            <th data-field="number" data-formatter="linkFormatter"><?php echo _("Actions")?></th>
+						        </tr>
+						    </thead>
+						</table>
+						<!-- Add/Edit Modal -->
+						<div id="pbForm" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						        <h4 class="modal-title"><?php echo _("Add or replace entry")?></h4>
+						      </div>
+						      <div class="modal-body">
+										<form autocomplete="off" name="edit" action="" method="post" onsubmit="return edit_onsubmit();">
+										<input type="hidden" name="display" value="phonebook">
+										<input type="hidden" name="action" value="add">
+										<input type="hidden" name="editnumber" id="editnumber" value="">
+										<!--Name-->
+										<div class="element-container">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-3">
+																<label class="control-label" for="name"><?php echo _("Name") ?></label>
+																<i class="fa fa-question-circle fpbx-help-icon" data-for="name"></i>
+															</div>
+															<div class="col-md-9">
+																<input type="text" class="form-control" id="name" name="name" value="<?php echo isset($name)?$name:''?>">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<span id="name-help" class="help-block fpbx-help-block"><?php echo _("Enter the name")?></span>
+												</div>
+											</div>
+										</div>
+										<!--END Name-->
+										<!--Number-->
+										<div class="element-container">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-3">
+																<label class="control-label" for="number"><?php echo _("Number") ?></label>
+																<i class="fa fa-question-circle fpbx-help-icon" data-for="number"></i>
+															</div>
+															<div class="col-md-9">
+																<input type="tel" class="form-control" id="number" name="number" value="<?php echo isset($number)?$number:''?>">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<span id="number-help" class="help-block fpbx-help-block"><?php echo _("Enter the number (For CallerID lookup to work it should match the CallerID received from network)")?></span>
+												</div>
+											</div>
+										</div>
+										<!--END Number-->
+										<!--Speed Dial Code-->
+										<div class="element-container">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-3">
+																<label class="control-label" for="speeddial"><?php echo _("Speed Dial Code") ?></label>
+																<i class="fa fa-question-circle fpbx-help-icon" data-for="speeddial"></i>
+															</div>
+															<div class="col-md-9">
+																<input type="text" class="form-control" id="speeddial" name="speeddial" value="<?php echo isset($speeddial)?$speeddial:''?>">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<span id="speeddial-help" class="help-block fpbx-help-block"><?php echo _("Enter a speed dial code<br/>Speeddial module is required to use speeddial codes")?></span>
+												</div>
+											</div>
+										</div>
+										<!--END Speed Dial Code-->
+										<!--Set Speed Dial-->
+										<div class="element-container">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-3">
+																<label class="control-label" for="gensd"><?php echo _("Set Speed Dial") ?></label>
+																<i class="fa fa-question-circle fpbx-help-icon" data-for="gensd"></i>
+															</div>
+															<div class="col-md-9 radioset">
+										            <input type="radio" name="gensd" id="gensdyes" value="yes" >
+										            <label for="gensdyes"><?php echo _("Yes");?></label>
+										            <input type="radio" name="gensd" id="gensdno" CHECKED>
+										            <label for="gensdno"><?php echo _("No");?></label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<span id="gensd-help" class="help-block fpbx-help-block"><?php echo _("Select Yes to have a speed dial created automatically for this number")?></span>
+												</div>
+											</div>
+										</div>
+										<!--END Set Speed Dial-->
+										<input name="addsubmit" type="submit" value="<?php echo _("Submit Changes")?>">
+										</form>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!--END MODAL-->
+						<!--import MODAL-->
+						<div id="importForm" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title"><?php echo _("Import from CSV")?></h4>
+									</div>
+									<div class="modal-body">
+										<form autocomplete="off" enctype="multipart/form-data" name="import" action="" method="post">
+										<input type="hidden" name="MAX_FILE_SIZE" value="30000">
+										<input type="hidden" name="display" value="phonebook">
+										<input type="hidden" name="action" value="import">
+										<!--File-->
+										<div class="element-container">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-3">
+																<label class="control-label" for="csv"><?php echo _("File") ?></label>
+																<i class="fa fa-question-circle fpbx-help-icon" data-for="csv"></i>
+															</div>
+															<div class="col-md-9">
+																<span class="btn btn-default btn-file">
+    															<?php echo _("Browse")?> <input type="file" class="form-control" name="csv" id="csv">
+																</span>
+																<span class="filename"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<span id="csv-help" class="help-block fpbx-help-block"><?php echo _("Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> Names should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:<br/>\"John Doe\";12345678;123")?></span>
+												</div>
+											</div>
+										</div>
+										<!--END File-->
+										<br/>
+										<input name="submit" type="submit" value="<?php echo _("Upload")?>" >
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--END MODAL-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<?php//onsubmit="return edit_onsubmit();"?>
-<tr><td colspan="4"<h2><?php echo _('Phone Book') ?></h2></td></tr>
-<tr><td colspan="4"><?php echo _('Use this module to create system wide speed dial numbers that can be dialed from any phone.')?><br><br></td></tr>
-
-	<tr>
-		<td colspan="5"><h5><?php echo _("Phonebook entries") ?></h5><hr></td>
-	</tr>
-
-	<tr>
-		<td><b><?php _("Number")?></b></td>
-		<td><b><?php _("Name")?></b></td>
-		<td><b><?php _("Speed dial")?></b></td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-
-<?php
-// Why should I specify type=tool ???
-
-	foreach ($numbers as $num => $values)	{
-		print('<tr>');
-		printf('<td>%s</td><td>%s</td><td>%s</td>', $num, $values['name'], $values['speeddial']);
-		printf('<td><a href="%s?type=tool&display=%s&number=%s&action=delete" onclick="return confirm(\'%s\')">%s</a></td>', 
-			$_SERVER['PHP_SELF'], urlencode($dispnum), urlencode($num), _("Are you sure you want to delete this entry ?"), _("Delete"));
-		printf('<td><a href="#"  
-    onClick="theForm.number.value = \'%s\'; theForm.name.value = \'%s\' ; theForm.speeddial.value = \'%s\' ; 
-    if (theForm.name.value && theForm.number.value && !theForm.speeddial.value) { theForm.gensd.checked = false } else { theForm.gensd.checked = true };
-    theForm.editnumber.value = \'%s\' ; theForm.action.value = \'edit\' ; ">%s</a></td>',
-			trim($num),  addslashes($values['name']), $values['speeddial'], $num, _("Edit"));
-		print('</tr>');
-	}
-
-?>
-
-	<tr>
-		<td colspan="3"><br><h6><a href="<?php echo $_SERVER['PHP_SELF'] ?>?type=tool&display=phonebook&action=export&quietmode=1"><?php echo _("Export in CSV") ?></a></h6></td><td colspan="2" align="center"><input name="submit" type="submit" value="<?php echo _("Empty Phonebook")?>"></td>		
-	</tr>
-</table>
-</form>
-
-<?php
-}
-?>
-
-<form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
-<input type="hidden" name="display" value="<?php echo $dispnum?>">
-<input type="hidden" name="action" value="add">
-<input type="hidden" name="editnumber" value="">
-<table cellpadding="5" width="100%">
-  <tr><td colspan="4"<h2><?php echo _('Phone Book')?></h2></td></tr>
-  <tr><td colspan="4"><?php echo _('Use this module to create system wide speed dial numbers that can be dialed from any phone.')?><br><br></td></tr>
-
-	<tr><td colspan="4"><h5><?php echo _("Add or replace entry") ?><hr></h5></td></tr>
-
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Name:")?><span><?php echo _("Enter the name")?></span></a></td>
-		<td><input type="text" name="name" tabindex="<?php echo ++$tabindex;?>"></td>
-	</tr>
-	
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Number:")?>
-		<span><?php echo _("Enter the number (For CallerID lookup to work it should match the CallerID received from network)")?></span></a></td>
-		<td><input type="text" name="number" tabindex="<?php echo ++$tabindex;?>"></td>
-	</tr>
-
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Speed dial code:")?><span><?php echo _("Enter a speed dial code<br/>Speeddial module is required to use speeddial codes")?></span></a></td>
-		<td><input type="text" name="speeddial" tabindex="<?php echo ++$tabindex;?>"></td>
-	</tr>
-
-  <tr>
-		<td><a href="#" class="info"><?php echo _("Set Speed Dial?"); ?><span><?php echo _("Check to have a speed dial created automatically for this number"); ?></span></a></td>
-		<td><input type="checkbox" name="gensd" value="yes" CHECKED tabindex="<?php echo ++$tabindex;?>"></td>
-
-	<tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
-
-	</tr>
-</table>
-</form>
-
-<form autocomplete="off" enctype="multipart/form-data" name="import" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
-<input type="hidden" name="MAX_FILE_SIZE" value="30000">
-<input type="hidden" name="display" value="<?php echo $dispnum?>">
-<input type="hidden" name="action" value="import">
-
-<table cellpadding="5" width="100%">
-
-	<tr><td colspan="4"><h5><?php echo _("Import from CSV") ?><hr></h5></td></tr>
-
-        <tr>
-                <td><a href="#" class="info"><?php echo _("File:")?>
-                <span><?php echo _("Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> Names should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:<br/>\"John Doe\";12345678;123")?></span></a></td>
-                <td><input type="file" name="csv" tabindex="<?php echo ++$tabindex;?>"></td>
-        </tr>
-
-	<tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Upload")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
-	</tr>
-</table>
-</form>
 <script language="javascript">
 <!--
 
@@ -205,14 +220,35 @@ function edit_onsubmit() {
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.number.value))
 		return warnInvalid(theForm.number, msgInvalidNumber);
-	
+
 	defaultEmptyOK = true;
 	if (!isInteger(theForm.speeddial.value))
 		return warnInvalid(theForm.speeddial, msgInvalidCode);
-		
+
 	return true;
 }
 
 
+function linkFormatter(value, row, index){
+    var html = '<a class="pbedit" href="#" data-toggle="modal" data-target="#pbForm" data-action="add" data-number="'+row['number']+'" data-name="'+row['name']+'" data-dial="'+row['dial']+'"><i class="fa fa-pencil"></i></a>';
+    html += '&nbsp;<a href="?display=phonebook&action=delete&number='+value+'&speeddial='+row["dial"]+'" class="delAction"><i class="fa fa-trash"></i></a>';
+    return html;
+}
+$(document).ready(function(){
+	$(document).on('click','.pbedit',function(){
+		if ($(this).data('action') == 'add') {
+			$("#editnumber").val($(this).data('number'));
+			$("#number").val($(this).data('number'));
+			$("#name").val($(this).data('name'));
+			$("#speeddial").val($(this).data('dial'));
+		}
+	});
+	$('#pbForm').on('hidden.bs.modal', function () {
+		$("#editnumber").val('');
+		$("#number").val('');
+		$("#name").val('');
+		$("#speeddial").val('');
+	});
+});
 -->
 </script>
