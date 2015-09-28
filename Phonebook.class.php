@@ -28,7 +28,7 @@ class Phonebook implements \BMO {
   			\phonebook_add($number, $name, $speeddial, $gensd);
   		break;
   		case "delete":
-  			if(!empty($number) && !empty($speeddial)){
+  			if(!empty($number)){
   			  \phonebook_del($number, $speeddial);
         }
   		break;

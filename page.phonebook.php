@@ -42,7 +42,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 						        <h4 class="modal-title"><?php echo _("Add or replace entry")?></h4>
 						      </div>
 						      <div class="modal-body">
-										<form autocomplete="off" name="edit" action="" method="post" onsubmit="return edit_onsubmit();">
+										<form autocomplete="off" name="edit" id="edit" action="" method="post" onsubmit="return edit_onsubmit();">
 										<input type="hidden" name="display" value="phonebook">
 										<input type="hidden" name="action" value="add">
 										<input type="hidden" name="editnumber" id="editnumber" value="">
@@ -57,7 +57,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 																<i class="fa fa-question-circle fpbx-help-icon" data-for="name"></i>
 															</div>
 															<div class="col-md-9">
-																<input type="text" class="form-control" id="name" name="name" value="<?php echo isset($name)?$name:''?>">
+																<input type="text" class="form-control" id="name" name="name" value="<?php echo isset($name)?$name:''?>" required>
 															</div>
 														</div>
 													</div>
@@ -210,21 +210,35 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 <script language="javascript">
 <!--
 
-var theForm = document.edit;
-theForm.name.focus();
 
 function edit_onsubmit() {
 	var msgInvalidNumber = "<?php echo _("Please enter a valid Number"); ?>";
 	var msgInvalidName = "<?php echo _("Please enter a valid Name"); ?>";
-	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty"); ?>";
-	defaultEmptyOK = false;
-	if (!isInteger(theForm.number.value))
-		return warnInvalid(theForm.number, msgInvalidNumber);
-
-	defaultEmptyOK = true;
-	if (!isInteger(theForm.speeddial.value))
-		return warnInvalid(theForm.speeddial, msgInvalidCode);
-
+	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty when generatingß"); ?>";
+	if($("#name").val().length == 0){
+		warnInvalid($("#name"), msgInvalidName);
+		return false;
+	}
+	if($("#number").val().length == 0){
+		warnInvalid($("#number"),msgInvalidNumber);
+		return false;
+	}else{
+		if(!isInteger($("#number").val())){
+			warnInvalid($("#number"),msgInvalidNumber);
+			return false;
+		}
+	}
+	if($('input[name="gensd"]:checked').val() == "on"){
+		if($("#speeddial").val().length == 0){
+			warnInvalid($("#speeddial"),msgInvalidCode);
+			return false;
+		}else{
+			if(!isInteger($("#speeddial").val())){
+				warnInvalid($("#speeddial"),msgInvalidCode);
+				return false;
+			}
+		}
+	}
 	return true;
 }
 
