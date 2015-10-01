@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 17:42-0700\n"
+"POT-Creation-Date: 2015-10-01 15:09-0700\n"
 "PO-Revision-Date: 2015-04-25 00:23+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -108,17 +108,17 @@ msgstr "Номер"
 msgid "Phonebook"
 msgstr "Телефонная книга"
 
-#: page.phonebook.php:218
+#: page.phonebook.php:216
 msgid "Please enter a valid Name"
 msgstr "Введите правильное имя"
 
-#: page.phonebook.php:217
+#: page.phonebook.php:215
 msgid "Please enter a valid Number"
 msgstr "Введите правильный номер"
 
-#: page.phonebook.php:219
-msgid "Please enter a valid Speeddial code or leave it empty"
-msgstr "Введите правильный код быстрого набора"
+#: page.phonebook.php:217
+msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
+msgstr ""
 
 #: Phonebook.class.php:94
 msgid "Reset"
@@ -163,6 +163,9 @@ msgstr ""
 #: page.phonebook.php:133
 msgid "Yes"
 msgstr ""
+
+#~ msgid "Please enter a valid Speeddial code or leave it empty"
+#~ msgstr "Введите правильный код быстрого набора"
 
 #~ msgid "Admin"
 #~ msgstr "Админ"

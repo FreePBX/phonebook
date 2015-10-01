@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 17:42-0700\n"
+"POT-Creation-Date: 2015-10-01 15:09-0700\n"
 "PO-Revision-Date: 2006-09-28 17:30+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -103,16 +103,16 @@ msgstr "מספר"
 msgid "Phonebook"
 msgstr "רשומת ספר טלפונים"
 
-#: page.phonebook.php:218
+#: page.phonebook.php:216
 msgid "Please enter a valid Name"
 msgstr ""
 
-#: page.phonebook.php:217
+#: page.phonebook.php:215
 msgid "Please enter a valid Number"
 msgstr ""
 
-#: page.phonebook.php:219
-msgid "Please enter a valid Speeddial code or leave it empty"
+#: page.phonebook.php:217
+msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
 msgstr ""
 
 #: Phonebook.class.php:94

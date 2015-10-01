@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo phonebook module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 17:42-0700\n"
+"POT-Creation-Date: 2015-10-01 15:09-0700\n"
 "PO-Revision-Date: 2015-04-18 04:21+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -104,17 +104,17 @@ msgstr "Número"
 msgid "Phonebook"
 msgstr "Listín telefónico"
 
-#: page.phonebook.php:218
+#: page.phonebook.php:216
 msgid "Please enter a valid Name"
 msgstr "Por favor, introduzca un nombre válido"
 
-#: page.phonebook.php:217
+#: page.phonebook.php:215
 msgid "Please enter a valid Number"
 msgstr "Por favor, introduzca un número válido"
 
-#: page.phonebook.php:219
-msgid "Please enter a valid Speeddial code or leave it empty"
-msgstr "Por favor, introduzca un código de marcación rápida válido"
+#: page.phonebook.php:217
+msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
+msgstr ""
 
 #: Phonebook.class.php:94
 msgid "Reset"
@@ -159,6 +159,9 @@ msgstr ""
 #: page.phonebook.php:133
 msgid "Yes"
 msgstr ""
+
+#~ msgid "Please enter a valid Speeddial code or leave it empty"
+#~ msgstr "Por favor, introduzca un código de marcación rápida válido"
 
 #~ msgid "Admin"
 #~ msgstr "Administrador"
