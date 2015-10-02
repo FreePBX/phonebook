@@ -158,7 +158,7 @@ class Phonebook implements \BMO {
   		}
   		if (isset($numbers) && is_array($numbers)) {
   			foreach ($numbers as $key => $row) {
-  				$names[$key]  = strtolower($row['name']);
+  				$names[$key]  = isset($row['name'])?strtolower($row['name']):'';
   			}
   			array_multisort($names, SORT_ASC, SORT_STRING, $numbers);
   			foreach ($numbers as $key => $value) {
