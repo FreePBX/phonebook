@@ -1,0 +1,151 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for phonebook
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-01 15:09-0700\n"
+"PO-Revision-Date: 2015-10-01 15:09-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.phonebook.php:32
+msgid "Actions"
+msgstr ""
+
+#: page.phonebook.php:21
+msgid "Add Phonebook Entry"
+msgstr ""
+
+#: page.phonebook.php:42
+msgid "Add or replace entry"
+msgstr ""
+
+#: page.phonebook.php:180
+msgid "Browse"
+msgstr ""
+
+#: Phonebook.class.php:89
+msgid "Delete"
+msgstr ""
+
+#: page.phonebook.php:22
+msgid "Empty Phonebook"
+msgstr ""
+
+#: page.phonebook.php:116
+msgid ""
+"Enter a speed dial code<br/>Speeddial module is required to use speeddial "
+"codes"
+msgstr ""
+
+#: page.phonebook.php:68
+msgid "Enter the name"
+msgstr ""
+
+#: page.phonebook.php:92
+msgid ""
+"Enter the number (For CallerID lookup to work it should match the CallerID "
+"received from network)"
+msgstr ""
+
+#: page.phonebook.php:23
+msgid "Export Phonebook"
+msgstr ""
+
+#: page.phonebook.php:175
+msgid "File"
+msgstr ""
+
+#: page.phonebook.php:24
+msgid "Import Phonebook"
+msgstr ""
+
+#: page.phonebook.php:190
+msgid ""
+"Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
+"Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
+"Example:<br/>\"John Doe\";12345678;123"
+msgstr ""
+
+#: page.phonebook.php:161
+msgid "Import from CSV"
+msgstr ""
+
+#: page.phonebook.php:30 page.phonebook.php:56
+msgid "Name"
+msgstr ""
+
+#: page.phonebook.php:135
+msgid "No"
+msgstr ""
+
+#: page.phonebook.php:29 page.phonebook.php:80
+msgid "Number"
+msgstr ""
+
+#: page.phonebook.php:11
+msgid "Phonebook"
+msgstr ""
+
+#: page.phonebook.php:216
+msgid "Please enter a valid Name"
+msgstr ""
+
+#: page.phonebook.php:215
+msgid "Please enter a valid Number"
+msgstr ""
+
+#: page.phonebook.php:217
+msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
+msgstr ""
+
+#: Phonebook.class.php:94
+msgid "Reset"
+msgstr ""
+
+#: page.phonebook.php:143
+msgid "Select Yes to have a speed dial created automatically for this number"
+msgstr ""
+
+#: page.phonebook.php:128
+msgid "Set Speed Dial"
+msgstr ""
+
+#: page.phonebook.php:104
+msgid "Speed Dial Code"
+msgstr ""
+
+#: page.phonebook.php:31
+msgid "Speeddial"
+msgstr ""
+
+#: Phonebook.class.php:99
+msgid "Submit"
+msgstr ""
+
+#: page.phonebook.php:148
+msgid "Submit Changes"
+msgstr ""
+
+#: page.phonebook.php:196
+msgid "Upload"
+msgstr ""
+
+#: page.phonebook.php:13
+msgid ""
+"Use this module to create system wide speed dial numbers that can be dialed "
+"from any phone."
+msgstr ""
+
+#: page.phonebook.php:133
+msgid "Yes"
+msgstr ""
