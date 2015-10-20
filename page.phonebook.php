@@ -228,11 +228,8 @@ function edit_onsubmit() {
 			return false;
 		}
 	}
-	if($('input[name="gensd"]:checked').val() == "on"){
-		if($("#speeddial").val().length == 0){
-			warnInvalid($("#speeddial"),msgInvalidCode);
-			return false;
-		}else{
+	if($('gensdno:checked')){
+		if($("#speeddial").val().length > 0){
 			if(!isInteger($("#speeddial").val())){
 				warnInvalid($("#speeddial"),msgInvalidCode);
 				return false;

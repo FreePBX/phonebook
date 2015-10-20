@@ -84,9 +84,9 @@ function phonebook_add($number, $name, $speeddial="", $gensd="no"){
 			  }
 		  }
 		}
-		$astman->database_put("cidname",$number, '"'.$name.'"');
+		$astman->database_put("cidname",$number, $name);
 		if ($speeddial != '')
-			$astman->database_put("sysspeeddials",$speeddial, '"'.$number.'"');
+			$astman->database_put("sysspeeddials",$speeddial, $number);
 	} else {
 		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 
