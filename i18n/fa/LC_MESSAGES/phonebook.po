@@ -1,0 +1,157 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for phonebook
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-01 15:09-0700\n"
+"PO-Revision-Date: 2015-10-16 07:54+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/phonebook/fa/>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
+
+#: page.phonebook.php:32
+msgid "Actions"
+msgstr "عملیات"
+
+#: page.phonebook.php:21
+msgid "Add Phonebook Entry"
+msgstr "افزودن ورودی دفترچه تلفن"
+
+#: page.phonebook.php:42
+msgid "Add or replace entry"
+msgstr "افزودن یا جایگزینی ورودی"
+
+#: page.phonebook.php:180
+msgid "Browse"
+msgstr "مرور"
+
+#: Phonebook.class.php:89
+msgid "Delete"
+msgstr "حذف"
+
+#: page.phonebook.php:22
+msgid "Empty Phonebook"
+msgstr "دفترچه تلفن خالی"
+
+#: page.phonebook.php:116
+msgid ""
+"Enter a speed dial code<br/>Speeddial module is required to use speeddial "
+"codes"
+msgstr ""
+
+#: page.phonebook.php:68
+msgid "Enter the name"
+msgstr "نام وارد کنید"
+
+#: page.phonebook.php:92
+msgid ""
+"Enter the number (For CallerID lookup to work it should match the CallerID "
+"received from network)"
+msgstr ""
+
+#: page.phonebook.php:23
+msgid "Export Phonebook"
+msgstr "خروجی دفترچه تلفن"
+
+#: page.phonebook.php:175
+msgid "File"
+msgstr "فایل"
+
+#: page.phonebook.php:24
+msgid "Import Phonebook"
+msgstr "ورود به دفترچه تلفن"
+
+#: page.phonebook.php:190
+msgid ""
+"Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
+"Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
+"Example:<br/>\"John Doe\";12345678;123"
+msgstr ""
+
+#: page.phonebook.php:161
+msgid "Import from CSV"
+msgstr "ورود از CSV"
+
+#: page.phonebook.php:30 page.phonebook.php:56
+msgid "Name"
+msgstr "نام"
+
+#: page.phonebook.php:135
+msgid "No"
+msgstr "خیر"
+
+#: page.phonebook.php:29 page.phonebook.php:80
+msgid "Number"
+msgstr "تعداد"
+
+#: page.phonebook.php:11
+msgid "Phonebook"
+msgstr "دفترچه تلفن"
+
+#: page.phonebook.php:216
+msgid "Please enter a valid Name"
+msgstr "نام معتبر وارد کنید"
+
+#: page.phonebook.php:215
+msgid "Please enter a valid Number"
+msgstr "شماره معتبر وارد کنید"
+
+#: page.phonebook.php:217
+msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
+msgstr "کد شماره گیری سریع وارد کنید یا خالی بگذارید"
+
+#: Phonebook.class.php:94
+msgid "Reset"
+msgstr "بازنشانی"
+
+#: page.phonebook.php:143
+msgid "Select Yes to have a speed dial created automatically for this number"
+msgstr "برای ایجاد خودکار شماره گیری سریع این شماره بله را انتخاب کنید"
+
+#: page.phonebook.php:128
+msgid "Set Speed Dial"
+msgstr "تنطیم شماره گیری سریع"
+
+#: page.phonebook.php:104
+msgid "Speed Dial Code"
+msgstr "کد شماره گیری سریع"
+
+#: page.phonebook.php:31
+msgid "Speeddial"
+msgstr "شماره گیری سریع"
+
+#: Phonebook.class.php:99
+msgid "Submit"
+msgstr "ثبت"
+
+#: page.phonebook.php:148
+msgid "Submit Changes"
+msgstr "ثبت تغییرات"
+
+#: page.phonebook.php:196
+msgid "Upload"
+msgstr "بارگذاری"
+
+#: page.phonebook.php:13
+msgid ""
+"Use this module to create system wide speed dial numbers that can be dialed "
+"from any phone."
+msgstr ""
+"از این ماژول برای ایجاد سیستم شماره گیری سریع استفاده کنید که از هر تلفنی "
+"بتوان آن را شماره گیری کرد."
+
+#: page.phonebook.php:133
+msgid "Yes"
+msgstr "بله"
