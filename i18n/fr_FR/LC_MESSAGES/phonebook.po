@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-01 15:09-0700\n"
-"PO-Revision-Date: 2016-01-20 09:49+0200\n"
+"PO-Revision-Date: 2016-01-20 11:00+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/phonebook/fr_FR/>\n"
@@ -37,7 +37,7 @@ msgstr "Actions"
 
 #: page.phonebook.php:21
 msgid "Add Phonebook Entry"
-msgstr ""
+msgstr "Ajouter une entrée d'annuaire"
 
 #: page.phonebook.php:42
 msgid "Add or replace entry"
@@ -45,7 +45,7 @@ msgstr "Ajouter ou remplacer une entrée"
 
 #: page.phonebook.php:180
 msgid "Browse"
-msgstr ""
+msgstr "Parcourir"
 
 #: Phonebook.class.php:89
 msgid "Delete"
@@ -53,7 +53,7 @@ msgstr "Supprimer"
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
-msgstr "Vider l'Annuaire"
+msgstr "Vider l'annuaire"
 
 #: page.phonebook.php:116
 msgid ""
@@ -75,15 +75,15 @@ msgstr ""
 
 #: page.phonebook.php:23
 msgid "Export Phonebook"
-msgstr ""
+msgstr "Exporter annuaire"
 
 #: page.phonebook.php:175
 msgid "File"
-msgstr ""
+msgstr "Fichier"
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
-msgstr ""
+msgstr "Importer annuaire"
 
 #: page.phonebook.php:190
 msgid ""
@@ -105,7 +105,7 @@ msgstr "Nom"
 
 #: page.phonebook.php:135
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #: page.phonebook.php:29 page.phonebook.php:80
 msgid "Number"
@@ -129,7 +129,7 @@ msgstr ""
 
 #: Phonebook.class.php:94
 msgid "Reset"
-msgstr ""
+msgstr "Remise à 0"
 
 #: page.phonebook.php:143
 msgid "Select Yes to have a speed dial created automatically for this number"
@@ -149,11 +149,11 @@ msgstr ""
 
 #: Phonebook.class.php:99
 msgid "Submit"
-msgstr ""
+msgstr "Soumettre"
 
 #: page.phonebook.php:148
 msgid "Submit Changes"
-msgstr "Appliquer les modifications"
+msgstr ""
 
 #: page.phonebook.php:196
 msgid "Upload"
