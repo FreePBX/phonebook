@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-01 15:09-0700\n"
-"PO-Revision-Date: 2016-01-20 11:00+0200\n"
+"PO-Revision-Date: 2016-01-23 06:41+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/phonebook/fr_FR/>\n"
@@ -72,6 +72,8 @@ msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
 msgstr ""
+"Entrez le numéro (pour que la recherche soit fructueuse, l'ID appelant doit "
+"être le même que celui reçu du réseau)"
 
 #: page.phonebook.php:23
 msgid "Export Phonebook"
@@ -126,6 +128,8 @@ msgstr "Entrez un numéro valide"
 #: page.phonebook.php:217
 msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
 msgstr ""
+"S'il vous plaît entrez un code  de numérotation abrégée vlide lors de la "
+"génération"
 
 #: Phonebook.class.php:94
 msgid "Reset"
