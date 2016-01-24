@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-01 15:09-0700\n"
-"PO-Revision-Date: 2016-01-23 06:41+0200\n"
+"PO-Revision-Date: 2016-01-24 06:28+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/phonebook/fr_FR/>\n"
@@ -61,7 +61,7 @@ msgid ""
 "codes"
 msgstr ""
 "Entrez un code de numérotation abrégée<br/>Le module de numérotation abrégée "
-"(Speeddial) est requis pour utiliser les codes de numérotation abrégée."
+"(Speeddial) est requis pour utiliser les codes de numérotation abrégée"
 
 #: page.phonebook.php:68
 msgid "Enter the name"
@@ -128,7 +128,7 @@ msgstr "Entrez un numéro valide"
 #: page.phonebook.php:217
 msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
 msgstr ""
-"S'il vous plaît entrez un code  de numérotation abrégée vlide lors de la "
+"S'il vous plaît entrez un code de numérotation abrégée valide lors de la "
 "génération"
 
 #: Phonebook.class.php:94
@@ -138,18 +138,20 @@ msgstr "Remise à 0"
 #: page.phonebook.php:143
 msgid "Select Yes to have a speed dial created automatically for this number"
 msgstr ""
+"Choisissez Oui pour avoir un code de numérotation abrégée créé "
+"automatiquement pour ce numéro"
 
 #: page.phonebook.php:128
 msgid "Set Speed Dial"
-msgstr ""
+msgstr "Assigner une numérotation abrégée"
 
 #: page.phonebook.php:104
 msgid "Speed Dial Code"
-msgstr ""
+msgstr "Code de numérotation abrégée"
 
 #: page.phonebook.php:31
 msgid "Speeddial"
-msgstr ""
+msgstr "Numérotation abrégée"
 
 #: Phonebook.class.php:99
 msgid "Submit"
@@ -157,7 +159,7 @@ msgstr "Soumettre"
 
 #: page.phonebook.php:148
 msgid "Submit Changes"
-msgstr ""
+msgstr "Soumettre les changements"
 
 #: page.phonebook.php:196
 msgid "Upload"
@@ -168,10 +170,12 @@ msgid ""
 "Use this module to create system wide speed dial numbers that can be dialed "
 "from any phone."
 msgstr ""
+"Utilisez ce module pour créer des codes de numérotation abrégée qui peuvent "
+"être appelés de n'importe quel téléphone du système."
 
 #: page.phonebook.php:133
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #~ msgid "Please enter a valid Speeddial code or leave it empty"
 #~ msgstr "Entrez un code de numérotation abrégée valide ou laissez vide"
