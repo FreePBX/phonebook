@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-01 15:09-0700\n"
-"PO-Revision-Date: 2016-01-24 06:28+0200\n"
-"Last-Translator: Nicolas <forums@riendeau.org>\n"
+"PO-Revision-Date: 2016-02-04 23:04+0200\n"
+"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/phonebook/fr_FR/>\n"
 "Language: fr_FR\n"
@@ -133,7 +133,7 @@ msgstr ""
 
 #: Phonebook.class.php:94
 msgid "Reset"
-msgstr "Remise à 0"
+msgstr "Réinitialiser"
 
 #: page.phonebook.php:143
 msgid "Select Yes to have a speed dial created automatically for this number"
