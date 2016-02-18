@@ -40,7 +40,6 @@ function phonebook_list() {
 function phonebook_del($number, $speeddial){
 	global $amp_conf;
 	global $astman;
-
 	if ($astman) {
 		$astman->database_del("cidname",trim($number));
 		if ($speeddial != '')

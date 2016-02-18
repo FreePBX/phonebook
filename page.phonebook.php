@@ -44,8 +44,9 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 						      <div class="modal-body">
 										<form autocomplete="off" name="edit" id="edit" action="" method="post" onsubmit="return edit_onsubmit();">
 										<input type="hidden" name="display" value="phonebook">
-										<input type="hidden" name="action" value="add">
+										<input type="hidden" name="action" id="formaction" value="add">
 										<input type="hidden" name="editnumber" id="editnumber" value="">
+										<input type="hidden" name="editspeeddial" id="editspeeddial" value="">
 										<!--Name-->
 										<div class="element-container">
 											<div class="row">
@@ -241,24 +242,28 @@ function edit_onsubmit() {
 
 
 function linkFormatter(value, row, index){
-    var html = '<a class="pbedit" href="#" data-toggle="modal" data-target="#pbForm" data-action="add" data-number="'+row['number']+'" data-name="'+row['name']+'" data-dial="'+row['dial']+'"><i class="fa fa-pencil"></i></a>';
+    var html = '<a class="pbedit" href="#" data-toggle="modal" data-target="#pbForm" data-action="edit" data-number="'+row['number']+'" data-name="'+row['name']+'" data-dial="'+row['dial']+'"><i class="fa fa-pencil"></i></a>';
     html += '&nbsp;<a href="?display=phonebook&action=delete&number='+value+'&speeddial='+row["dial"]+'" class="delAction"><i class="fa fa-trash"></i></a>';
     return html;
 }
 $(document).ready(function(){
 	$(document).on('click','.pbedit',function(){
-		if ($(this).data('action') == 'add') {
+		if ($(this).data('action') == 'edit') {
+			$("#formaction").val("edit");
 			$("#editnumber").val($(this).data('number'));
 			$("#number").val($(this).data('number'));
 			$("#name").val($(this).data('name'));
 			$("#speeddial").val($(this).data('dial'));
+			$("#editspeeddial").val($(this).data('dial'));
 		}
 	});
 	$('#pbForm').on('hidden.bs.modal', function () {
+		$("#formaction").val('add');
 		$("#editnumber").val('');
 		$("#number").val('');
 		$("#name").val('');
 		$("#speeddial").val('');
+		$("#editspeeddial").val('');
 	});
 });
 -->
