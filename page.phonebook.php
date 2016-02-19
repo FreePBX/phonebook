@@ -26,9 +26,9 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 						 <table id="mygrid" data-url="<?php echo $dataurl?>" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
 						    <thead>
 						            <tr>
-						            <th data-field="number"><?php echo _("Number")?></th>
-						            <th data-field="name"><?php echo _("Name")?></th>
-						            <th data-field="dial"><?php echo _("Speeddial")?></th>
+						            <th data-field="number" data-sortable="true"><?php echo _("Number")?></th>
+						            <th data-field="name" data-sortable="true"><?php echo _("Name")?></th>
+						            <th data-field="dial" data-sortable="true"><?php echo _("Speeddial")?></th>
 						            <th data-field="number" data-formatter="linkFormatter"><?php echo _("Actions")?></th>
 						        </tr>
 						    </thead>
