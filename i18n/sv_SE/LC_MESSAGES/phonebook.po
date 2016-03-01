@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX phonebook\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-01 15:09-0700\n"
+"POT-Creation-Date: 2016-03-01 12:11-0800\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -42,11 +42,19 @@ msgstr ""
 msgid "Add or replace entry"
 msgstr "Lägg till eller byt ut"
 
-#: page.phonebook.php:180
+#: phonebook.i18n.php:6 phonebook.i18n.php:12
+msgid "Admin"
+msgstr ""
+
+#: phonebook.i18n.php:10
+msgid "Asterisk Phonebook"
+msgstr "Asterisk telefonbok"
+
+#: page.phonebook.php:181
 msgid "Browse"
 msgstr ""
 
-#: Phonebook.class.php:89
+#: Phonebook.class.php:90
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -54,7 +62,7 @@ msgstr "Ta bort"
 msgid "Empty Phonebook"
 msgstr "Töm telefonboken"
 
-#: page.phonebook.php:116
+#: page.phonebook.php:117
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes"
@@ -62,11 +70,11 @@ msgstr ""
 "Skriv in ett kortnummer<br>Modulen Kortnummer måste vara installerad och "
 "aktiv för att detta ska fungera"
 
-#: page.phonebook.php:68
+#: page.phonebook.php:69
 msgid "Enter the name"
 msgstr "Skriv in namnet"
 
-#: page.phonebook.php:92
+#: page.phonebook.php:93
 msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
@@ -78,7 +86,7 @@ msgstr ""
 msgid "Export Phonebook"
 msgstr ""
 
-#: page.phonebook.php:175
+#: page.phonebook.php:176
 msgid "File"
 msgstr ""
 
@@ -86,7 +94,7 @@ msgstr ""
 msgid "Import Phonebook"
 msgstr ""
 
-#: page.phonebook.php:190
+#: page.phonebook.php:191
 msgid ""
 "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
 "Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
@@ -96,51 +104,57 @@ msgstr ""
 "Snabbnummer<br>Namnen måste vara omslutna med \" och fälten måste vara "
 "separerade med ';'<br><br>T.ex. \"Nils Nilsson\";040123456;123"
 
-#: page.phonebook.php:161
+#: page.phonebook.php:162
 msgid "Import from CSV"
 msgstr "Importera från CSV"
 
-#: page.phonebook.php:30 page.phonebook.php:56
+#: page.phonebook.php:30 page.phonebook.php:57
 msgid "Name"
 msgstr "Namn"
 
-#: page.phonebook.php:135
+#: page.phonebook.php:136
 msgid "No"
 msgstr ""
 
-#: page.phonebook.php:29 page.phonebook.php:80
+#: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
 msgstr "Nummer"
 
-#: page.phonebook.php:11
+#: page.phonebook.php:11 phonebook.i18n.php:4
 msgid "Phonebook"
 msgstr "Telefonbok"
 
-#: page.phonebook.php:216
+#: page.phonebook.php:217
 msgid "Please enter a valid Name"
 msgstr "Skriv in ett giltigt namn"
 
-#: page.phonebook.php:215
+#: page.phonebook.php:216
 msgid "Please enter a valid Number"
 msgstr "Skriv in ett giltigt nummer"
 
-#: page.phonebook.php:217
+#: page.phonebook.php:218
 msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
 msgstr ""
 
-#: Phonebook.class.php:94
+#: phonebook.i18n.php:8
+msgid ""
+"Provides a phonebook which can be used as base for Caller ID Lookup and "
+"Speed Dial"
+msgstr ""
+
+#: Phonebook.class.php:95
 msgid "Reset"
 msgstr ""
 
-#: page.phonebook.php:143
+#: page.phonebook.php:144
 msgid "Select Yes to have a speed dial created automatically for this number"
 msgstr ""
 
-#: page.phonebook.php:128
+#: page.phonebook.php:129
 msgid "Set Speed Dial"
 msgstr ""
 
-#: page.phonebook.php:104
+#: page.phonebook.php:105
 msgid "Speed Dial Code"
 msgstr ""
 
@@ -148,15 +162,15 @@ msgstr ""
 msgid "Speeddial"
 msgstr ""
 
-#: Phonebook.class.php:99
+#: Phonebook.class.php:100
 msgid "Submit"
 msgstr ""
 
-#: page.phonebook.php:148
+#: page.phonebook.php:149
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
-#: page.phonebook.php:196
+#: page.phonebook.php:197
 msgid "Upload"
 msgstr "Ladda upp"
 
@@ -168,7 +182,7 @@ msgstr ""
 "Använd denna modul för att skapa en telefonbok med snabbnummer som kan kan "
 "användas av alla telefoner"
 
-#: page.phonebook.php:133
+#: page.phonebook.php:134
 msgid "Yes"
 msgstr ""
 
@@ -180,9 +194,6 @@ msgstr ""
 
 #~ msgid "Are you sure you want to empty your phonebook ?"
 #~ msgstr "Är du säker på att du vill tömma telefonboken?"
-
-#~ msgid "Asterisk Phonebook"
-#~ msgstr "Asterisk telefonbok"
 
 #~ msgid "Check to have a speed dial created automatically for this number"
 #~ msgstr ""
