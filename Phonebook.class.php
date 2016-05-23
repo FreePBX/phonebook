@@ -127,7 +127,7 @@ class Phonebook implements \BMO {
             foreach ($numbers as $key => $value) {
               $ret[] = array(
                 'number' => $key,
-                'name' => $value['name'],
+                'name' => isset($value['name'])?$value['name']:$key,
                 'dial' => isset($value['speeddial']) ? $value['speeddial'] : ""
               );
             }
