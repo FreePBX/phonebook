@@ -12,12 +12,12 @@ msgstr ""
 "POT-Creation-Date: 2016-03-01 12:11-0800\n"
 "PO-Revision-Date: 2016-04-27 20:06+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
-"Language-Team: Persian (Iran) "
-"<http://weblate.freepbx.org/projects/freepbx/phonebook/fa_IR/>\n"
-"Language: fa_IR\n"
+"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
+"phonebook/fa_IR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -92,8 +92,8 @@ msgid ""
 "Example:<br/>\"John Doe\";12345678;123"
 msgstr ""
 "ورود فایل CSV  با فرمت زیر::<br/>\"Name\";Number;Speeddial<br /> Names "
-"should be enclosed by '\"' and fields separated by ';' <br /><br /> "
-"Example:<br/>\"John Doe\";12345678;123"
+"should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:"
+"<br/>\"John Doe\";12345678;123"
 
 #: page.phonebook.php:162
 msgid "Import from CSV"
@@ -141,7 +141,8 @@ msgstr "بازنشانی"
 
 #: page.phonebook.php:144
 msgid "Select Yes to have a speed dial created automatically for this number"
-msgstr "به منظور ایجاد خودکار شماره گیری سریع برای این شماره بله را انتخاب کنید"
+msgstr ""
+"به منظور ایجاد خودکار شماره گیری سریع برای این شماره بله را انتخاب کنید"
 
 #: page.phonebook.php:129
 msgid "Set Speed Dial"
