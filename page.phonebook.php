@@ -224,14 +224,14 @@ function edit_onsubmit() {
 		warnInvalid($("#number"),msgInvalidNumber);
 		return false;
 	}else{
-		if(!isInteger($("#number").val())){
+		if(!isDialpattern($("#number").val())){
 			warnInvalid($("#number"),msgInvalidNumber);
 			return false;
 		}
 	}
 	if($('gensdno:checked')){
 		if($("#speeddial").val().length > 0){
-			if(!isInteger($("#speeddial").val())){
+			if(!isDialpattern($("#speeddial").val())){
 				warnInvalid($("#speeddial"),msgInvalidCode);
 				return false;
 			}
