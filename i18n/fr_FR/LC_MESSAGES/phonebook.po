@@ -20,16 +20,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-01 12:11-0800\n"
-"PO-Revision-Date: 2016-02-04 23:04+0200\n"
-"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
-"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/phonebook/"
-"fr_FR/>\n"
+"PO-Revision-Date: 2016-11-22 22:35+0200\n"
+"Last-Translator: Pascal <pascal.noyel@ipexia.com>\n"
+"Language-Team: French "
+"<http://weblate.freepbx.org/projects/freepbx/phonebook/fr_FR/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.phonebook.php:32
 msgid "Actions"
@@ -45,7 +45,7 @@ msgstr "Ajouter ou remplacer une entrée"
 
 #: phonebook.i18n.php:6 phonebook.i18n.php:12
 msgid "Admin"
-msgstr ""
+msgstr "Administrateur"
 
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
@@ -144,6 +144,8 @@ msgid ""
 "Provides a phonebook which can be used as base for Caller ID Lookup and "
 "Speed Dial"
 msgstr ""
+"Fournit un annuaire qui peut être utilisé pour rechercher le numéro de "
+"l'appelant et pour les Numéro-Abrégés"
 
 #: Phonebook.class.php:95
 msgid "Reset"
