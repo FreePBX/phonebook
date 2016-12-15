@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-01 12:11-0800\n"
-"PO-Revision-Date: 2016-12-15 00:59+0200\n"
+"PO-Revision-Date: 2016-12-15 01:16+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/phonebook/pt_BR/>\n"
@@ -31,55 +31,59 @@ msgstr "Adicionar Elemento na Agenda Telefônica"
 
 #: page.phonebook.php:42
 msgid "Add or replace entry"
-msgstr ""
+msgstr "Adicionar ou substituir elemento"
 
 #: phonebook.i18n.php:6 phonebook.i18n.php:12
 msgid "Admin"
-msgstr ""
+msgstr "Administrador"
 
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
-msgstr ""
+msgstr "Agenda Telefônica do Asterisk"
 
 #: page.phonebook.php:181
 msgid "Browse"
-msgstr ""
+msgstr "Visualizar"
 
 #: Phonebook.class.php:90
 msgid "Delete"
-msgstr ""
+msgstr "Apagar"
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
-msgstr ""
+msgstr "Agenda Telefônica Vazia"
 
 #: page.phonebook.php:117
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes"
 msgstr ""
+"Introduzir um código de discagem rápida <br/> É necessário o módulo de "
+"discagem rápida"
 
 #: page.phonebook.php:69
 msgid "Enter the name"
-msgstr ""
+msgstr "Insira o nome"
 
 #: page.phonebook.php:93
 msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
 msgstr ""
+"Insira o número (Para que a pesquisa de ID Chamador funcione, ela deve "
+"corresponder ao ID Chamador recebido da rede)"
 
 #: page.phonebook.php:23
 msgid "Export Phonebook"
-msgstr ""
+msgstr "Exportar Agenda Telefônica"
 
 #: page.phonebook.php:176
 msgid "File"
-msgstr ""
+msgstr "Arquivo"
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
-msgstr ""
+msgstr "Importar Agenda Telefônica"
 
 #: page.phonebook.php:191
 msgid ""
@@ -87,83 +91,92 @@ msgid ""
 "Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
 "Example:<br/>\"John Doe\";12345678;123"
 msgstr ""
+"Importar um arquivo CSV formatado da seguinte forma: <br/>\"Nome\";Número;"
+"Discagem Rápida<br/> Os nomes devem ser delimitados por (\"\")  e campos "
+"separados por(;) <br/><br/> Exemplo: <br/> \"John Doe\";12345678;123"
 
 #: page.phonebook.php:162
 msgid "Import from CSV"
-msgstr ""
+msgstr "Importar de CSV"
 
 #: page.phonebook.php:30 page.phonebook.php:57
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: page.phonebook.php:136
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
-msgstr ""
+msgstr "Número"
 
 #: page.phonebook.php:11 phonebook.i18n.php:4
 msgid "Phonebook"
-msgstr ""
+msgstr "Agenda Telefônica"
 
 #: page.phonebook.php:217
 msgid "Please enter a valid Name"
-msgstr ""
+msgstr "Por favor, insira um Nome válido"
 
 #: page.phonebook.php:216
 msgid "Please enter a valid Number"
-msgstr ""
+msgstr "Por favor, insira um Número válido"
 
 #: page.phonebook.php:218
 msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
-msgstr ""
+msgstr "Insira um código de Discagem Rápida válido ou deixe-o vazio ao gerarß"
 
 #: phonebook.i18n.php:8
 msgid ""
 "Provides a phonebook which can be used as base for Caller ID Lookup and "
 "Speed Dial"
 msgstr ""
+"Fornece uma agenda telefônica que pode ser usada como base para a Pesquisa "
+"por Identificação de Chamadas e Discagem Rápida"
 
 #: Phonebook.class.php:95
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: page.phonebook.php:144
 msgid "Select Yes to have a speed dial created automatically for this number"
 msgstr ""
+"Selecione \"Sim\" para ter uma discagem rápida criada automaticamente para "
+"esse número"
 
 #: page.phonebook.php:129
 msgid "Set Speed Dial"
-msgstr ""
+msgstr "Configurar Discagem Rápida"
 
 #: page.phonebook.php:105
 msgid "Speed Dial Code"
-msgstr ""
+msgstr "Código de Discagem Rápida"
 
 #: page.phonebook.php:31
 msgid "Speeddial"
-msgstr ""
+msgstr "Discagem Rápida"
 
 #: Phonebook.class.php:100
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: page.phonebook.php:149
 msgid "Submit Changes"
-msgstr ""
+msgstr "Aplicar Mudanças"
 
 #: page.phonebook.php:197
 msgid "Upload"
-msgstr ""
+msgstr "Carregamento"
 
 #: page.phonebook.php:13
 msgid ""
 "Use this module to create system wide speed dial numbers that can be dialed "
 "from any phone."
 msgstr ""
+"Use este módulo para criar números de discagem rápida para todo o sistema e "
+"que podem ser discados a partir de qualquer telefone."
 
 #: page.phonebook.php:134
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
