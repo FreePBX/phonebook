@@ -10,73 +10,78 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-01 12:11-0800\n"
-"PO-Revision-Date: 2016-03-01 12:11-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-01-12 13:28+0200\n"
+"Last-Translator: Sven <spiderrs4@web.de>\n"
+"Language-Team: German "
+"<http://weblate.freepbx.org/projects/freepbx/phonebook/de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.phonebook.php:32
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 #: page.phonebook.php:21
 msgid "Add Phonebook Entry"
-msgstr ""
+msgstr "Eintrag hinzufügen"
 
 #: page.phonebook.php:42
 msgid "Add or replace entry"
-msgstr ""
+msgstr "Eintrag hinzufügen oder ersetzen"
 
 #: phonebook.i18n.php:6 phonebook.i18n.php:12
 msgid "Admin"
-msgstr ""
+msgstr "Administrator"
 
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
-msgstr ""
+msgstr "Asterisk Telefonbuch"
 
 #: page.phonebook.php:181
 msgid "Browse"
-msgstr ""
+msgstr "Durchsuchen"
 
 #: Phonebook.class.php:90
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
-msgstr ""
+msgstr "Telefonbuch leeren"
 
 #: page.phonebook.php:117
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes"
 msgstr ""
+"Vergeben Sie eine Kurzwahlnummer.<br/>Um Kurzwahlnummern zu verwenden, wird "
+"das Kurzwahlmodul benötigt."
 
 #: page.phonebook.php:69
 msgid "Enter the name"
-msgstr ""
+msgstr "Geben Sie den Namen ein."
 
 #: page.phonebook.php:93
 msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
-msgstr ""
+msgstr "Geben Sie die Telefonnummer ein."
 
 #: page.phonebook.php:23
 msgid "Export Phonebook"
-msgstr ""
+msgstr "Telefonbuch exportieren"
 
 #: page.phonebook.php:176
 msgid "File"
-msgstr ""
+msgstr "Datei"
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
-msgstr ""
+msgstr "Telefonbuch importieren"
 
 #: page.phonebook.php:191
 msgid ""
@@ -84,83 +89,93 @@ msgid ""
 "Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
 "Example:<br/>\"John Doe\";12345678;123"
 msgstr ""
+"Importieren Sie eine CSV-Datei, die wie folgt formatiert ist:<br/>\"Name\""
+";Nummer;Kurzwahl<br /> Die Namen sollten von ''\" eingeschlossen werden und "
+"Felder durch ';' getrennt. <br /><br /> zum Beispiel:<br/>\"John Doe\""
+";12345678;123"
 
 #: page.phonebook.php:162
 msgid "Import from CSV"
-msgstr ""
+msgstr "CSV importieren"
 
 #: page.phonebook.php:30 page.phonebook.php:57
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: page.phonebook.php:136
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
-msgstr ""
+msgstr "Nummer"
 
 #: page.phonebook.php:11 phonebook.i18n.php:4
 msgid "Phonebook"
-msgstr ""
+msgstr "Telefonbuch"
 
 #: page.phonebook.php:217
 msgid "Please enter a valid Name"
-msgstr ""
+msgstr "Bitte geben Sie einen gültigen Namen ein."
 
 #: page.phonebook.php:216
 msgid "Please enter a valid Number"
-msgstr ""
+msgstr "Bitte geben Sie eine gültige Nummer ein."
 
 #: page.phonebook.php:218
 msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
 msgstr ""
+"Bitte geben Sie eine gültige Kurzwahlnummer ein oder lassen Sie das Feld "
+"leer."
 
 #: phonebook.i18n.php:8
 msgid ""
 "Provides a phonebook which can be used as base for Caller ID Lookup and "
 "Speed Dial"
 msgstr ""
+"Bietet ein Telefonbuch, das als Basis für Anrufer-ID-Suche und für die "
+"Kurzwahl verwendet werden kann."
 
 #: Phonebook.class.php:95
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: page.phonebook.php:144
 msgid "Select Yes to have a speed dial created automatically for this number"
-msgstr ""
+msgstr "Markieren Sie Ja um automatisch eine Kurwahlnummer erstellen zu lassen."
 
 #: page.phonebook.php:129
 msgid "Set Speed Dial"
-msgstr ""
+msgstr "Kurwahl erstellen"
 
 #: page.phonebook.php:105
 msgid "Speed Dial Code"
-msgstr ""
+msgstr "Kurzwahl Nummer"
 
 #: page.phonebook.php:31
 msgid "Speeddial"
-msgstr ""
+msgstr "Kurzwahl"
 
 #: Phonebook.class.php:100
 msgid "Submit"
-msgstr ""
+msgstr "Bestätigen"
 
 #: page.phonebook.php:149
 msgid "Submit Changes"
-msgstr ""
+msgstr "Änderungen bestätigen"
 
 #: page.phonebook.php:197
 msgid "Upload"
-msgstr ""
+msgstr "Hochladen"
 
 #: page.phonebook.php:13
 msgid ""
 "Use this module to create system wide speed dial numbers that can be dialed "
 "from any phone."
 msgstr ""
+"Hier werden Systemweite Kurzwahlnummern erstellt, welche von allen Benutzern "
+"gewählt werden können."
 
 #: page.phonebook.php:134
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
