@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-01 12:11-0800\n"
-"PO-Revision-Date: 2017-01-12 13:28+0200\n"
-"Last-Translator: Sven <spiderrs4@web.de>\n"
+"PO-Revision-Date: 2017-03-03 15:57+0200\n"
+"Last-Translator: hammer125 <auswertung@aon.at>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/phonebook/de_DE/>\n"
 "Language: de_DE\n"
@@ -59,17 +59,17 @@ msgid ""
 "codes"
 msgstr ""
 "Vergeben Sie eine Kurzwahlnummer.<br/>Um Kurzwahlnummern zu verwenden, wird "
-"das Kurzwahlmodul benötigt."
+"das Kurzwahlmodul benötigt"
 
 #: page.phonebook.php:69
 msgid "Enter the name"
-msgstr "Geben Sie den Namen ein."
+msgstr "Geben Sie den Namen ein"
 
 #: page.phonebook.php:93
 msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
-msgstr "Geben Sie die Telefonnummer ein."
+msgstr "Geben Sie die Telefonnummer ein"
 
 #: page.phonebook.php:23
 msgid "Export Phonebook"
@@ -116,17 +116,16 @@ msgstr "Telefonbuch"
 
 #: page.phonebook.php:217
 msgid "Please enter a valid Name"
-msgstr "Bitte geben Sie einen gültigen Namen ein."
+msgstr "Bitte geben Sie einen gültigen Namen ein"
 
 #: page.phonebook.php:216
 msgid "Please enter a valid Number"
-msgstr "Bitte geben Sie eine gültige Nummer ein."
+msgstr "Bitte geben Sie eine gültige Nummer ein"
 
 #: page.phonebook.php:218
 msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
 msgstr ""
-"Bitte geben Sie eine gültige Kurzwahlnummer ein oder lassen Sie das Feld "
-"leer."
+"Bitte geben Sie eine gültige Kurzwahlnummer ein oder lassen Sie das Feld leer"
 
 #: phonebook.i18n.php:8
 msgid ""
@@ -134,7 +133,7 @@ msgid ""
 "Speed Dial"
 msgstr ""
 "Bietet ein Telefonbuch, das als Basis für Anrufer-ID-Suche und für die "
-"Kurzwahl verwendet werden kann."
+"Kurzwahl verwendet werden kann"
 
 #: Phonebook.class.php:95
 msgid "Reset"
@@ -142,7 +141,7 @@ msgstr "Zurücksetzen"
 
 #: page.phonebook.php:144
 msgid "Select Yes to have a speed dial created automatically for this number"
-msgstr "Markieren Sie Ja um automatisch eine Kurwahlnummer erstellen zu lassen."
+msgstr "Markieren Sie Ja um automatisch eine Kurwahlnummer erstellen zu lassen"
 
 #: page.phonebook.php:129
 msgid "Set Speed Dial"
