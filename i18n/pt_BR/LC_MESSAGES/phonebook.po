@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-01 12:11-0800\n"
-"PO-Revision-Date: 2017-03-08 20:30+0200\n"
-"Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
+"PO-Revision-Date: 2017-03-27 14:35+0200\n"
+"Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/phonebook/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -27,7 +27,7 @@ msgstr "Ações"
 
 #: page.phonebook.php:21
 msgid "Add Phonebook Entry"
-msgstr "Adicionar Elemento na Agenda Telefônica"
+msgstr "Adicionar Item na Agenda Telefônica"
 
 #: page.phonebook.php:42
 msgid "Add or replace entry"
