@@ -39,7 +39,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 						    <div class="modal-content">
 						      <div class="modal-header">
 						        <button type="button" class="close" data-dismiss="modal">&times;</button>
-						        <h4 class="modal-title"><?php echo _("Add or replace entry")?></h4>
+						        <h2 class="modal-title"><?php echo _("Add or replace entry")?></h2>
 						      </div>
 						      <div class="modal-body">
 										<form autocomplete="off" name="edit" id="edit" action="" method="post" onsubmit="return edit_onsubmit();">
@@ -114,8 +114,11 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 											</div>
 											<div class="row">
 												<div class="col-md-12">
-													<span id="speeddial-help" class="help-block fpbx-help-block"><?php echo _("Enter a speed dial code<br/>Speeddial module is required to use speeddial codes")?></span>
+													<span id="speeddial-help" class="help-block fpbx-help-block"><?php echo _("Enter a speed dial code<br/>Speeddial module is required to use speeddial codes ")?></span>
 												</div>
+												<div class="well">
+												 <p><?php echo _("If you use an exsiting Speed Dial,then it will be removed from the used one."); ?>
+												 </div>
 											</div>
 										</div>
 										<!--END Speed Dial Code-->
@@ -188,7 +191,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 											</div>
 											<div class="row">
 												<div class="col-md-12">
-													<span id="csv-help" class="help-block fpbx-help-block"><?php echo _("Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> Names should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:<br/>\"John Doe\";12345678;123")?></span>
+													<span id="csv-help" class="help-block fpbx-help-block"><?php echo _("Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123")?></span>
 												</div>
 											</div>
 										</div>
@@ -215,7 +218,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 function edit_onsubmit() {
 	var msgInvalidNumber = "<?php echo _("Please enter a valid Number"); ?>";
 	var msgInvalidName = "<?php echo _("Please enter a valid Name"); ?>";
-	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty when generatingß"); ?>";
+	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty when Set Speed Dial=YES "); ?>";
 	if($("#name").val().length == 0){
 		warnInvalid($("#name"), msgInvalidName);
 		return false;
@@ -229,12 +232,15 @@ function edit_onsubmit() {
 			return false;
 		}
 	}
-	if($('gensdno:checked')){
+	if($("input[name='gensd']:checked").val()=="on"){
 		if($("#speeddial").val().length > 0){
 			if(!isDialpattern($("#speeddial").val())){
 				warnInvalid($("#speeddial"),msgInvalidCode);
 				return false;
 			}
+		}else{
+		warnInvalid($("#speeddial"),msgInvalidCode);
+		return false;
 		}
 	}
 	return true;
