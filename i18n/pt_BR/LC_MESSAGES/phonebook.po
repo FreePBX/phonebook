@@ -1,0 +1,182 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for phonebook
+# Copyright (C) 2008-2016 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-01 12:11-0800\n"
+"PO-Revision-Date: 2017-03-27 14:35+0200\n"
+"Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://weblate.freepbx.org/projects/freepbx/phonebook/pt_BR/>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
+
+#: page.phonebook.php:32
+msgid "Actions"
+msgstr "Ações"
+
+#: page.phonebook.php:21
+msgid "Add Phonebook Entry"
+msgstr "Adicionar Item na Agenda Telefônica"
+
+#: page.phonebook.php:42
+msgid "Add or replace entry"
+msgstr "Adicionar ou substituir elemento"
+
+#: phonebook.i18n.php:6 phonebook.i18n.php:12
+msgid "Admin"
+msgstr "Administrador"
+
+#: phonebook.i18n.php:10
+msgid "Asterisk Phonebook"
+msgstr "Agenda Telefônica do Asterisk"
+
+#: page.phonebook.php:181
+msgid "Browse"
+msgstr "Localizar"
+
+#: Phonebook.class.php:90
+msgid "Delete"
+msgstr "Apagar"
+
+#: page.phonebook.php:22
+msgid "Empty Phonebook"
+msgstr "Limpar Agenda Telefônica"
+
+#: page.phonebook.php:117
+msgid ""
+"Enter a speed dial code<br/>Speeddial module is required to use speeddial "
+"codes"
+msgstr ""
+"Introduzir um código de discagem rápida <br/> É necessário o módulo de "
+"discagem rápida"
+
+#: page.phonebook.php:69
+msgid "Enter the name"
+msgstr "Insira o nome"
+
+#: page.phonebook.php:93
+msgid ""
+"Enter the number (For CallerID lookup to work it should match the CallerID "
+"received from network)"
+msgstr ""
+"Insira o número (Para que a pesquisa de ID Chamador funcione, ela deve "
+"corresponder ao ID Chamador recebido da rede)"
+
+#: page.phonebook.php:23
+msgid "Export Phonebook"
+msgstr "Exportar Agenda Telefônica"
+
+#: page.phonebook.php:176
+msgid "File"
+msgstr "Arquivo"
+
+#: page.phonebook.php:24
+msgid "Import Phonebook"
+msgstr "Importar Agenda Telefônica"
+
+#: page.phonebook.php:191
+msgid ""
+"Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
+"Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
+"Example:<br/>\"John Doe\";12345678;123"
+msgstr ""
+"Importar um arquivo CSV formatado da seguinte forma: <br/>\"Nome\";Número;"
+"Discagem Rápida<br/> Os nomes devem ser delimitados por (\"\")  e campos "
+"separados por(;) <br/><br/> Exemplo: <br/> \"John Doe\";12345678;123"
+
+#: page.phonebook.php:162
+msgid "Import from CSV"
+msgstr "Importar de CSV"
+
+#: page.phonebook.php:30 page.phonebook.php:57
+msgid "Name"
+msgstr "Nome"
+
+#: page.phonebook.php:136
+msgid "No"
+msgstr "Não"
+
+#: page.phonebook.php:29 page.phonebook.php:81
+msgid "Number"
+msgstr "Número"
+
+#: page.phonebook.php:11 phonebook.i18n.php:4
+msgid "Phonebook"
+msgstr "Agenda Telefônica"
+
+#: page.phonebook.php:217
+msgid "Please enter a valid Name"
+msgstr "Por favor, insira um Nome válido"
+
+#: page.phonebook.php:216
+msgid "Please enter a valid Number"
+msgstr "Por favor, insira um Número válido"
+
+#: page.phonebook.php:218
+msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
+msgstr "Insira um código de Discagem Rápida válido ou deixe-o vazio ao gerarß"
+
+#: phonebook.i18n.php:8
+msgid ""
+"Provides a phonebook which can be used as base for Caller ID Lookup and "
+"Speed Dial"
+msgstr ""
+"Fornece uma agenda telefônica que pode ser usada como base para a Pesquisa "
+"por Identificação de Chamadas e Discagem Rápida"
+
+#: Phonebook.class.php:95
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: page.phonebook.php:144
+msgid "Select Yes to have a speed dial created automatically for this number"
+msgstr ""
+"Selecione \"Sim\" para ter uma discagem rápida criada automaticamente para "
+"esse número"
+
+#: page.phonebook.php:129
+msgid "Set Speed Dial"
+msgstr "Configurar Discagem Rápida"
+
+#: page.phonebook.php:105
+msgid "Speed Dial Code"
+msgstr "Código de Discagem Rápida"
+
+#: page.phonebook.php:31
+msgid "Speeddial"
+msgstr "Discagem Rápida"
+
+#: Phonebook.class.php:100
+msgid "Submit"
+msgstr "Enviar"
+
+#: page.phonebook.php:149
+msgid "Submit Changes"
+msgstr "Aplicar Mudanças"
+
+#: page.phonebook.php:197
+msgid "Upload"
+msgstr "Enviar"
+
+#: page.phonebook.php:13
+msgid ""
+"Use this module to create system wide speed dial numbers that can be dialed "
+"from any phone."
+msgstr ""
+"Use este módulo para criar números de discagem rápida para todo o sistema e "
+"que podem ser discados a partir de qualquer telefone."
+
+#: page.phonebook.php:134
+msgid "Yes"
+msgstr "Sim"
