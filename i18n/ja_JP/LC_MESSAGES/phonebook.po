@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-01 12:11-0800\n"
+"POT-Creation-Date: 2017-06-23 20:12-0400\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/phonebook/ja/>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Add or replace entry"
 msgstr "エントリの追加と上書き"
 
-#: phonebook.i18n.php:6 phonebook.i18n.php:12
+#: phonebook.i18n.php:6
 msgid "Admin"
 msgstr "アドミン"
 
@@ -68,7 +68,7 @@ msgstr "アドミン"
 msgid "Asterisk Phonebook"
 msgstr "Asterisk 電話帳"
 
-#: page.phonebook.php:181
+#: page.phonebook.php:184
 msgid "Browse"
 msgstr ""
 
@@ -83,10 +83,8 @@ msgstr "電話帳を空にする"
 #: page.phonebook.php:117
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
-"codes"
+"codes "
 msgstr ""
-"スピードダイヤルコードを入力してください<br/>スピードダイヤルコードを使用する"
-"にはスピードダイヤルモジュールが必要です。"
 
 #: page.phonebook.php:69
 msgid "Enter the name"
@@ -104,25 +102,26 @@ msgstr ""
 msgid "Export Phonebook"
 msgstr ""
 
-#: page.phonebook.php:176
+#: page.phonebook.php:179
 msgid "File"
+msgstr ""
+
+#: page.phonebook.php:120
+msgid ""
+"If you use an exsiting Speed Dial,then it will be removed from the used one."
 msgstr ""
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
 msgstr ""
 
-#: page.phonebook.php:191
+#: page.phonebook.php:194
 msgid ""
-"Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
-"Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
-"Example:<br/>\"John Doe\";12345678;123"
+"Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
+"fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
-"次のようなフォーマットでCSVファイルをインポートします：<br/>\"名前\";番号;短"
-"縮ダイヤル<br /> 名前は'\"'で囲われなければいけません、フィールドは';'で分け"
-"られなければいけません。 <br /><br /> 例：<br/>\"John Doe\";12345678;123"
 
-#: page.phonebook.php:162
+#: page.phonebook.php:165
 msgid "Import from CSV"
 msgstr "CSVからインポート"
 
@@ -130,7 +129,7 @@ msgstr "CSVからインポート"
 msgid "Name"
 msgstr "名前"
 
-#: page.phonebook.php:136
+#: page.phonebook.php:139
 msgid "No"
 msgstr ""
 
@@ -142,16 +141,18 @@ msgstr "番号"
 msgid "Phonebook"
 msgstr "電話帳"
 
-#: page.phonebook.php:217
+#: page.phonebook.php:220
 msgid "Please enter a valid Name"
 msgstr "有効な名前を入力してください"
 
-#: page.phonebook.php:216
+#: page.phonebook.php:219
 msgid "Please enter a valid Number"
 msgstr "有効な番号を入力してください"
 
-#: page.phonebook.php:218
-msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
+#: page.phonebook.php:221
+msgid ""
+"Please enter a valid Speeddial code or leave it empty when Set Speed "
+"Dial=YES "
 msgstr ""
 
 #: phonebook.i18n.php:8
@@ -164,11 +165,11 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: page.phonebook.php:144
+#: page.phonebook.php:147
 msgid "Select Yes to have a speed dial created automatically for this number"
 msgstr ""
 
-#: page.phonebook.php:129
+#: page.phonebook.php:132
 msgid "Set Speed Dial"
 msgstr ""
 
@@ -184,11 +185,11 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: page.phonebook.php:149
+#: page.phonebook.php:152
 msgid "Submit Changes"
 msgstr "変更を適用"
 
-#: page.phonebook.php:197
+#: page.phonebook.php:200
 msgid "Upload"
 msgstr "アップロード"
 
@@ -200,9 +201,26 @@ msgstr ""
 "このモジュールを使用して、任意の電話機からダイヤルすることができるシステム全"
 "体の短縮ダイヤル番号を作成します。"
 
-#: page.phonebook.php:134
+#: page.phonebook.php:137
 msgid "Yes"
 msgstr ""
+
+#~ msgid ""
+#~ "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
+#~ "codes"
+#~ msgstr ""
+#~ "スピードダイヤルコードを入力してください<br/>スピードダイヤルコードを使用"
+#~ "するにはスピードダイヤルモジュールが必要です。"
+
+#~ msgid ""
+#~ "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /"
+#~ "> Names should be enclosed by '\"' and fields separated by ';' <br /><br /"
+#~ "> Example:<br/>\"John Doe\";12345678;123"
+#~ msgstr ""
+#~ "次のようなフォーマットでCSVファイルをインポートします：<br/>\"名前\";番号;"
+#~ "短縮ダイヤル<br /> 名前は'\"'で囲われなければいけません、フィールドは';'で"
+#~ "分けられなければいけません。 <br /><br /> 例：<br/>\"John Doe"
+#~ "\";12345678;123"
 
 #~ msgid "Please enter a valid Speeddial code or leave it empty"
 #~ msgstr "有効な短縮ダイヤルを入力するか、空のままにしてください。"

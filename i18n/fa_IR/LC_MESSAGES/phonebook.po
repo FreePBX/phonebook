@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-01 12:11-0800\n"
+"POT-Creation-Date: 2017-06-23 20:12-0400\n"
 "PO-Revision-Date: 2016-04-27 20:06+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -33,7 +33,7 @@ msgstr "افزودن ورودی به دفترچه تلفن"
 msgid "Add or replace entry"
 msgstr "افزودن یا جایگزینی ورودی"
 
-#: phonebook.i18n.php:6 phonebook.i18n.php:12
+#: phonebook.i18n.php:6
 msgid "Admin"
 msgstr "مدیر"
 
@@ -41,7 +41,7 @@ msgstr "مدیر"
 msgid "Asterisk Phonebook"
 msgstr "دفترچه تلفن استریسک"
 
-#: page.phonebook.php:181
+#: page.phonebook.php:184
 msgid "Browse"
 msgstr "بارگذاری فایل"
 
@@ -56,10 +56,8 @@ msgstr "دفترچه تلفن خالی"
 #: page.phonebook.php:117
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
-"codes"
+"codes "
 msgstr ""
-"یک کد برای شماره گیری سریع وارد نمایید<br/>.برای بکارگیری شماره گیری سریع به "
-"ماژول آن نیاز دارید"
 
 #: page.phonebook.php:69
 msgid "Enter the name"
@@ -77,25 +75,26 @@ msgstr ""
 msgid "Export Phonebook"
 msgstr "خروجی از دفترچه تلفن"
 
-#: page.phonebook.php:176
+#: page.phonebook.php:179
 msgid "File"
 msgstr "فایل"
+
+#: page.phonebook.php:120
+msgid ""
+"If you use an exsiting Speed Dial,then it will be removed from the used one."
+msgstr ""
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
 msgstr "وارد کردن دفترچه تلفن"
 
-#: page.phonebook.php:191
+#: page.phonebook.php:194
 msgid ""
-"Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
-"Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
-"Example:<br/>\"John Doe\";12345678;123"
+"Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
+"fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
-"ورود فایل CSV  با فرمت زیر::<br/>\"Name\";Number;Speeddial<br /> Names "
-"should be enclosed by '\"' and fields separated by ';' <br /><br /> Example:"
-"<br/>\"John Doe\";12345678;123"
 
-#: page.phonebook.php:162
+#: page.phonebook.php:165
 msgid "Import from CSV"
 msgstr "وارد کردن از طریق فایل CSV"
 
@@ -103,7 +102,7 @@ msgstr "وارد کردن از طریق فایل CSV"
 msgid "Name"
 msgstr "نام"
 
-#: page.phonebook.php:136
+#: page.phonebook.php:139
 msgid "No"
 msgstr "خیر"
 
@@ -115,17 +114,19 @@ msgstr "شماره"
 msgid "Phonebook"
 msgstr "دفترچه تلفن"
 
-#: page.phonebook.php:217
+#: page.phonebook.php:220
 msgid "Please enter a valid Name"
 msgstr "لطفا یک نام معتبر وارد کنید"
 
-#: page.phonebook.php:216
+#: page.phonebook.php:219
 msgid "Please enter a valid Number"
 msgstr "لطفا یک شماره معتبر وارد کنید"
 
-#: page.phonebook.php:218
-msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
-msgstr "کد شماره گیری سریع را وارد نمایید یا آن را خالی بگذارید"
+#: page.phonebook.php:221
+msgid ""
+"Please enter a valid Speeddial code or leave it empty when Set Speed "
+"Dial=YES "
+msgstr ""
 
 #: phonebook.i18n.php:8
 msgid ""
@@ -139,12 +140,12 @@ msgstr ""
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: page.phonebook.php:144
+#: page.phonebook.php:147
 msgid "Select Yes to have a speed dial created automatically for this number"
 msgstr ""
 "به منظور ایجاد خودکار شماره گیری سریع برای این شماره بله را انتخاب کنید"
 
-#: page.phonebook.php:129
+#: page.phonebook.php:132
 msgid "Set Speed Dial"
 msgstr "تنطیم شماره گیری سریع"
 
@@ -160,11 +161,11 @@ msgstr "شماره گیری سریع"
 msgid "Submit"
 msgstr "ثبت"
 
-#: page.phonebook.php:149
+#: page.phonebook.php:152
 msgid "Submit Changes"
 msgstr "ثبت تغییرات"
 
-#: page.phonebook.php:197
+#: page.phonebook.php:200
 msgid "Upload"
 msgstr "بارگذاری"
 
@@ -176,6 +177,26 @@ msgstr ""
 ".از این ماژول به منظور ایجاد سیستم شماره گیری سریع استفاده نمایید که در این "
 "صورت می توان از هر تلفنی آن را شماره گیری کرد."
 
-#: page.phonebook.php:134
+#: page.phonebook.php:137
 msgid "Yes"
 msgstr "بله"
+
+#~ msgid ""
+#~ "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
+#~ "codes"
+#~ msgstr ""
+#~ "یک کد برای شماره گیری سریع وارد نمایید<br/>.برای بکارگیری شماره گیری سریع "
+#~ "به ماژول آن نیاز دارید"
+
+#~ msgid ""
+#~ "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /"
+#~ "> Names should be enclosed by '\"' and fields separated by ';' <br /><br /"
+#~ "> Example:<br/>\"John Doe\";12345678;123"
+#~ msgstr ""
+#~ "ورود فایل CSV  با فرمت زیر::<br/>\"Name\";Number;Speeddial<br /> Names "
+#~ "should be enclosed by '\"' and fields separated by ';' <br /><br /> "
+#~ "Example:<br/>\"John Doe\";12345678;123"
+
+#~ msgid ""
+#~ "Please enter a valid Speeddial code or leave it empty when generatingß"
+#~ msgstr "کد شماره گیری سریع را وارد نمایید یا آن را خالی بگذارید"

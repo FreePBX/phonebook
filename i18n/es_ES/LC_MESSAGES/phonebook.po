@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo phonebook module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-01 12:11-0800\n"
+"POT-Creation-Date: 2017-06-23 20:12-0400\n"
 "PO-Revision-Date: 2016-12-10 22:24+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/phonebook/es_ES/>\n"
-"Language: es_ES\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
+"phonebook/es_ES/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 "X-Poedit-Language: Spanish\n"
@@ -29,7 +29,7 @@ msgstr "Agregar entrada a la agenda telefónica"
 msgid "Add or replace entry"
 msgstr "Añadir o reemplazar elemento"
 
-#: phonebook.i18n.php:6 phonebook.i18n.php:12
+#: phonebook.i18n.php:6
 msgid "Admin"
 msgstr "Administrador"
 
@@ -37,7 +37,7 @@ msgstr "Administrador"
 msgid "Asterisk Phonebook"
 msgstr "Listín telefónico de Asterisk"
 
-#: page.phonebook.php:181
+#: page.phonebook.php:184
 msgid "Browse"
 msgstr "Vistazo"
 
@@ -52,10 +52,8 @@ msgstr "Vaciar listín telefónico"
 #: page.phonebook.php:117
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
-"codes"
+"codes "
 msgstr ""
-"Introduzca un código de marcación rápida.<br/>Es necesario el módulo de "
-"'Marcación rápida' para que funcione"
 
 #: page.phonebook.php:69
 msgid "Enter the name"
@@ -73,26 +71,26 @@ msgstr ""
 msgid "Export Phonebook"
 msgstr "Exportar agenda telefónica"
 
-#: page.phonebook.php:176
+#: page.phonebook.php:179
 msgid "File"
 msgstr "Archivo"
+
+#: page.phonebook.php:120
+msgid ""
+"If you use an exsiting Speed Dial,then it will be removed from the used one."
+msgstr ""
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
 msgstr "Importar agenda telefónica"
 
-#: page.phonebook.php:191
+#: page.phonebook.php:194
 msgid ""
-"Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /> "
-"Names should be enclosed by '\"' and fields separated by ';' <br /><br /> "
-"Example:<br/>\"John Doe\";12345678;123"
+"Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
+"fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
-"Importar un archivo CSV formateado como sigue:<br/>\"Nombre\";Número;"
-"CódigoMarcaciónRapida<br />Los nombres deben ir entre comillas (\"\") y los "
-"campos separados por punto y coma (;).<br/><br/>Por ejemplo:<br/>\"John Doe"
-"\";12345678;123"
 
-#: page.phonebook.php:162
+#: page.phonebook.php:165
 msgid "Import from CSV"
 msgstr "Importar desde CSV"
 
@@ -100,7 +98,7 @@ msgstr "Importar desde CSV"
 msgid "Name"
 msgstr "Nombre"
 
-#: page.phonebook.php:136
+#: page.phonebook.php:139
 msgid "No"
 msgstr "No"
 
@@ -112,17 +110,19 @@ msgstr "Número"
 msgid "Phonebook"
 msgstr "Listín telefónico"
 
-#: page.phonebook.php:217
+#: page.phonebook.php:220
 msgid "Please enter a valid Name"
 msgstr "Por favor, introduzca un nombre válido"
 
-#: page.phonebook.php:216
+#: page.phonebook.php:219
 msgid "Please enter a valid Number"
 msgstr "Por favor, introduzca un número válido"
 
-#: page.phonebook.php:218
-msgid "Please enter a valid Speeddial code or leave it empty when generatingß"
-msgstr "Introduzca un código Speeddial válido o déjelo vacío al generarß"
+#: page.phonebook.php:221
+msgid ""
+"Please enter a valid Speeddial code or leave it empty when Set Speed "
+"Dial=YES "
+msgstr ""
 
 #: phonebook.i18n.php:8
 msgid ""
@@ -136,12 +136,12 @@ msgstr ""
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: page.phonebook.php:144
+#: page.phonebook.php:147
 msgid "Select Yes to have a speed dial created automatically for this number"
 msgstr ""
 "Seleccione Sí para crear una marcación rápida automática para este número"
 
-#: page.phonebook.php:129
+#: page.phonebook.php:132
 msgid "Set Speed Dial"
 msgstr "Configurar marcación rápida"
 
@@ -157,11 +157,11 @@ msgstr "Marcación rápida"
 msgid "Submit"
 msgstr "Enviar"
 
-#: page.phonebook.php:149
+#: page.phonebook.php:152
 msgid "Submit Changes"
 msgstr "Enviar cambios"
 
-#: page.phonebook.php:197
+#: page.phonebook.php:200
 msgid "Upload"
 msgstr "Enviar"
 
@@ -173,9 +173,30 @@ msgstr ""
 "Utilice este módulo para crear números de marcado rápido para todo el "
 "sistema y que se pueden marcar desde cualquier teléfono."
 
-#: page.phonebook.php:134
+#: page.phonebook.php:137
 msgid "Yes"
 msgstr "Si"
+
+#~ msgid ""
+#~ "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
+#~ "codes"
+#~ msgstr ""
+#~ "Introduzca un código de marcación rápida.<br/>Es necesario el módulo de "
+#~ "'Marcación rápida' para que funcione"
+
+#~ msgid ""
+#~ "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /"
+#~ "> Names should be enclosed by '\"' and fields separated by ';' <br /><br /"
+#~ "> Example:<br/>\"John Doe\";12345678;123"
+#~ msgstr ""
+#~ "Importar un archivo CSV formateado como sigue:<br/>\"Nombre\";Número;"
+#~ "CódigoMarcaciónRapida<br />Los nombres deben ir entre comillas (\"\") y "
+#~ "los campos separados por punto y coma (;).<br/><br/>Por ejemplo:<br/>"
+#~ "\"John Doe\";12345678;123"
+
+#~ msgid ""
+#~ "Please enter a valid Speeddial code or leave it empty when generatingß"
+#~ msgstr "Introduzca un código Speeddial válido o déjelo vacío al generarß"
 
 #~ msgid "Please enter a valid Speeddial code or leave it empty"
 #~ msgstr "Por favor, introduzca un código de marcación rápida válido"

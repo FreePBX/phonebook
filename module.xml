@@ -2,7 +2,7 @@
 	<rawname>phonebook</rawname>
 	<repo>extended</repo>
 	<name>Phonebook</name>
-	<version>13.0.5.5</version>
+	<version>13.0.5.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -14,6 +14,7 @@
 	<location>release/2.11/phonebook-2.11.0.1.tgz</location>
 	<md5sum>adae5d1494f4e15f9f80a522f12175a3</md5sum>
 	<changelog>
+		*13.0.5.6* FREEPBX-15113 FREEPBX-15114
 		*13.0.5.5* FREEPBX-12967
 		*13.0.5.4* FREEPBX-12366 default name if not provided
 		*13.0.5.3* FREEPBX-6743 Make columns sortable
