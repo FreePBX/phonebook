@@ -10,163 +10,181 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-23 20:12-0400\n"
-"PO-Revision-Date: 2017-06-23 20:12-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-07-11 14:25+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/phonebook/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.phonebook.php:32
 msgid "Actions"
-msgstr ""
+msgstr "Các thao tác"
 
 #: page.phonebook.php:21
 msgid "Add Phonebook Entry"
-msgstr ""
+msgstr "Thêm mục nhập danh bạ điện thoại"
 
 #: page.phonebook.php:42
 msgid "Add or replace entry"
-msgstr ""
+msgstr "Thêm hoặc thay thế mục nhập"
 
 #: phonebook.i18n.php:6
 msgid "Admin"
-msgstr ""
+msgstr "Quản trị viên"
 
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
-msgstr ""
+msgstr "Danh bạ điện thoại Asterisk"
 
 #: page.phonebook.php:184
 msgid "Browse"
-msgstr ""
+msgstr "Trình duyệt"
 
 #: Phonebook.class.php:90
 msgid "Delete"
-msgstr ""
+msgstr "Xóa"
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
-msgstr ""
+msgstr "Danh bạ điện thoại trống"
 
 #: page.phonebook.php:117
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes "
 msgstr ""
+"Nhập mã quay số nhanh<br/>Mô đun quay số nhanh yêu cầu phải sử dụng các mã "
+"quay số nhanh "
 
 #: page.phonebook.php:69
 msgid "Enter the name"
-msgstr ""
+msgstr "Nhập tên"
 
 #: page.phonebook.php:93
 msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
 msgstr ""
+"Nhập số điện thoại ( Cho việc tra cứu Caller ID để làm việc, số điện thoại "
+"phải khớp với Caller ID nhận được từ mạng)"
 
 #: page.phonebook.php:23
 msgid "Export Phonebook"
-msgstr ""
+msgstr "Xuất danh bạ điện thoại"
 
 #: page.phonebook.php:179
 msgid "File"
-msgstr ""
+msgstr "Tệp"
 
 #: page.phonebook.php:120
 msgid ""
 "If you use an exsiting Speed Dial,then it will be removed from the used one."
 msgstr ""
+"Nếu bạn sử dụng tính năng quay số nhanh hiện có thì nó sẽ được xóa khỏi danh "
+"sách đã sử dụng."
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
-msgstr ""
+msgstr "Nhập vào danh bạ điện thoại"
 
 #: page.phonebook.php:194
 msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
+"Nhập vào một tệp CSV được định dạng như sau:<br/>Tên;Số;Speeddial<br />  các "
+"trường được ngăn cách nhau bằng dấu ';' <br /><br /> Ví dụ:<br/>John "
+"Doe;12345678;123"
 
 #: page.phonebook.php:165
 msgid "Import from CSV"
-msgstr ""
+msgstr "Nhập vào từ CSV"
 
 #: page.phonebook.php:30 page.phonebook.php:57
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #: page.phonebook.php:139
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
-msgstr ""
+msgstr "Số điện thoại"
 
 #: page.phonebook.php:11 phonebook.i18n.php:4
 msgid "Phonebook"
-msgstr ""
+msgstr "Danh bạ điện thoại"
 
 #: page.phonebook.php:220
 msgid "Please enter a valid Name"
-msgstr ""
+msgstr "Vui lòng nhập một Tên hợp lệ"
 
 #: page.phonebook.php:219
 msgid "Please enter a valid Number"
-msgstr ""
+msgstr "Vui lòng nhập một số hợp lệ"
 
 #: page.phonebook.php:221
 msgid ""
 "Please enter a valid Speeddial code or leave it empty when Set Speed "
 "Dial=YES "
 msgstr ""
+"Vui lòng nhập một mã quay số nhanh hợp lệ hoặc để trống khi cài Speed Dial="
+"YES "
 
 #: phonebook.i18n.php:8
 msgid ""
 "Provides a phonebook which can be used as base for Caller ID Lookup and "
 "Speed Dial"
 msgstr ""
+"Cung cấp một danh bạ điện thoại có thể sử dụng như một cơ cở cho việc tra "
+"cứu Caller ID và Quay số nhanh"
 
 #: Phonebook.class.php:95
 msgid "Reset"
-msgstr ""
+msgstr "Cài đặt lại"
 
 #: page.phonebook.php:147
 msgid "Select Yes to have a speed dial created automatically for this number"
-msgstr ""
+msgstr "Chọn Yes để quay số nhanh được tạo tự động cho số điện thoại này"
 
 #: page.phonebook.php:132
 msgid "Set Speed Dial"
-msgstr ""
+msgstr "Cài đặt Quay số nhanh"
 
 #: page.phonebook.php:105
 msgid "Speed Dial Code"
-msgstr ""
+msgstr "Mã Quay số nhanh"
 
 #: page.phonebook.php:31
 msgid "Speeddial"
-msgstr ""
+msgstr "Quay số nhanh"
 
 #: Phonebook.class.php:100
 msgid "Submit"
-msgstr ""
+msgstr "Gửi đi"
 
 #: page.phonebook.php:152
 msgid "Submit Changes"
-msgstr ""
+msgstr "Gửi đi các thay đổi"
 
 #: page.phonebook.php:200
 msgid "Upload"
-msgstr ""
+msgstr "Tải lên"
 
 #: page.phonebook.php:13
 msgid ""
 "Use this module to create system wide speed dial numbers that can be dialed "
 "from any phone."
 msgstr ""
+"Sử dụng mô đun này để tạo các số điện thoại quay số nhanh diện rộng trong hệ "
+"thống để có thể quay số từ bất kỳ điện thoại nào."
 
 #: page.phonebook.php:137
 msgid "Yes"
-msgstr ""
+msgstr "Có"
