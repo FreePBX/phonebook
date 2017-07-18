@@ -133,9 +133,9 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 																<i class="fa fa-question-circle fpbx-help-icon" data-for="gensd"></i>
 															</div>
 															<div class="col-md-9 radioset">
-										            <input type="radio" name="gensd" id="gensdyes" value="yes" >
+										            <input type="radio" name="gensd" id="gensdyes" value="yes" CHECKED >
 										            <label for="gensdyes"><?php echo _("Yes");?></label>
-										            <input type="radio" name="gensd" id="gensdno" CHECKED>
+										            <input type="radio" name="gensd" id="gensdno" >
 										            <label for="gensdno"><?php echo _("No");?></label>
 															</div>
 														</div>
@@ -218,7 +218,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 function edit_onsubmit() {
 	var msgInvalidNumber = "<?php echo _("Please enter a valid Number"); ?>";
 	var msgInvalidName = "<?php echo _("Please enter a valid Name"); ?>";
-	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty when Set Speed Dial=YES "); ?>";
+	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "); ?>";
 	if($("#name").val().length == 0){
 		warnInvalid($("#name"), msgInvalidName);
 		return false;
