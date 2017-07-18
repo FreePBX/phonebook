@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 20:12-0400\n"
+"POT-Creation-Date: 2017-07-18 12:58-0400\n"
 "PO-Revision-Date: 2016-04-27 20:06+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -124,8 +124,7 @@ msgstr "لطفا یک شماره معتبر وارد کنید"
 
 #: page.phonebook.php:221
 msgid ""
-"Please enter a valid Speeddial code or leave it empty when Set Speed "
-"Dial=YES "
+"Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "
 msgstr ""
 
 #: phonebook.i18n.php:8
