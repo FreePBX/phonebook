@@ -218,7 +218,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 function edit_onsubmit() {
 	var msgInvalidNumber = "<?php echo _("Please enter a valid Number"); ?>";
 	var msgInvalidName = "<?php echo _("Please enter a valid Name"); ?>";
-	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "); ?>";
+	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty"); ?>";
 	if($("#name").val().length == 0){
 		warnInvalid($("#name"), msgInvalidName);
 		return false;
@@ -232,17 +232,12 @@ function edit_onsubmit() {
 			return false;
 		}
 	}
-	if($("input[name='gensd']:checked").val()=="on"){
 		if($("#speeddial").val().length > 0){
 			if(!isDialpattern($("#speeddial").val())){
 				warnInvalid($("#speeddial"),msgInvalidCode);
 				return false;
 			}
-		}else{
-		warnInvalid($("#speeddial"),msgInvalidCode);
-		return false;
 		}
-	}
 	return true;
 }
 
