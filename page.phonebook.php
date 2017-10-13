@@ -135,7 +135,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 															<div class="col-md-9 radioset">
 										            <input type="radio" name="gensd" id="gensdyes" value="yes" CHECKED >
 										            <label for="gensdyes"><?php echo _("Yes");?></label>
-										            <input type="radio" name="gensd" id="gensdno" >
+										            <input type="radio" name="gensd" id="gensdno" value="no">
 										            <label for="gensdno"><?php echo _("No");?></label>
 															</div>
 														</div>
@@ -210,62 +210,3 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 		</div>
 	</div>
 </div>
-
-<script language="javascript">
-<!--
-
-
-function edit_onsubmit() {
-	var msgInvalidNumber = "<?php echo _("Please enter a valid Number"); ?>";
-	var msgInvalidName = "<?php echo _("Please enter a valid Name"); ?>";
-	var msgInvalidCode = "<?php echo _("Please enter a valid Speeddial code or leave it empty"); ?>";
-	if($("#name").val().length == 0){
-		warnInvalid($("#name"), msgInvalidName);
-		return false;
-	}
-	if($("#number").val().length == 0){
-		warnInvalid($("#number"),msgInvalidNumber);
-		return false;
-	}else{
-		if(!isDialpattern($("#number").val())){
-			warnInvalid($("#number"),msgInvalidNumber);
-			return false;
-		}
-	}
-		if($("#speeddial").val().length > 0){
-			if(!isDialpattern($("#speeddial").val())){
-				warnInvalid($("#speeddial"),msgInvalidCode);
-				return false;
-			}
-		}
-	return true;
-}
-
-
-function linkFormatter(value, row, index){
-    var html = '<a class="pbedit" href="#" data-toggle="modal" data-target="#pbForm" data-action="edit" data-number="'+row['number']+'" data-name="'+row['name']+'" data-dial="'+row['dial']+'"><i class="fa fa-pencil"></i></a>';
-    html += '&nbsp;<a href="?display=phonebook&action=delete&number='+value+'&speeddial='+row["dial"]+'" class="delAction"><i class="fa fa-trash"></i></a>';
-    return html;
-}
-$(document).ready(function(){
-	$(document).on('click','.pbedit',function(){
-		if ($(this).data('action') == 'edit') {
-			$("#formaction").val("edit");
-			$("#editnumber").val($(this).data('number'));
-			$("#number").val($(this).data('number'));
-			$("#name").val($(this).data('name'));
-			$("#speeddial").val($(this).data('dial'));
-			$("#editspeeddial").val($(this).data('dial'));
-		}
-	});
-	$('#pbForm').on('hidden.bs.modal', function () {
-		$("#formaction").val('add');
-		$("#editnumber").val('');
-		$("#number").val('');
-		$("#name").val('');
-		$("#speeddial").val('');
-		$("#editspeeddial").val('');
-	});
-});
--->
-</script>
