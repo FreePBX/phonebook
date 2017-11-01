@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX phonebook\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 12:58-0400\n"
+"POT-Creation-Date: 2017-10-31 20:03-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -57,6 +57,10 @@ msgstr ""
 #: Phonebook.class.php:90
 msgid "Delete"
 msgstr "Ta bort"
+
+#: assets/js/phonebook.js:29
+msgid "Duplicate speeddial number"
+msgstr ""
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
@@ -123,15 +127,15 @@ msgstr "Nummer"
 msgid "Phonebook"
 msgstr "Telefonbok"
 
-#: page.phonebook.php:220
+#: assets/js/phonebook.js:5
 msgid "Please enter a valid Name"
 msgstr "Skriv in ett giltigt namn"
 
-#: page.phonebook.php:219
+#: assets/js/phonebook.js:2
 msgid "Please enter a valid Number"
 msgstr "Skriv in ett giltigt nummer"
 
-#: page.phonebook.php:221
+#: assets/js/phonebook.js:3
 msgid ""
 "Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "
 msgstr ""

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 12:58-0400\n"
+"POT-Creation-Date: 2017-10-31 20:03-0400\n"
 "PO-Revision-Date: 2016-04-27 20:06+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -48,6 +48,10 @@ msgstr "بارگذاری فایل"
 #: Phonebook.class.php:90
 msgid "Delete"
 msgstr "حذف"
+
+#: assets/js/phonebook.js:29
+msgid "Duplicate speeddial number"
+msgstr ""
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
@@ -114,15 +118,15 @@ msgstr "شماره"
 msgid "Phonebook"
 msgstr "دفترچه تلفن"
 
-#: page.phonebook.php:220
+#: assets/js/phonebook.js:5
 msgid "Please enter a valid Name"
 msgstr "لطفا یک نام معتبر وارد کنید"
 
-#: page.phonebook.php:219
+#: assets/js/phonebook.js:2
 msgid "Please enter a valid Number"
 msgstr "لطفا یک شماره معتبر وارد کنید"
 
-#: page.phonebook.php:221
+#: assets/js/phonebook.js:3
 msgid ""
 "Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "
 msgstr ""

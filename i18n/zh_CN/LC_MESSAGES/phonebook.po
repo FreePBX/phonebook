@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 12:58-0400\n"
+"POT-Creation-Date: 2017-10-31 20:03-0400\n"
 "PO-Revision-Date: 2009-02-01 14:10+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -45,6 +45,10 @@ msgstr ""
 #: Phonebook.class.php:90
 msgid "Delete"
 msgstr "删除"
+
+#: assets/js/phonebook.js:29
+msgid "Duplicate speeddial number"
+msgstr ""
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
@@ -109,15 +113,15 @@ msgstr "号码"
 msgid "Phonebook"
 msgstr "电话簿"
 
-#: page.phonebook.php:220
+#: assets/js/phonebook.js:5
 msgid "Please enter a valid Name"
 msgstr "请输入有效的名字"
 
-#: page.phonebook.php:219
+#: assets/js/phonebook.js:2
 msgid "Please enter a valid Number"
 msgstr "请输入有效的号码"
 
-#: page.phonebook.php:221
+#: assets/js/phonebook.js:3
 msgid ""
 "Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "
 msgstr ""
