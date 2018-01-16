@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 20:03-0400\n"
+"POT-Creation-Date: 2018-01-16 19:34-0300\n"
 "PO-Revision-Date: 2017-07-11 14:25+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
 "phonebook/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -41,11 +41,11 @@ msgstr "Quản trị viên"
 msgid "Asterisk Phonebook"
 msgstr "Danh bạ điện thoại Asterisk"
 
-#: page.phonebook.php:184
+#: page.phonebook.php:185
 msgid "Browse"
 msgstr "Trình duyệt"
 
-#: Phonebook.class.php:90
+#: Phonebook.class.php:108
 msgid "Delete"
 msgstr "Xóa"
 
@@ -81,7 +81,7 @@ msgstr ""
 msgid "Export Phonebook"
 msgstr "Xuất danh bạ điện thoại"
 
-#: page.phonebook.php:179
+#: page.phonebook.php:180
 msgid "File"
 msgstr "Tệp"
 
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Import Phonebook"
 msgstr "Nhập vào danh bạ điện thoại"
 
-#: page.phonebook.php:194
+#: page.phonebook.php:195
 msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
@@ -146,7 +146,7 @@ msgstr ""
 "Cung cấp một danh bạ điện thoại có thể sử dụng như một cơ cở cho việc tra "
 "cứu Caller ID và Quay số nhanh"
 
-#: Phonebook.class.php:95
+#: Phonebook.class.php:113
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -166,7 +166,7 @@ msgstr "Mã Quay số nhanh"
 msgid "Speeddial"
 msgstr "Quay số nhanh"
 
-#: Phonebook.class.php:100
+#: Phonebook.class.php:118
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -174,7 +174,7 @@ msgstr "Gửi đi"
 msgid "Submit Changes"
 msgstr "Gửi đi các thay đổi"
 
-#: page.phonebook.php:200
+#: page.phonebook.php:201
 msgid "Upload"
 msgstr "Tải lên"
 

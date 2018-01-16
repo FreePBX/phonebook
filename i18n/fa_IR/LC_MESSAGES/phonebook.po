@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 20:03-0400\n"
+"POT-Creation-Date: 2018-01-16 19:34-0300\n"
 "PO-Revision-Date: 2016-04-27 20:06+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
 "phonebook/fa_IR/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -41,11 +41,11 @@ msgstr "مدیر"
 msgid "Asterisk Phonebook"
 msgstr "دفترچه تلفن استریسک"
 
-#: page.phonebook.php:184
+#: page.phonebook.php:185
 msgid "Browse"
 msgstr "بارگذاری فایل"
 
-#: Phonebook.class.php:90
+#: Phonebook.class.php:108
 msgid "Delete"
 msgstr "حذف"
 
@@ -79,7 +79,7 @@ msgstr ""
 msgid "Export Phonebook"
 msgstr "خروجی از دفترچه تلفن"
 
-#: page.phonebook.php:179
+#: page.phonebook.php:180
 msgid "File"
 msgstr "فایل"
 
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Import Phonebook"
 msgstr "وارد کردن دفترچه تلفن"
 
-#: page.phonebook.php:194
+#: page.phonebook.php:195
 msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
@@ -139,7 +139,7 @@ msgstr ""
 "ارائه یک دفترچه تلفن که می تواند برای یافتن شناسه تماس گیرنده و یا شماره "
 "گیری سریع مورد استفاده قرار گیرد"
 
-#: Phonebook.class.php:95
+#: Phonebook.class.php:113
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -160,7 +160,7 @@ msgstr "کد شماره گیری سریع"
 msgid "Speeddial"
 msgstr "شماره گیری سریع"
 
-#: Phonebook.class.php:100
+#: Phonebook.class.php:118
 msgid "Submit"
 msgstr "ثبت"
 
@@ -168,7 +168,7 @@ msgstr "ثبت"
 msgid "Submit Changes"
 msgstr "ثبت تغییرات"
 
-#: page.phonebook.php:200
+#: page.phonebook.php:201
 msgid "Upload"
 msgstr "بارگذاری"
 

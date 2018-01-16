@@ -20,10 +20,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX phonebook\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 20:03-0400\n"
+"POT-Creation-Date: 2018-01-16 19:34-0300\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,11 +51,11 @@ msgstr ""
 msgid "Asterisk Phonebook"
 msgstr "Asterisk telefonbok"
 
-#: page.phonebook.php:184
+#: page.phonebook.php:185
 msgid "Browse"
 msgstr ""
 
-#: Phonebook.class.php:90
+#: Phonebook.class.php:108
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -88,7 +89,7 @@ msgstr ""
 msgid "Export Phonebook"
 msgstr ""
 
-#: page.phonebook.php:179
+#: page.phonebook.php:180
 msgid "File"
 msgstr ""
 
@@ -101,7 +102,7 @@ msgstr ""
 msgid "Import Phonebook"
 msgstr ""
 
-#: page.phonebook.php:194
+#: page.phonebook.php:195
 msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
@@ -146,7 +147,7 @@ msgid ""
 "Speed Dial"
 msgstr ""
 
-#: Phonebook.class.php:95
+#: Phonebook.class.php:113
 msgid "Reset"
 msgstr ""
 
@@ -166,7 +167,7 @@ msgstr ""
 msgid "Speeddial"
 msgstr ""
 
-#: Phonebook.class.php:100
+#: Phonebook.class.php:118
 msgid "Submit"
 msgstr ""
 
@@ -174,7 +175,7 @@ msgstr ""
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
-#: page.phonebook.php:200
+#: page.phonebook.php:201
 msgid "Upload"
 msgstr "Ladda upp"
 
