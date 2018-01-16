@@ -48,6 +48,9 @@ class Phonebook implements \BMO {
 			break;
 		case "import":
 			$i = 0; // imported lines
+			if ($_FILES['csv']['error']) {
+				throw new \Exception("Upload error - Error no ".$_FILES['csv']['error']." - File too large? Max 1mb");
+			}
 			if(is_uploaded_file($_FILES['csv']['tmp_name'])) {
 				$lines = file($_FILES['csv']['tmp_name']);
 				if (is_array($lines))	{
@@ -61,8 +64,10 @@ class Phonebook implements \BMO {
 								&&  ($fields[3] == '' || is_numeric($fields[3]))
 							) {
 								phonebook_del($fields[2], $numbers[$fields[2]]['speeddial']);
-								phonebook_add(htmlentities($fields[2],ENT_QUOTES, 'UTF-8'),
-									addslashes(htmlentities($fields[1],ENT_QUOTES, 'UTF-8')),
+								// Make sure there's no tabs in the name, this can cause
+								// problems
+								$name = htmlentities(str_replace("\t", "", $fields[2]),ENT_QUOTES, 'UTF-8');
+								phonebook_add($name, addslashes(htmlentities($fields[1],ENT_QUOTES, 'UTF-8')),
 									htmlentities($fields[3],ENT_QUOTES, 'UTF-8'));
 								$i++;
 							}

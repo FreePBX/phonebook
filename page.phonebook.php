@@ -166,7 +166,8 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 									</div>
 									<div class="modal-body">
 										<form autocomplete="off" enctype="multipart/form-data" name="import" action="" method="post">
-										<input type="hidden" name="MAX_FILE_SIZE" value="30000">
+										<!-- Allow up to 1mb of phonebooks -->
+										<input type="hidden" name="MAX_FILE_SIZE" value="1048576">
 										<input type="hidden" name="display" value="phonebook">
 										<input type="hidden" name="action" value="import">
 										<!--File-->
