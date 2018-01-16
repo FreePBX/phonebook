@@ -78,10 +78,18 @@ class Phonebook implements \BMO {
 			header('Content-disposition: attachment; filename=phonebook.csv');
 			$numbers = \phonebook_list();
 			foreach ($numbers as $number => $values){
-				printf("\"%s\";%s;%s\n", $values['name'], trim($number), $values['speeddial']);
+				// We can't use fputcsv, as that won't quote numbers, which we need to do
+				// so that a number starting with zero isn't accidentally stripped by
+				// spreadsheet programs.
+				//
+				// But we also want to make sure that we don't accidentally double quote ourselves
+				// on exporting, which will ALSO confuse spreadsheet programs.
+				$csv = '"'.trim(str_replace('"', '', $values['name']).'";"'.trim($number).'";');
+				$csv .= '"'.$values['speeddial']."\"\n";
+
+				echo $csv;
 			}
 			exit;
-			break;
 		}
 	}
 	public function getActionBar($request) {
