@@ -90,7 +90,7 @@ class Phonebook implements \BMO {
 				// But we also want to make sure that we don't accidentally double quote ourselves
 				// on exporting, which will ALSO confuse spreadsheet programs.
 				$csv = '"'.trim(str_replace('"', '', $values['name']).'";"'.trim($number).'";');
-				$csv .= '"'.$values['speeddial']."\"\n";
+				$csv .= (int)$values['speeddial']."\n";
 
 				echo $csv;
 			}
