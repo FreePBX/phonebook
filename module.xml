@@ -2,50 +2,19 @@
 	<rawname>phonebook</rawname>
 	<repo>extended</repo>
 	<name>Phonebook</name>
-	<version>13.0.6.2</version>
+	<version>15.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
-	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Provides a phonebook which can be used as base for Caller ID Lookup and Speed Dial</description>
 	<category>Admin</category>
 	<menuitems>
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
 	<changelog>
-		*13.0.6.2* FREEPBX-16571 - Fix issue with importing an export
-		*13.0.6* FREEPBX-16508, FREEPBX-16571
-		*13.0.5.8* FREEPBX-15964 dont enforce speeddial if users dont want it
-		*13.0.5.7* FREEPBX-15113
-		*13.0.5.6* FREEPBX-15113 FREEPBX-15114
-		*13.0.5.5* FREEPBX-12967
-		*13.0.5.4* FREEPBX-12366 default name if not provided
-		*13.0.5.3* FREEPBX-6743 Make columns sortable
-		*13.0.5.2* FREEPBX-10514 update validation
-		*13.0.5.1* validate parameter
-		*13.0.5* FREEPBX-10356 Fix form validation
-		*13.0.3* FREEPBX-9646 address issues and publish
-		*13.0.2* Version bump Beta
-		*2.11.0.2* include license file
-		*2.11.0.1* #5792 again
-		*2.11.0.0* #5792
-		*2.10.0.2* exit, not die_freepbx
-		*2.10.0.1* #5478
-		*2.10.0.0* new version changes
-		*2.9.0.3* #5355
-		*2.9.0.2* spelling, localizations
-		*2.9.0.1* set reposoitory
-		*2.9.0.0* 2.9 Update
-		*2.8.0.1* #4590
-		*2.8.0.0* #4309
-		*2.7.0.0* localizations
-		*2.6.0.0* localizations, misc
-		*2.5.0.2* localization changes, Swedish
-		*2.5.0.1* #3009 spelling
-		*2.5.0* #1821, #2845 tabindex
-		*2.4.0.1* #2843 Russian Translation
-		*2.4.0* CHANGELOG TRUNCATED See SVN Repository
+		*15.0.1* Backup 15
 	</changelog>
 	<supported>
-		<version>13.0</version>
+		<version>15.0</version>
 	</supported>
 </module>

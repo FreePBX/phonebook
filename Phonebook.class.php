@@ -1,7 +1,7 @@
 <?php
 namespace FreePBX\modules;
-
-class Phonebook implements \BMO {
+use BMO;
+class Phonebook implements BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");
@@ -14,10 +14,7 @@ class Phonebook implements \BMO {
 	}
 	public function uninstall() {
 	}
-	public function backup() {
-	}
-	public function restore($backup) {
-	}
+
 	public function doConfigPageInit($page) {
 
 		$action = isset($_REQUEST['action'])? trim($_REQUEST['action']) : '';
@@ -165,7 +162,7 @@ class Phonebook implements \BMO {
 	}
 	public function getAll() {
 		$astman = $this->astman;
-		if ($astman) {
+		if ($astman->connected()) {
 			$list = $astman->database_show();
 			foreach ($list as $k => $v) {
 				if (isset($v)) { // Somehow, a 'null' value is leaking into astdb.
@@ -188,5 +185,24 @@ class Phonebook implements \BMO {
 			return isset($retnumbers)?$retnumbers:array();
 		}
 		return array();
-	}
+    }
+
+    public function add($number, $name, $speeddial="", $gensd="no"){
+        if ($this->FreePBX->astman->connected()) {
+            if ('yes' == $gensd) {
+                if (empty($speeddial)) {
+                    for ($nbr = 99; $nbr > 0; --$nbr) {
+                        if (false === $this->FreePBX->astman->database_get('sysspeeddials', sprintf('%02d', $nbr))) {
+                            $speeddial = sprintf('%02d', $nbr);
+                            break;
+                        }
+                    }
+                }
+            }
+            $this->FreePBX->astman->database_put('cidname', $number, $name);
+            if ('' != $speeddial) {
+                $this->FreePBX->astman->database_put('sysspeeddials', $speeddial, $number);
+            }
+        } 
+    }
 }
