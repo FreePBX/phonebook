@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2018-08-20 12:51-0400\n"
 "PO-Revision-Date: 2017-07-11 14:25+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,7 +45,7 @@ msgstr "Danh bạ điện thoại Asterisk"
 msgid "Browse"
 msgstr "Trình duyệt"
 
-#: Phonebook.class.php:108
+#: Phonebook.class.php:105
 msgid "Delete"
 msgstr "Xóa"
 
@@ -146,7 +146,7 @@ msgstr ""
 "Cung cấp một danh bạ điện thoại có thể sử dụng như một cơ cở cho việc tra "
 "cứu Caller ID và Quay số nhanh"
 
-#: Phonebook.class.php:113
+#: Phonebook.class.php:110
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -166,7 +166,7 @@ msgstr "Mã Quay số nhanh"
 msgid "Speeddial"
 msgstr "Quay số nhanh"
 
-#: Phonebook.class.php:118
+#: Phonebook.class.php:115
 msgid "Submit"
 msgstr "Gửi đi"
 

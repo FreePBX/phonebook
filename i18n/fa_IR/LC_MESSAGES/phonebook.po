@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2018-08-20 12:51-0400\n"
 "PO-Revision-Date: 2016-04-27 20:06+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,7 +45,7 @@ msgstr "دفترچه تلفن استریسک"
 msgid "Browse"
 msgstr "بارگذاری فایل"
 
-#: Phonebook.class.php:108
+#: Phonebook.class.php:105
 msgid "Delete"
 msgstr "حذف"
 
@@ -139,7 +139,7 @@ msgstr ""
 "ارائه یک دفترچه تلفن که می تواند برای یافتن شناسه تماس گیرنده و یا شماره "
 "گیری سریع مورد استفاده قرار گیرد"
 
-#: Phonebook.class.php:113
+#: Phonebook.class.php:110
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -160,7 +160,7 @@ msgstr "کد شماره گیری سریع"
 msgid "Speeddial"
 msgstr "شماره گیری سریع"
 
-#: Phonebook.class.php:118
+#: Phonebook.class.php:115
 msgid "Submit"
 msgstr "ثبت"
 

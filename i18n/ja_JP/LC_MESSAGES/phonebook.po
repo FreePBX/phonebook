@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2018-08-20 12:51-0400\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/phonebook/ja/>\n"
@@ -72,7 +72,7 @@ msgstr "Asterisk 電話帳"
 msgid "Browse"
 msgstr ""
 
-#: Phonebook.class.php:108
+#: Phonebook.class.php:105
 msgid "Delete"
 msgstr "削除"
 
@@ -164,7 +164,7 @@ msgid ""
 "Speed Dial"
 msgstr ""
 
-#: Phonebook.class.php:113
+#: Phonebook.class.php:110
 msgid "Reset"
 msgstr ""
 
@@ -184,7 +184,7 @@ msgstr ""
 msgid "Speeddial"
 msgstr ""
 
-#: Phonebook.class.php:118
+#: Phonebook.class.php:115
 msgid "Submit"
 msgstr ""
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo phonebook module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2018-08-20 12:51-0400\n"
 "PO-Revision-Date: 2016-12-10 22:24+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -41,7 +41,7 @@ msgstr "Listín telefónico de Asterisk"
 msgid "Browse"
 msgstr "Vistazo"
 
-#: Phonebook.class.php:108
+#: Phonebook.class.php:105
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -135,7 +135,7 @@ msgstr ""
 "Proporciona una agenda que puede ser utilizada como base para identificador "
 "de llamadas de búsqueda y de marcación rápida"
 
-#: Phonebook.class.php:113
+#: Phonebook.class.php:110
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -156,7 +156,7 @@ msgstr "Código de marcación rápida"
 msgid "Speeddial"
 msgstr "Marcación rápida"
 
-#: Phonebook.class.php:118
+#: Phonebook.class.php:115
 msgid "Submit"
 msgstr "Enviar"
 

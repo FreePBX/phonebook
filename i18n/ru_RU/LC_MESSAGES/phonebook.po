@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2018-08-20 12:51-0400\n"
 "PO-Revision-Date: 2017-05-17 02:01+0200\n"
 "Last-Translator: Evgeniy <yen81@mail.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,7 +45,7 @@ msgstr "Телефонная книга Астериск"
 msgid "Browse"
 msgstr "Просмотр"
 
-#: Phonebook.class.php:108
+#: Phonebook.class.php:105
 msgid "Delete"
 msgstr "Удалить"
 
@@ -139,7 +139,7 @@ msgstr ""
 "Предоставляет телефонную книгу, которая может быть использована в качестве "
 "основы для поиска Caller ID и Speed Dial"
 
-#: Phonebook.class.php:113
+#: Phonebook.class.php:110
 msgid "Reset"
 msgstr "Сброс"
 
@@ -159,7 +159,7 @@ msgstr ""
 msgid "Speeddial"
 msgstr ""
 
-#: Phonebook.class.php:118
+#: Phonebook.class.php:115
 msgid "Submit"
 msgstr "Сохранить"
 

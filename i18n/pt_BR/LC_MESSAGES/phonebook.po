@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2018-08-20 12:51-0400\n"
 "PO-Revision-Date: 2017-03-27 14:35+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -45,7 +45,7 @@ msgstr "Agenda Telefônica do Asterisk"
 msgid "Browse"
 msgstr "Localizar"
 
-#: Phonebook.class.php:108
+#: Phonebook.class.php:105
 msgid "Delete"
 msgstr "Apagar"
 
@@ -139,7 +139,7 @@ msgstr ""
 "Fornece uma agenda telefônica que pode ser usada como base para a Pesquisa "
 "por Identificação de Chamadas e Discagem Rápida"
 
-#: Phonebook.class.php:113
+#: Phonebook.class.php:110
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -161,7 +161,7 @@ msgstr "Código de Discagem Rápida"
 msgid "Speeddial"
 msgstr "Discagem Rápida"
 
-#: Phonebook.class.php:118
+#: Phonebook.class.php:115
 msgid "Submit"
 msgstr "Enviar"
 

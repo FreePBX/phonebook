@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2018-08-20 12:51-0400\n"
 "PO-Revision-Date: 2017-12-04 21:06+0200\n"
 "Last-Translator: JCattan <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/phonebook/"
@@ -55,7 +55,7 @@ msgstr "Annuaire Asterisk"
 msgid "Browse"
 msgstr "Parcourir"
 
-#: Phonebook.class.php:108
+#: Phonebook.class.php:105
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -157,7 +157,7 @@ msgstr ""
 "Fournit un annuaire qui peut être utilisé pour rechercher le numéro de "
 "l'appelant et pour les Numéro-Abrégés"
 
-#: Phonebook.class.php:113
+#: Phonebook.class.php:110
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -179,7 +179,7 @@ msgstr "Code de numérotation abrégée"
 msgid "Speeddial"
 msgstr "Numérotation abrégée"
 
-#: Phonebook.class.php:118
+#: Phonebook.class.php:115
 msgid "Submit"
 msgstr "Soumettre"
 

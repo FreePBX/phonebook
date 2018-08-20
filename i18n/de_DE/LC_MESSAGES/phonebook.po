@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2018-08-20 12:51-0400\n"
 "PO-Revision-Date: 2018-06-01 14:50+0000\n"
 "Last-Translator: Nils Heckenkamp <nheckenkamp@sangoma.com>\n"
 "Language-Team: German <http://*/projects/freepbx/phonebook/de/>\n"
@@ -44,7 +44,7 @@ msgstr "Asterisk Telefonbuch"
 msgid "Browse"
 msgstr "Durchsuchen"
 
-#: Phonebook.class.php:108
+#: Phonebook.class.php:105
 msgid "Delete"
 msgstr "Löschen"
 
@@ -97,9 +97,9 @@ msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
-"Importieren Sie eine CSV-Datei wie folgt formatiert: <br/> "
-"1Name;Nummer;Kurzwahl<br /> 2  Felder getrennt durch ';' <br /> 3<br /> 4 "
-"Beispiel:<br/> 5John Doe;12345678;123"
+"Importieren Sie eine CSV-Datei wie folgt formatiert: <br/> 1Name;Nummer;"
+"Kurzwahl<br /> 2  Felder getrennt durch ';' <br /> 3<br /> 4 Beispiel:<br/> "
+"5John Doe;12345678;123"
 
 #: page.phonebook.php:165
 msgid "Import from CSV"
@@ -144,7 +144,7 @@ msgstr ""
 "Bietet ein Telefonbuch, das als Basis für Anrufer-ID-Suche und für die "
 "Kurzwahl verwendet werden kann"
 
-#: Phonebook.class.php:113
+#: Phonebook.class.php:110
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -164,7 +164,7 @@ msgstr "Kurzwahl Nummer"
 msgid "Speeddial"
 msgstr "Kurzwahl"
 
-#: Phonebook.class.php:118
+#: Phonebook.class.php:115
 msgid "Submit"
 msgstr "Bestätigen"
 
