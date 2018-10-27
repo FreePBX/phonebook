@@ -1,212 +1,155 @@
-# This file is part of FreePBX.
-#
-# For licensing information, please see the file named LICENSE located in the module directory
-#
-# FreePBX language template for phonebook
-# Copyright (C) 2008-2016 Sangoma, Inc.
-#
-msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:51-0400\n"
-"PO-Revision-Date: 2018-06-01 14:50+0000\n"
-"Last-Translator: Nils Heckenkamp <nheckenkamp@sangoma.com>\n"
-"Language-Team: German <http://*/projects/freepbx/phonebook/de/>\n"
-"Language: de_DE\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
-
 #: page.phonebook.php:32
 msgid "Actions"
-msgstr "Aktionen"
+msgstr ""
 
 #: page.phonebook.php:21
 msgid "Add Phonebook Entry"
-msgstr "Eintrag hinzufügen"
+msgstr ""
 
 #: page.phonebook.php:42
 msgid "Add or replace entry"
-msgstr "Eintrag hinzufügen oder ersetzen"
+msgstr ""
 
 #: phonebook.i18n.php:6
 msgid "Admin"
-msgstr "Administrator"
+msgstr ""
 
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
-msgstr "Asterisk Telefonbuch"
+msgstr ""
 
 #: page.phonebook.php:185
 msgid "Browse"
-msgstr "Durchsuchen"
+msgstr ""
 
 #: Phonebook.class.php:105
 msgid "Delete"
-msgstr "Löschen"
+msgstr ""
 
 #: assets/js/phonebook.js:29
 msgid "Duplicate speeddial number"
-msgstr "dupliziere Kurzwahlnummern"
+msgstr ""
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
-msgstr "Telefonbuch leeren"
+msgstr ""
 
 #: page.phonebook.php:117
 msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes "
 msgstr ""
-"Geben Sie einen Kurzwahlcode ein. <br/> 1 Das Kurzwahl-Modul ist für die "
-"Verwendung von Kurzwahlcodes erforderlich "
 
 #: page.phonebook.php:69
 msgid "Enter the name"
-msgstr "Geben Sie den Namen ein"
+msgstr ""
 
 #: page.phonebook.php:93
 msgid ""
 "Enter the number (For CallerID lookup to work it should match the CallerID "
 "received from network)"
-msgstr "Geben Sie die Telefonnummer ein"
+msgstr ""
 
 #: page.phonebook.php:23
 msgid "Export Phonebook"
-msgstr "Telefonbuch exportieren"
+msgstr ""
 
 #: page.phonebook.php:180
 msgid "File"
-msgstr "Datei"
+msgstr ""
 
 #: page.phonebook.php:120
 msgid ""
 "If you use an exsiting Speed Dial,then it will be removed from the used one."
 msgstr ""
-"If you use an exsiting Speed Dial,then it will be removed from the used one."
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
-msgstr "Telefonbuch importieren"
+msgstr ""
 
 #: page.phonebook.php:195
 msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
-"Importieren Sie eine CSV-Datei wie folgt formatiert: <br/> 1Name;Nummer;"
-"Kurzwahl<br /> 2  Felder getrennt durch ';' <br /> 3<br /> 4 Beispiel:<br/> "
-"5John Doe;12345678;123"
 
 #: page.phonebook.php:165
 msgid "Import from CSV"
-msgstr "CSV importieren"
+msgstr ""
 
 #: page.phonebook.php:30 page.phonebook.php:57
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 #: page.phonebook.php:139
 msgid "No"
-msgstr "Nein"
+msgstr ""
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
-msgstr "Nummer"
+msgstr ""
 
 #: page.phonebook.php:11 phonebook.i18n.php:4
 msgid "Phonebook"
-msgstr "Telefonbuch"
+msgstr ""
 
 #: assets/js/phonebook.js:5
 msgid "Please enter a valid Name"
-msgstr "Bitte geben Sie einen gültigen Namen ein"
+msgstr ""
 
 #: assets/js/phonebook.js:2
 msgid "Please enter a valid Number"
-msgstr "Bitte geben Sie eine gültige Nummer ein"
+msgstr ""
 
 #: assets/js/phonebook.js:3
 msgid ""
 "Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "
 msgstr ""
-"Bitte geben Sie einen gültigen Kurzwahlcode ein oder lassen Sie ihn leer, "
-"wenn die Kurzwahl mit  =Nein eingestellt ist "
 
 #: phonebook.i18n.php:8
 msgid ""
 "Provides a phonebook which can be used as base for Caller ID Lookup and "
 "Speed Dial"
 msgstr ""
-"Bietet ein Telefonbuch, das als Basis für Anrufer-ID-Suche und für die "
-"Kurzwahl verwendet werden kann"
 
 #: Phonebook.class.php:110
 msgid "Reset"
-msgstr "Zurücksetzen"
+msgstr ""
 
 #: page.phonebook.php:147
 msgid "Select Yes to have a speed dial created automatically for this number"
-msgstr "Markieren Sie Ja um automatisch eine Kurwahlnummer erstellen zu lassen"
+msgstr ""
 
 #: page.phonebook.php:132
 msgid "Set Speed Dial"
-msgstr "Kurwahl erstellen"
+msgstr ""
 
 #: page.phonebook.php:105
 msgid "Speed Dial Code"
-msgstr "Kurzwahl Nummer"
+msgstr ""
 
 #: page.phonebook.php:31
 msgid "Speeddial"
-msgstr "Kurzwahl"
+msgstr ""
 
 #: Phonebook.class.php:115
 msgid "Submit"
-msgstr "Bestätigen"
+msgstr ""
 
 #: page.phonebook.php:152
 msgid "Submit Changes"
-msgstr "Änderungen bestätigen"
+msgstr ""
 
 #: page.phonebook.php:201
 msgid "Upload"
-msgstr "Hochladen"
+msgstr ""
 
 #: page.phonebook.php:13
 msgid ""
 "Use this module to create system wide speed dial numbers that can be dialed "
 "from any phone."
 msgstr ""
-"Hier werden Systemweite Kurzwahlnummern erstellt, welche von allen Benutzern "
-"gewählt werden können."
 
 #: page.phonebook.php:137
 msgid "Yes"
-msgstr "Ja"
-
-#~ msgid ""
-#~ "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
-#~ "codes"
-#~ msgstr ""
-#~ "Vergeben Sie eine Kurzwahlnummer.<br/>Um Kurzwahlnummern zu verwenden, "
-#~ "wird das Kurzwahlmodul benötigt"
-
-#~ msgid ""
-#~ "Import a CSV File formatted as follows:<br/>\"Name\";Number;Speeddial<br /"
-#~ "> Names should be enclosed by '\"' and fields separated by ';' <br /><br /"
-#~ "> Example:<br/>\"John Doe\";12345678;123"
-#~ msgstr ""
-#~ "Importieren Sie eine CSV-Datei, die wie folgt formatiert ist:<br/>\"Name"
-#~ "\";Nummer;Kurzwahl<br /> Die Namen sollten von ''\" eingeschlossen werden "
-#~ "und Felder durch ';' getrennt. <br /><br /> zum Beispiel:<br/>\"John Doe"
-#~ "\";12345678;123"
-
-#~ msgid ""
-#~ "Please enter a valid Speeddial code or leave it empty when generatingß"
-#~ msgstr ""
-#~ "Bitte geben Sie eine gültige Kurzwahlnummer ein oder lassen Sie das Feld "
-#~ "leer"
+msgstr ""
