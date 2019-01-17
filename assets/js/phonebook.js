@@ -36,7 +36,7 @@ var numbers = [];
 function linkFormatter(value, row, index){
 	numbers.push(row.number);
 	var html = '<a class="pbedit" href="#" data-toggle="modal" data-target="#pbForm" data-action="edit" data-number="'+row.number+'" data-name="'+row.name+'" data-dial="'+row.dial+'"><i class="fa fa-pencil"></i></a>';
-	html += '&nbsp;<a href="?display=phonebook&action=delete&number='+value+'&speeddial='+row.dial+'" class="delAction"><i class="fa fa-trash"></i></a>';
+	html += '&nbsp;<a href="?display=phonebook&action=delete&number='+ encodeURIComponent(value)+'&speeddial='+row.dial+'" class="delAction"><i class="fa fa-trash"></i></a>';
 	return html;
 }
 $(document).ready(function(){
