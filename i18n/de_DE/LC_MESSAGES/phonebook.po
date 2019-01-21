@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 19:34-0300\n"
-"PO-Revision-Date: 2017-03-03 15:57+0200\n"
-"Last-Translator: hammer125 <auswertung@aon.at>\n"
-"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/phonebook/"
-"de_DE/>\n"
+"PO-Revision-Date: 2018-08-25 12:00+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"Language-Team: German <http://*/projects/freepbx/phonebook/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.phonebook.php:32
 msgid "Actions"
@@ -51,7 +50,7 @@ msgstr "Löschen"
 
 #: assets/js/phonebook.js:29
 msgid "Duplicate speeddial number"
-msgstr ""
+msgstr "dupliziere Kurzwahlnummern"
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
@@ -62,6 +61,8 @@ msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes "
 msgstr ""
+"Geben Sie einen Kurzwahlcode ein. <br/> 1 Das Kurzwahl-Modul ist für die "
+"Verwendung von Kurzwahlcodes erforderlich "
 
 #: page.phonebook.php:69
 msgid "Enter the name"
@@ -85,6 +86,7 @@ msgstr "Datei"
 msgid ""
 "If you use an exsiting Speed Dial,then it will be removed from the used one."
 msgstr ""
+"If you use an exsiting Speed Dial,then it will be removed from the used one."
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
@@ -95,6 +97,9 @@ msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
+"Importieren Sie eine CSV-Datei wie folgt formatiert: <br/> "
+"1Name;Nummer;Kurzwahl<br /> 2  Felder getrennt durch ';' <br /> 3<br /> 4 "
+"Beispiel:<br/> 5John Doe;12345678;123"
 
 #: page.phonebook.php:165
 msgid "Import from CSV"
@@ -128,6 +133,8 @@ msgstr "Bitte geben Sie eine gültige Nummer ein"
 msgid ""
 "Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "
 msgstr ""
+"Bitte geben Sie einen gültigen Kurzwahlcode ein oder lassen Sie ihn leer, "
+"wenn die Kurzwahl mit  =Nein eingestellt ist "
 
 #: phonebook.i18n.php:8
 msgid ""
@@ -159,7 +166,7 @@ msgstr "Kurzwahl"
 
 #: Phonebook.class.php:118
 msgid "Submit"
-msgstr "Bestätigen"
+msgstr "Absenden"
 
 #: page.phonebook.php:152
 msgid "Submit Changes"
