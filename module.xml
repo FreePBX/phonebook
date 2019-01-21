@@ -2,7 +2,7 @@
 	<rawname>phonebook</rawname>
 	<repo>extended</repo>
 	<name>Phonebook</name>
-	<version>13.0.6.2</version>
+	<version>13.0.6.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -12,6 +12,7 @@
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
 	<changelog>
+		*13.0.6.3* FREEPBX-18900 Phonebook entries starting in E.164-format can't be deleted 
 		*13.0.6.2* FREEPBX-16571 - Fix issue with importing an export
 		*13.0.6* FREEPBX-16508, FREEPBX-16571
 		*13.0.5.8* FREEPBX-15964 dont enforce speeddial if users dont want it
