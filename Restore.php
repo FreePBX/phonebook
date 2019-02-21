@@ -11,7 +11,7 @@ class Restore Extends Base\RestoreBase{
 	}
 	public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
 		$pb = $this->FreePBX->Phonebook;
-		$astdb = $this->getAstDb($tmpfiledir.'/astdb');
+		$astdb = $data['astdb'];
 		if(!isset($astdb['sysspeeddials'])){
 			return $this;
 		}
