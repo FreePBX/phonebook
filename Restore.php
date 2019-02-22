@@ -9,7 +9,7 @@ class Restore Extends Base\RestoreBase{
 			$pb->add($number, $setting['name'], $setting['speeddial']);
 		}
 	}
-	public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
+	public function processLegacy($pdo, $data, $tables, $unknownTables){
 		$pb = $this->FreePBX->Phonebook;
 		$astdb = $data['astdb'];
 		if(!isset($astdb['sysspeeddials'])){
