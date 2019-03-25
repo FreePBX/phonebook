@@ -58,4 +58,20 @@ $(document).ready(function(){
 		$("#speeddial").val('');
 		$("#editspeeddial").val('');
 	});
+
+
+	$('#csvsubmit').on("click",function() {
+			if ($('#csv').val() == "") {
+				alert(_("No Phonebook csv file selected.. Please select proper csv file to proceed further"));
+				return false;
+			} });
+
+	$('#export').on("click",function() {
+			if (!$("table#mygrid").bootstrapTable('getData').length) {
+				alert(_("No phonebook record to export.."));
+				return false;
+			}
+	});
+
+
 });
