@@ -20,7 +20,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 						<div id="toolbar-all">
 							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#pbForm" data-action="add"><i class="fa fa-plus"></i> <?php echo _("Add Phonebook Entry")?></button>
 							<a class="btn btn-default" href="?display=phonebook&amp;action=empty"><i class="fa fa-exclamation-triangle"></i> <?php echo _("Empty Phonebook")?></a>
-							<a class="btn btn-default" href="?display=phonebook&amp;action=export"><i class="fa fa-upload"></i> <?php echo _("Export Phonebook")?></a>
+							<a button type="button" class="btn btn-default" id="export" name="export" href="?display=phonebook&amp;action=export"><i class="fa fa-upload"></i> <?php echo _("Export Phonebook")?></a>
 							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#importForm" data-action="add"><i class="fa fa-download"></i> <?php echo _("Import Phonebook")?></button>
 						</div>
 						 <table id="mygrid" data-url="<?php echo $dataurl?>" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
@@ -198,7 +198,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 										</div>
 										<!--END File-->
 										<br/>
-										<input name="submit" type="submit" value="<?php echo _("Upload")?>" >
+										<input name="csvsubmit" id="csvsubmit" type="submit" value="<?php echo _("Upload")?>" >
 										</form>
 									</div>
 								</div>
