@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2019-03-28 07:18+0530\n"
 "PO-Revision-Date: 2006-09-28 17:30+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -104,6 +104,16 @@ msgstr "שם"
 
 #: page.phonebook.php:139
 msgid "No"
+msgstr ""
+
+#: assets/js/phonebook.js:65
+msgid ""
+"No Phonebook csv file selected.. Please select proper csv file to proceed "
+"further"
+msgstr ""
+
+#: assets/js/phonebook.js:71
+msgid "No phonebook record to export.."
 msgstr ""
 
 #: page.phonebook.php:29 page.phonebook.php:81

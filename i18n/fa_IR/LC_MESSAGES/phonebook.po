@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2019-03-28 07:18+0530\n"
 "PO-Revision-Date: 2019-01-26 13:00+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/phonebook/fa/>\n"
@@ -112,6 +112,16 @@ msgstr "نام"
 #: page.phonebook.php:139
 msgid "No"
 msgstr "خیر"
+
+#: assets/js/phonebook.js:65
+msgid ""
+"No Phonebook csv file selected.. Please select proper csv file to proceed "
+"further"
+msgstr ""
+
+#: assets/js/phonebook.js:71
+msgid "No phonebook record to export.."
+msgstr ""
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"

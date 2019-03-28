@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 19:34-0300\n"
+"POT-Creation-Date: 2019-03-28 07:18+0530\n"
 "PO-Revision-Date: 2018-08-25 12:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/phonebook/de/>\n"
@@ -97,9 +97,9 @@ msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
-"Importieren Sie eine CSV-Datei wie folgt formatiert: <br/> "
-"1Name;Nummer;Kurzwahl<br /> 2  Felder getrennt durch ';' <br /> 3<br /> 4 "
-"Beispiel:<br/> 5John Doe;12345678;123"
+"Importieren Sie eine CSV-Datei wie folgt formatiert: <br/> 1Name;Nummer;"
+"Kurzwahl<br /> 2  Felder getrennt durch ';' <br /> 3<br /> 4 Beispiel:<br/> "
+"5John Doe;12345678;123"
 
 #: page.phonebook.php:165
 msgid "Import from CSV"
@@ -112,6 +112,16 @@ msgstr "Name"
 #: page.phonebook.php:139
 msgid "No"
 msgstr "Nein"
+
+#: assets/js/phonebook.js:65
+msgid ""
+"No Phonebook csv file selected.. Please select proper csv file to proceed "
+"further"
+msgstr ""
+
+#: assets/js/phonebook.js:71
+msgid "No phonebook record to export.."
+msgstr ""
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
