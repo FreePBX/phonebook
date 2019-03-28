@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:51-0400\n"
+"POT-Creation-Date: 2019-03-28 07:21+0530\n"
 "PO-Revision-Date: 2017-03-27 14:35+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -109,6 +109,16 @@ msgstr "Nome"
 #: page.phonebook.php:139
 msgid "No"
 msgstr "Não"
+
+#: assets/js/phonebook.js:65
+msgid ""
+"No Phonebook csv file selected.. Please select proper csv file to proceed "
+"further"
+msgstr ""
+
+#: assets/js/phonebook.js:71
+msgid "No phonebook record to export.."
+msgstr ""
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"

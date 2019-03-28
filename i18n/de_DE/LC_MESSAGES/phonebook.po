@@ -85,6 +85,16 @@ msgstr ""
 msgid "No"
 msgstr ""
 
+#: assets/js/phonebook.js:65
+msgid ""
+"No Phonebook csv file selected.. Please select proper csv file to proceed "
+"further"
+msgstr ""
+
+#: assets/js/phonebook.js:71
+msgid "No phonebook record to export.."
+msgstr ""
+
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
 msgstr ""

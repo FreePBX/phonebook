@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 19:21-0500\n"
+"POT-Creation-Date: 2019-03-28 07:21+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,6 +104,16 @@ msgstr ""
 
 #: page.phonebook.php:139
 msgid "No"
+msgstr ""
+
+#: assets/js/phonebook.js:65
+msgid ""
+"No Phonebook csv file selected.. Please select proper csv file to proceed "
+"further"
+msgstr ""
+
+#: assets/js/phonebook.js:71
+msgid "No phonebook record to export.."
 msgstr ""
 
 #: page.phonebook.php:29
