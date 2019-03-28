@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 19:34-0300\n"
-"PO-Revision-Date: 2016-04-27 20:06+0200\n"
-"Last-Translator: psdk <hyavari26@gmail.com>\n"
-"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
-"phonebook/fa_IR/>\n"
+"PO-Revision-Date: 2019-01-26 13:00+0000\n"
+"Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
+"Language-Team: Persian <http://*/projects/freepbx/phonebook/fa/>\n"
 "Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.phonebook.php:32
 msgid "Actions"
@@ -51,7 +50,7 @@ msgstr "حذف"
 
 #: assets/js/phonebook.js:29
 msgid "Duplicate speeddial number"
-msgstr ""
+msgstr "تکرار شماره گیر سریع"
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
@@ -62,6 +61,8 @@ msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes "
 msgstr ""
+"Enter a speed dial code<br/>1Speeddial module is required to use speeddial "
+"codes. "
 
 #: page.phonebook.php:69
 msgid "Enter the name"
@@ -86,7 +87,7 @@ msgstr "فایل"
 #: page.phonebook.php:120
 msgid ""
 "If you use an exsiting Speed Dial,then it will be removed from the used one."
-msgstr ""
+msgstr "اگر از شماره گیر سریع موجود استفاده میکنید، باید از قبلی حذف شود."
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
@@ -97,6 +98,8 @@ msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
+"Import a CSV File formatted as follows:<br/>1Name;Number;Speeddial<br />2  "
+"fields separated by ';' <br />3<br />4 Example:<br/>5John Doe;12345678;123"
 
 #: page.phonebook.php:165
 msgid "Import from CSV"
@@ -130,6 +133,7 @@ msgstr "لطفا یک شماره معتبر وارد کنید"
 msgid ""
 "Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "
 msgstr ""
+"کد شماره گیر سریع معتبر وارد کرده یا آن را خالی بگذارید اگر Speed Dial=No . "
 
 #: phonebook.i18n.php:8
 msgid ""
