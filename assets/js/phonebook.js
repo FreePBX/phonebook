@@ -59,6 +59,12 @@ $(document).ready(function(){
 		$("#editspeeddial").val('');
 	});
 
+	$(".btn-remove").click(function (e) {
+		if(!confirm(_("Are you sure you want to delete all existing phonebook entries?"))) {
+			e.preventDefault();
+			e.stopPropagation();
+		}
+	});
 
 	$('#csvsubmit').on("click",function() {
 			if ($('#csv').val() == "") {
