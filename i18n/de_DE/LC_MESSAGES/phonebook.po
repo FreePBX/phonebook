@@ -14,6 +14,10 @@ msgstr ""
 msgid "Admin"
 msgstr ""
 
+#: assets/js/phonebook.js:63
+msgid "Are you sure you want to delete all existing phonebook entries?"
+msgstr ""
+
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
 msgstr ""
@@ -85,13 +89,13 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: assets/js/phonebook.js:65
+#: assets/js/phonebook.js:71
 msgid ""
 "No Phonebook csv file selected.. Please select proper csv file to proceed "
 "further"
 msgstr ""
 
-#: assets/js/phonebook.js:71
+#: assets/js/phonebook.js:77
 msgid "No phonebook record to export.."
 msgstr ""
 
