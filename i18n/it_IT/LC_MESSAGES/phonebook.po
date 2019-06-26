@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 07:18+0530\n"
+"POT-Creation-Date: 2019-06-26 14:33+0530\n"
 "PO-Revision-Date: 2018-05-30 09:19+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/phonebook/it/>\n"
@@ -35,6 +35,10 @@ msgstr "Aggiungi o sostituisci voce"
 #: phonebook.i18n.php:6
 msgid "Admin"
 msgstr "Amministratore"
+
+#: assets/js/phonebook.js:63
+msgid "Are you sure you want to delete all existing phonebook entries?"
+msgstr ""
 
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
@@ -116,13 +120,13 @@ msgstr "Nome"
 msgid "No"
 msgstr "No"
 
-#: assets/js/phonebook.js:65
+#: assets/js/phonebook.js:71
 msgid ""
 "No Phonebook csv file selected.. Please select proper csv file to proceed "
 "further"
 msgstr ""
 
-#: assets/js/phonebook.js:71
+#: assets/js/phonebook.js:77
 msgid "No phonebook record to export.."
 msgstr ""
 
