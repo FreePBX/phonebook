@@ -15,8 +15,8 @@ class Restore Extends Base\RestoreBase{
 		if(!isset($astdb['sysspeeddials'])){
 			return $this;
 		}
-		foreach($astdb['sysspeeddials'] as $number => $setting){
-				$pb->add($number, $setting['name'], $setting['speeddial']);
+		foreach($astdb['sysspeeddials'] as $speeddial => $number) {
+			$pb->add($number, $astdb['cidname'][$number], $speeddial);
 		}
 	}
 }
