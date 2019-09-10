@@ -2,7 +2,7 @@
 	<rawname>phonebook</rawname>
 	<repo>extended</repo>
 	<name>Phonebook</name>
-	<version>15.0.10</version>
+	<version>15.0.11</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -12,6 +12,7 @@
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
 	<changelog>
+		*15.0.11* Related to FREEPBX-20414: removed $jobid from runRestore() 
 		*15.0.10* FREEPBX-20388 Restoring backup into FreePBX 15 system is not flushing the previously existing asterisk phonebook entries. 
 		*15.0.9* FREEPBX-20292  phone book legacy restore error 
 		*15.0.8* FREEPBX-20063 - added confirmation prompt when clicking Empty Phonebook button 
