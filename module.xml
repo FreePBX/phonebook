@@ -2,7 +2,7 @@
 	<rawname>phonebook</rawname>
 	<repo>extended</repo>
 	<name>Phonebook</name>
-	<version>13.0.6.5</version>
+	<version>13.0.6.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -13,6 +13,7 @@
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
 	<changelog>
+		*13.0.6.6* Packaging of ver 13.0.6.6
 		*13.0.6.5* FREEPBX-20063
 		*13.0.6.4* Fixing FREEPBX-19622 
 		*13.0.6.3* FREEPBX-18900 Phonebook entries starting in E.164-format can't be deleted 
