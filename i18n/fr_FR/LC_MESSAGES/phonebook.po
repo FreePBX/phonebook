@@ -20,16 +20,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 14:33+0530\n"
-"PO-Revision-Date: 2017-12-04 21:06+0200\n"
-"Last-Translator: JCattan <jeremie@famillecattan.com>\n"
+"PO-Revision-Date: 2021-09-21 16:29+0000\n"
+"Last-Translator: jeremie cattan <freepbx@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/phonebook/"
-"fr_FR/>\n"
+"fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.phonebook.php:32
 msgid "Actions"
@@ -50,6 +50,7 @@ msgstr "Administrateur"
 #: assets/js/phonebook.js:63
 msgid "Are you sure you want to delete all existing phonebook entries?"
 msgstr ""
+"Voulez-vous vraiment supprimer toutes les entrées existantes du répertoire ?"
 
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
@@ -135,10 +136,12 @@ msgid ""
 "No Phonebook csv file selected.. Please select proper csv file to proceed "
 "further"
 msgstr ""
+"Aucun fichier csv de répertoire sélectionné. Veuillez sélectionner le "
+"fichier csv approprié pour continuer"
 
 #: assets/js/phonebook.js:77
 msgid "No phonebook record to export.."
-msgstr ""
+msgstr "Aucun enregistrement du répertoire à exporter."
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
