@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 14:33+0530\n"
-"PO-Revision-Date: 2021-11-23 07:01+0000\n"
+"PO-Revision-Date: 2021-11-29 07:51+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "phonebook/ru/>\n"
@@ -40,6 +40,7 @@ msgstr "Админ"
 #: assets/js/phonebook.js:63
 msgid "Are you sure you want to delete all existing phonebook entries?"
 msgstr ""
+"Вы уверены, что хотите удалить все существующие записи телефонной книги?"
 
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
@@ -55,7 +56,7 @@ msgstr "Удалить"
 
 #: assets/js/phonebook.js:29
 msgid "Duplicate speeddial number"
-msgstr ""
+msgstr "Дублирующийся номер быстрого набора"
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
@@ -66,6 +67,8 @@ msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes "
 msgstr ""
+"Введите код быстрого набора <br/> Для использования кодов быстрого набора "
+"требуется модуль Быстрый набор "
 
 #: page.phonebook.php:69
 msgid "Enter the name"
@@ -91,6 +94,8 @@ msgstr "Файл"
 msgid ""
 "If you use an exsiting Speed Dial,then it will be removed from the used one."
 msgstr ""
+"Если вы используете существующий быстрый набор, то он будет удален из "
+"используемого."
 
 #: page.phonebook.php:24
 msgid "Import Phonebook"
@@ -101,6 +106,8 @@ msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
+"Импортируйте файл CSV в следующем формате: <br/>Имя;Номер;Быстрый набор<br/>"
+"  поля разделяются ';'<br/><br/>Пример:<br/>Иван Петров;12345678;123"
 
 #: page.phonebook.php:165
 msgid "Import from CSV"
@@ -119,10 +126,12 @@ msgid ""
 "No Phonebook csv file selected.. Please select proper csv file to proceed "
 "further"
 msgstr ""
+"CSV-файл телефонной книги не выбран.. Пожалуйста, выберите правильный csv-"
+"файл чтобы продолжить"
 
 #: assets/js/phonebook.js:77
 msgid "No phonebook record to export.."
-msgstr ""
+msgstr "Нет записей телефонной книги для экспорта.."
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
@@ -144,6 +153,8 @@ msgstr "Введите правильный номер"
 msgid ""
 "Please enter a valid Speeddial code or leave it empty when Set Speed Dial=No "
 msgstr ""
+"Пожалуйста, введите действительный код быстрого набора или оставьте его "
+"пустым если выбрано \"Установить быстрый набор\"=Нет "
 
 #: phonebook.i18n.php:8
 msgid ""
@@ -160,6 +171,7 @@ msgstr "Сброс"
 #: page.phonebook.php:147
 msgid "Select Yes to have a speed dial created automatically for this number"
 msgstr ""
+"Выберите Да, чтобы для этого номера автоматически создавался быстрый набор"
 
 #: page.phonebook.php:132
 msgid "Set Speed Dial"
@@ -167,11 +179,11 @@ msgstr "Настроить быстрый набор"
 
 #: page.phonebook.php:105
 msgid "Speed Dial Code"
-msgstr ""
+msgstr "Код быстрого набора"
 
 #: page.phonebook.php:31
 msgid "Speeddial"
-msgstr ""
+msgstr "Быстрый набор"
 
 #: Phonebook.class.php:118
 msgid "Submit"
