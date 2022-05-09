@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 09:41+0530\n"
+"POT-Creation-Date: 2022-05-09 02:17+0000\n"
 "PO-Revision-Date: 2018-07-18 19:10+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/phonebook/bg/>\n"
@@ -29,7 +29,7 @@ msgstr "Действия"
 msgid "Add Phonebook Entry"
 msgstr ""
 
-#: page.phonebook.php:42
+#: page.phonebook.php:41
 msgid "Add or replace entry"
 msgstr "Добави или замени въвеждане"
 

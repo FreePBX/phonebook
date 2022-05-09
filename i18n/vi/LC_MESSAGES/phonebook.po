@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 09:41+0530\n"
+"POT-Creation-Date: 2022-05-09 02:17+0000\n"
 "PO-Revision-Date: 2017-07-11 14:25+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,7 +29,7 @@ msgstr "Các thao tác"
 msgid "Add Phonebook Entry"
 msgstr "Thêm mục nhập danh bạ điện thoại"
 
-#: page.phonebook.php:42
+#: page.phonebook.php:41
 msgid "Add or replace entry"
 msgstr "Thêm hoặc thay thế mục nhập"
 
