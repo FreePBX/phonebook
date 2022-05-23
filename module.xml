@@ -2,7 +2,7 @@
 	<rawname>phonebook</rawname>
 	<repo>extended</repo>
 	<name>Phonebook</name>
-	<version>16.0.2</version>
+	<version>17.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -13,10 +13,9 @@
 		<phonebook needsenginedb="yes">Asterisk Phonebook</phonebook>
 	</menuitems>
 	<changelog>
-		*16.0.2* FREEI-4793 
-		*16.0.1* 16.0
+		*17.0.1* 17.0
 	</changelog>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 </module>
