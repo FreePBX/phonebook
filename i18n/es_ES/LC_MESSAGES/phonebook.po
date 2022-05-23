@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo phonebook module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 02:17+0000\n"
+"POT-Creation-Date: 2022-05-23 10:00+0000\n"
 "PO-Revision-Date: 2016-12-10 22:24+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -25,7 +25,7 @@ msgstr "Acciones"
 msgid "Add Phonebook Entry"
 msgstr "Agregar entrada a la agenda telefónica"
 
-#: page.phonebook.php:41
+#: page.phonebook.php:42
 msgid "Add or replace entry"
 msgstr "Añadir o reemplazar elemento"
 

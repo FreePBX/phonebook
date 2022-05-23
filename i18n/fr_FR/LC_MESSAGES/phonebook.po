@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 02:17+0000\n"
+"POT-Creation-Date: 2022-05-23 10:00+0000\n"
 "PO-Revision-Date: 2017-12-04 21:06+0200\n"
 "Last-Translator: JCattan <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/phonebook/"
@@ -39,7 +39,7 @@ msgstr "Actions"
 msgid "Add Phonebook Entry"
 msgstr "Ajouter une entrée d'annuaire"
 
-#: page.phonebook.php:41
+#: page.phonebook.php:42
 msgid "Add or replace entry"
 msgstr "Ajouter ou remplacer une entrée"
 

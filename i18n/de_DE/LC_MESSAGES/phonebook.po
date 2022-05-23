@@ -6,7 +6,7 @@ msgstr ""
 msgid "Add Phonebook Entry"
 msgstr ""
 
-#: page.phonebook.php:41
+#: page.phonebook.php:42
 msgid "Add or replace entry"
 msgstr ""
 
