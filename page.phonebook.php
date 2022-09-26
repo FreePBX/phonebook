@@ -117,7 +117,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 													<span id="speeddial-help" class="help-block fpbx-help-block"><?php echo _("Enter a speed dial code<br/>Speeddial module is required to use speeddial codes ")?></span>
 												</div>
 												<div class="well">
-												 <p><?php echo _("If you use an exsiting Speed Dial,then it will be removed from the used one."); ?>
+												 <p><?php echo _("If you use an existing Speed Dial,then it will be removed from the used one."); ?>
 												 </div>
 											</div>
 										</div>
