@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 02:17+0000\n"
+"POT-Creation-Date: 2022-05-23 10:00+0000\n"
 "PO-Revision-Date: 2017-03-27 14:35+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -29,7 +29,7 @@ msgstr "Ações"
 msgid "Add Phonebook Entry"
 msgstr "Adicionar Item na Agenda Telefônica"
 
-#: page.phonebook.php:41
+#: page.phonebook.php:42
 msgid "Add or replace entry"
 msgstr "Adicionar ou substituir elemento"
 

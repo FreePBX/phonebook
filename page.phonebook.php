@@ -38,8 +38,8 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 						  <div class="modal-dialog">
 						    <div class="modal-content">
 						      <div class="modal-header">
-								<h2 class="modal-title mr-auto"><?php echo _("Add or replace entry")?></h2>
 						        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						        <h2 class="modal-title"><?php echo _("Add or replace entry")?></h2>
 						      </div>
 						      <div class="modal-body">
 										<form autocomplete="off" name="edit" id="edit" action="" method="post" onsubmit="return edit_onsubmit();">
@@ -51,8 +51,8 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 										<div class="element-container">
 											<div class="row">
 												<div class="col-md-12">
-													<div class="">
-														<div class="row form-group">
+													<div class="row">
+														<div class="form-group">
 															<div class="col-md-3">
 																<label class="control-label" for="name"><?php echo _("Name") ?></label>
 																<i class="fa fa-question-circle fpbx-help-icon" data-for="name"></i>
@@ -75,8 +75,8 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 										<div class="element-container">
 											<div class="row">
 												<div class="col-md-12">
-													<div class="">
-														<div class="row form-group">
+													<div class="row">
+														<div class="form-group">
 															<div class="col-md-3">
 																<label class="control-label" for="number"><?php echo _("Number") ?></label>
 																<i class="fa fa-question-circle fpbx-help-icon" data-for="number"></i>
@@ -99,8 +99,8 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 										<div class="element-container">
 											<div class="row">
 												<div class="col-md-12">
-													<div class="">
-														<div class="row form-group">
+													<div class="row">
+														<div class="form-group">
 															<div class="col-md-3">
 																<label class="control-label" for="speeddial"><?php echo _("Speed Dial Code") ?></label>
 																<i class="fa fa-question-circle fpbx-help-icon" data-for="speeddial"></i>
@@ -117,7 +117,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 													<span id="speeddial-help" class="help-block fpbx-help-block"><?php echo _("Enter a speed dial code<br/>Speeddial module is required to use speeddial codes ")?></span>
 												</div>
 												<div class="well">
-												 <p><?php echo _("If you use an exsiting Speed Dial,then it will be removed from the used one."); ?>
+												 <p><?php echo _("If you use an existing Speed Dial,then it will be removed from the used one."); ?>
 												 </div>
 											</div>
 										</div>
@@ -126,8 +126,8 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 										<div class="element-container">
 											<div class="row">
 												<div class="col-md-12">
-													<div class="">
-														<div class="row form-group">
+													<div class="row">
+														<div class="form-group">
 															<div class="col-md-3">
 																<label class="control-label" for="gensd"><?php echo _("Set Speed Dial") ?></label>
 																<i class="fa fa-question-circle fpbx-help-icon" data-for="gensd"></i>
@@ -158,7 +158,7 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 						<!--END MODAL-->
 						<!--import MODAL-->
 						<div id="importForm" class="modal fade" role="dialog">
-							<div class="modal-dialog modal-md">
+							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -174,8 +174,8 @@ $dataurl = "ajax.php?module=phonebook&command=getJSON&jdata=grid";
 										<div class="element-container">
 											<div class="row">
 												<div class="col-md-12">
-													<div class="">
-														<div class="row form-group">
+													<div class="row">
+														<div class="form-group">
 															<div class="col-md-3">
 																<label class="control-label" for="csv"><?php echo _("File") ?></label>
 																<i class="fa fa-question-circle fpbx-help-icon" data-for="csv"></i>

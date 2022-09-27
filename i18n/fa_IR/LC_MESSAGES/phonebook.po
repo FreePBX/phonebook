@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 02:17+0000\n"
+"POT-Creation-Date: 2022-05-23 10:00+0000\n"
 "PO-Revision-Date: 2016-04-27 20:06+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,7 +29,7 @@ msgstr "عملیات"
 msgid "Add Phonebook Entry"
 msgstr "افزودن ورودی به دفترچه تلفن"
 
-#: page.phonebook.php:41
+#: page.phonebook.php:42
 msgid "Add or replace entry"
 msgstr "افزودن یا جایگزینی ورودی"
 
