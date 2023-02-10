@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo phonebook module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 14:33+0530\n"
-"PO-Revision-Date: 2016-12-10 22:24+0200\n"
-"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"PO-Revision-Date: 2023-02-11 20:01+0000\n"
+"Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
-"phonebook/es_ES/>\n"
+"phonebook/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -36,6 +36,8 @@ msgstr "Administrador"
 #: assets/js/phonebook.js:63
 msgid "Are you sure you want to delete all existing phonebook entries?"
 msgstr ""
+"¿Está seguro de que desea eliminar todas las entradas existentes en la "
+"libreta de teléfonos?"
 
 #: phonebook.i18n.php:10
 msgid "Asterisk Phonebook"
@@ -51,7 +53,7 @@ msgstr "Eliminar"
 
 #: assets/js/phonebook.js:29
 msgid "Duplicate speeddial number"
-msgstr ""
+msgstr "Número de marcación rápida duplicado"
 
 #: page.phonebook.php:22
 msgid "Empty Phonebook"
@@ -62,6 +64,8 @@ msgid ""
 "Enter a speed dial code<br/>Speeddial module is required to use speeddial "
 "codes "
 msgstr ""
+"Ingrese un código de marcación rápida<br/> El módulo de marcación rápida es "
+"necesario para usar los códigos de marcación rápida. "
 
 #: page.phonebook.php:69
 msgid "Enter the name"
@@ -97,6 +101,9 @@ msgid ""
 "Import a CSV File formatted as follows:<br/>Name;Number;Speeddial<br />  "
 "fields separated by ';' <br /><br /> Example:<br/>John Doe;12345678;123"
 msgstr ""
+"Importar un archivo CSV formateado de la siguiente manera:<br/>Nombre;Número;"
+"Marcación rápida; <br />  campos separados por ';' <br /><br /> Ejemplo:<br/>"
+"John Doe;12345678;123"
 
 #: page.phonebook.php:165
 msgid "Import from CSV"
@@ -115,10 +122,12 @@ msgid ""
 "No Phonebook csv file selected.. Please select proper csv file to proceed "
 "further"
 msgstr ""
+"No se ha seleccionado un archivo CSV de la libreta de teléfonos. Por favor, "
+"seleccione el archivo CSV adecuado para continuar"
 
 #: assets/js/phonebook.js:77
 msgid "No phonebook record to export.."
-msgstr ""
+msgstr "No hay registros de la libreta de teléfonos para exportar."
 
 #: page.phonebook.php:29 page.phonebook.php:81
 msgid "Number"
